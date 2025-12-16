@@ -5,7 +5,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@radix-ui/react-accordion";
+} from "@/components/ui/accordion";
 
 export default function Home() {
   return (
@@ -171,55 +171,167 @@ export default function Home() {
           </p>
         </section>
 
+        <hr className="w-full"></hr>
+
         <section id="about" className="w-full my-8 items-center justify-center">
+          <h1 className="text-2xl md:text-4xl text-black font-bold ">
+            Frequently Asked
+          </h1>
           <Accordion
             type="single"
             collapsible
-            className="w-full"
+            className="w-full mt-10"
             defaultValue="item-1"
           >
             <AccordionItem value="item-1">
-              <AccordionTrigger>Product Information</AccordionTrigger>
-              <AccordionContent className="flex flex-col gap-4 text-balance">
+              <AccordionTrigger className="text-sm md:text-xl">
+                If my business joins the SIT STOP campaign do we have to provide
+                a special/designated chair?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
                 <p>
-                  Our flagship product combines cutting-edge technology with
-                  sleek design. Built with premium materials, it offers
-                  unparalleled performance and reliability.
-                </p>
-                <p>
-                  Key features include advanced processing capabilities, and an
-                  intuitive user interface designed for both beginners and
-                  experts.
+                  No - any chair in the part of your business that is open to
+                  the public is fine. Equally, if a chair is willingly provided
+                  on request, that is an acceptable alternative.
                 </p>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>Shipping Details</AccordionTrigger>
-              <AccordionContent className="flex flex-col gap-4 text-balance">
+              <AccordionTrigger className="text-sm md:text-xl">
+                Can I designate a particular chair if I wish to?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
                 <p>
-                  We offer worldwide shipping through trusted courier partners.
-                  Standard delivery takes 3-5 business days, while express
-                  shipping ensures delivery within 1-2 business days.
-                </p>
-                <p>
-                  All orders are carefully packaged and fully insured. Track
-                  your shipment in real-time through our dedicated tracking
-                  portal.
+                  Yes, we would be delighted to supply a SIT STOP sticker for
+                  the chair if you wish. Please do contact us to order your
+                  sticker. Details are on the contacts page.
                 </p>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Return Policy</AccordionTrigger>
-              <AccordionContent className="flex flex-col gap-4 text-balance">
+              <AccordionTrigger className="text-sm md:text-xl">
+                Is there a particular type of chair which is best for SIT STOP’s
+                purpose?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
                 <p>
-                  We stand behind our products with a comprehensive 30-day
-                  return policy. If you&apos;re not completely satisfied, simply
-                  return the item in its original condition.
+                  Yes, a chair which has a relatively high seat and ideally arms
+                  is the easiest for most people with mobility problems to use.
+                  However any stable chair is welcome to someone who needs to
+                  sit down.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-sm md:text-xl">
+                Does the chair have to be in a particular part of my premises?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+                <p>
+                  No, anywhere in the public area that is convenient to you, and
+                  accessible to the user.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-sm md:text-xl">
+                What do I do if someone abuses our hospitality by behaving
+                anti-socially?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+                <p>
+                  Any premises open to the public will from time to time have
+                  incidents of this type. Evidence from our pilot project is
+                  that participating in SIT STOP does not increase the frequency
+                  of such events. When they occur they should be addressed by
+                  staff in the way they have been trained.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger className="text-sm md:text-xl">
+                Am I required to provide additional first aid training to staff
+                because I participate in Sit Stop?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+                <p>
+                  No, there is no incremental obligation beyond that which your
+                  business already has.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7">
+              <AccordionTrigger className="text-sm md:text-xl">
+                As a business providing a seat as part of the SIT STOP campaign
+                do we get paid?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+                <p>No. The campaign is entirely voluntary throughout.</p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-8">
+              <AccordionTrigger className="text-sm md:text-xl">
+                I know of a business which provides seating but they are not SIT
+                STOP participants. Should I say something to them?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+                <p>
+                  We would be very pleased to know of public spirited businesses
+                  such as these! Displaying the SIT STOP logo helps the public,
+                  builds awareness of SIT STOP and assists recruitment of
+                  additional participant businesses.
                 </p>
                 <p>
-                  Our hassle-free return process includes free return shipping
-                  and full refunds processed within 48 hours of receiving the
-                  returned item.
+                  By all means approach them to display the logo and put us in
+                  touch with them by giving us the name and address of the
+                  business and the name of the person you spoke to.
+                  Alternatively if you would like us to approach them just send
+                  us the details.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-9">
+              <AccordionTrigger className="text-sm md:text-xl">
+                I use a business frequently but they have no seating which I
+                feel they should provide. Would you approach them for me?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+                <p>
+                  Yes, if we can get there. We have found that face to face is
+                  the best way to persuade people. We are south west London
+                  based. At this stage of the campaign it is not easy for us to
+                  approach businesses substantially outside our area.
+                </p>
+
+                <p>
+                  However, we are very happy to write to them if you supply the
+                  full postal address and the name of the manager. Our contact
+                  details are in the contacts section of this website.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-10">
+              <AccordionTrigger className="text-sm md:text-xl">
+                Do I have to pay anything because I participate in SIT STOP?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+                <p>
+                  No. We are a voluntary body. We are funded through donations
+                  which cover our costs of operation. All our team give their
+                  time without payment.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-10">
+              <AccordionTrigger className="text-sm md:text-xl">
+                If I want to make a donation in support of SIT STOP what should
+                I do?
+              </AccordionTrigger>
+              <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+                <p>
+                  Cheques payable to ‘SIT STOP’ will be very gratefully
+                  received. They can be mailed to us at the address on the
+                  contacts page.
                 </p>
               </AccordionContent>
             </AccordionItem>
