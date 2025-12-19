@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="w-full px-5 md:px-35 lg:px-45 xl:px-60 my-8">
+    <div className="w-full px-5 md:px-35 lg:px-45 xl:px-60 2xl:px-100 my-8">
       <main>
         <section id="hero" className="w-full text-center space-y-6">
           <h1 className="text-6xl md:text-8xl text-black font-bold ">
