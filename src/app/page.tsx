@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { NavigationBar } from "@/components/NavigationBar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -30,15 +31,20 @@ export default function Home() {
 
           <section id="action-buttons" className="w-full my-8">
             <div className="items-center justify-center flex gap-3 md:gap-5">
-              <Button className="hover:cursor-pointer md:h-11 md:w-40">
-                View all locations
-              </Button>
-              <Button
-                variant="secondary"
-                className="hover:cursor-pointer bg-gray-200 md:h-11 md:w-40"
-              >
-                Connect with us
-              </Button>
+              <Link href="/locations">
+                <Button className="hover:cursor-pointer md:h-11 md:w-40">
+                  View all locations
+                </Button>
+              </Link>
+              {/* need to replace with acc link*/}
+              <Link href="/">
+                <Button
+                  variant="secondary"
+                  className="hover:cursor-pointer bg-gray-200 md:h-11 md:w-40"
+                >
+                  Connect with us
+                </Button>
+              </Link>
             </div>
           </section>
 

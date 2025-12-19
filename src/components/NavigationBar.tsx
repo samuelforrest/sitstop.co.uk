@@ -66,7 +66,7 @@ export function NavigationBar() {
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link className="text-[17px] bg-transparent" href="/docs">
+                <Link className="text-[17px] bg-transparent" href="/">
                   Home
                 </Link>
               </NavigationMenuLink>
@@ -76,7 +76,7 @@ export function NavigationBar() {
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link className="text-[17px] bg-transparent" href="/docs">
+                <Link className="text-[17px] bg-transparent" href="/">
                   About
                 </Link>
               </NavigationMenuLink>
@@ -86,7 +86,7 @@ export function NavigationBar() {
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link className="text-[17px] bg-transparent" href="/docs">
+                <Link className="text-[17px] bg-transparent" href="/locations">
                   All Locations
                 </Link>
               </NavigationMenuLink>
@@ -96,7 +96,7 @@ export function NavigationBar() {
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link className="text-[17px] bg-transparent" href="/docs">
+                <Link className="text-[17px] bg-transparent" href="/">
                   Join
                 </Link>
               </NavigationMenuLink>
@@ -106,7 +106,7 @@ export function NavigationBar() {
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link className="text-[17px] bg-transparent" href="/docs">
+                <Link className="text-[17px] bg-transparent" href="/">
                   Contact
                 </Link>
               </NavigationMenuLink>
