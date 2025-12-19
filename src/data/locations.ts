@@ -18,9 +18,9 @@ export const locations: Location[] = [
     town: "Barnes",
     email: "books@barnesbookshop.com",
     photoUrl:
-      "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_7184.jpeg",
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694553870010421c5ef9/view?project=storage&mode=admin",
     mapUrl:
-      "https://www.google.com/maps/search/?api=1&query=6+Church+Road+Barnes+SW13+9HE",
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694553870010421c5ef9/view?project=storage&mode=admin",
   },
 
   // CASTELNAU
@@ -31,7 +31,7 @@ export const locations: Location[] = [
     town: "Castelnau",
     email: "castelnau.library@richmond.gov.uk",
     photoUrl:
-      "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/placeholder-library.jpg",
+      "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/5463a0a7-ffcf-4468-96cb-d66bdd1fa110.JPG",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=75+Castelnau+Barnes+SW13+9RT",
   },

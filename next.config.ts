@@ -11,6 +11,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/storage/v1/object/public/**",
       },
+      {
+        protocol: "https",
+        hostname: "fra.cloud.appwrite.io",
+        port: "",
+        pathname: "/v1/storage/buckets/**",
+      },
     ],
   },
 };

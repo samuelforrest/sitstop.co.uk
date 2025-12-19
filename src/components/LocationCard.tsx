@@ -12,7 +12,7 @@ interface LocationCardProps {
 
 export function LocationCard({ location }: LocationCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
       <div className="relative h-48 w-full bg-gray-200">
         <Image
           src={location.photoUrl}
@@ -23,19 +23,19 @@ export function LocationCard({ location }: LocationCardProps) {
         />
       </div>
       <div className="p-4 flex-1 flex flex-col">
-        <h3 className="text-xl font-bold text-gray-900 mb-2">
+        <h3 className="text-xl font-bold text-gray-900 mb-5">
           {location.name}
         </h3>
-        <div className="flex items-start gap-2 text-sm text-gray-600 mb-2">
+        <div className="flex items-start gap-2 text-sm text-gray-600 mb-3">
           <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
           <p>{location.address}</p>
         </div>
         {location.email && (
-          <div className="flex items-center gap-2 text-sm text-gray-600 mb-1">
+          <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
             <Mail className="w-4 h-4 flex-shrink-0" />
             <a
               href={`mailto:${location.email}`}
-              className="hover:text-blue-600 truncate"
+              className="hover:underline truncate"
             >
               {location.email}
             </a>
@@ -44,7 +44,7 @@ export function LocationCard({ location }: LocationCardProps) {
         {location.phone && (
           <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
             <Phone className="w-4 h-4 flex-shrink-0" />
-            <a href={`tel:${location.phone}`} className="hover:text-blue-600">
+            <a href={`tel:${location.phone}`} className="hover:underline">
               {location.phone}
             </a>
           </div>
@@ -57,8 +57,7 @@ export function LocationCard({ location }: LocationCardProps) {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2"
             >
-              GoogleMapsIco
-              <MapPin className="w-4 h-4" />
+              <GoogleMapsIcon />
               Open in Google Maps
               <ExternalLink className="w-4 h-4" />
             </a>
