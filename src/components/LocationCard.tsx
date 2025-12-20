@@ -12,13 +12,12 @@ interface LocationCardProps {
 
 export function LocationCard({ location }: LocationCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+    <div className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
       <div className="relative h-48 w-full bg-gray-200">
-        <Image
+        <img
           src={location.photoUrl}
-          alt={location.name}
-          fill
-          className="object-cover"
+          alt={`${location.name} Image`}
+          className="w-full h-full object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
