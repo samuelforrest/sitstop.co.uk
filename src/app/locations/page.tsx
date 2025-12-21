@@ -44,8 +44,9 @@ export default function Locations() {
             <h1 className="text-6xl md:text-8xl text-black font-bold">
               LOCATIONS
             </h1>
-            <p className="text-md md:text-2xl">
-              Here is our directory of SIT STOP locations.
+            <p className="text-md md:text-xl">
+              Here is our directory of SIT STOP locations.<br></br>For opening
+              times, visit the associated google maps page.
             </p>
           </section>
 

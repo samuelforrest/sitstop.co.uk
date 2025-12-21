@@ -10,7 +10,8 @@ export interface Location {
 }
 
 export const locations: Location[] = [
-  // BARNES
+  // BARNES - NEW TOWN
+
   {
     id: "barnes-bookshop",
     name: "Barnes Bookshop",
@@ -256,14 +257,16 @@ export const locations: Location[] = [
 
   // HAM
   {
+    // CONFIRMED
     id: "eye-care-opticians",
     name: "Eye Care Opticians",
     address: "307 Richmond Road, KT2 5QU",
     town: "Ham",
     email: "info@eyecareopticians.com",
     phone: "020 8549 0331",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69472a7b000714a8a6bd/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzJhODA4ZDcxMzM2OTQ1ODAiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzJhN2IwMDA3MTRhOGE2YmQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE4IiwiaWF0IjoxNzY2MjcxNjE2fQ.KzUqVZ5N5i3SrCPgyZMzROvyihF8GI_nqUS39xsEPdc",
+    mapUrl: "https://maps.app.goo.gl/hvg9aqqvLkyzRxRK8",
   },
   {
     id: "ham-food-wine",
@@ -284,34 +287,41 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    // CONFIRMED
     id: "kanset-pharmacy",
     name: "Kanset Pharmacy",
     address: "177 Ashburnham Road, TW10 7NR",
     town: "Ham",
     phone: "020 8948 0601",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694727410038ab7a70e4/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzI3NDg0MDU3OTdhZGEzOGEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzI3NDEwMDM4YWI3YTcwZTQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE1IiwiaWF0IjoxNzY2MjcwNzkyfQ.1IzANxUnu4TfKV32y2KnKgE5D-VFzlfgmnNXOPZs8F8",
+    mapUrl: "https://maps.app.goo.gl/hSTicC2PBXwz5zDc7",
   },
   {
+    // CONFIRMED
     id: "mj-hardware",
     name: "M & J Hardware",
     address: "Parkleys Prde, U Ham Rd, TW10 5LF",
     town: "Ham",
     phone: "020 8546 4449",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694728ef002e6954eb5a/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzI4ZjgxMTFlMzJlZTJmMDUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzI4ZWYwMDJlNjk1NGViNWEiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE2IiwiaWF0IjoxNzY2MjcxMjI0fQ.m1eHrmfiOQZRYfmj-DVQVBIwEsvKhmg2pZF6o30x_l4",
+    mapUrl: "https://maps.app.goo.gl/BV7obGBM7ktQtbA46",
   },
   {
+    // CONFIRMED
     id: "pharmacare",
     name: "Pharmacare",
     address: "12-14 Back Lane, TW10 7LF",
     town: "Ham",
     phone: "020 8940 7918",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6947299a00012aa6f37f/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzI5OWZjYWUwNTYwZDA5MzkiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzI5OWEwMDAxMmFhNmYzN2YiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE3IiwiaWF0IjoxNzY2MjcxMzkxfQ.Kok-iKnZQ8DnHehcvd0xY5A3peNb1--9a113TuJUmtI",
+    mapUrl: "https://maps.app.goo.gl/dhMZto86tM5Fce3Z6",
   },
 
-  // HAMPTON
+  // HAMPTON - NEW TOWN
+
   {
     id: "chinos-cafe",
     name: "Chinos Café",
