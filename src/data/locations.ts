@@ -427,17 +427,20 @@ export const locations: Location[] = [
     address: "33 Ashley Road, TW12 2JA",
     town: "Hampton",
     phone: "020 8979 5916",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949a1fe000100352fdf/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWEyMDE4OGEyNGY1MzRlMGYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWExZmUwMDAxMDAzNTJmZGYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQwIiwiaWF0IjoxNzY2NDMzMjgxfQ.sSUSq9gkMS4cwf4AXebRcg7bVj9IsDqXyJYYvxcc_00",
+    mapUrl: "https://maps.app.goo.gl/SLtwsMdCf1vbyBkg8",
   },
   {
     no: "038",
     id: "white-house-community-centre",
     name: "White House Community Centre",
-    address: "",
+    address: "White House, 45 The Avenue, TW12 3RN",
     town: "Hampton",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 8979 1884",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949a282002dca48c31a/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWEyODYxMTI0M2E5ZjczZmUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWEyODIwMDJkY2E0OGMzMWEiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQxIiwiaWF0IjoxNzY2NDMzNDE0fQ.QeIqw3pBGGI969mpxI5VE_dGnfr4wWSgtFXESCypt-M",
+    mapUrl: "https://maps.app.goo.gl/tPrm1BsndmWEvT5h6",
   },
   {
     no: "039",
