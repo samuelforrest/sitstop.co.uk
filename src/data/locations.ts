@@ -1,4 +1,5 @@
 export interface Location {
+  no: string;
   id: string;
   name: string;
   address: string;
@@ -13,6 +14,7 @@ export const locations: Location[] = [
   // BARNES - NEW TOWN
 
   {
+    no: "001",
     // CONFIRMED
     id: "barnes-bookshop",
     name: "Barnes Bookshop",
@@ -25,6 +27,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/PB8wHDkpbmA1me5b8",
   },
   {
+    no: "002",
     // CONFIRMED
     id: "bca-rose-house",
     name: "BCA Rose House",
@@ -37,6 +40,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/yTCKKhHbBSBunVLa7",
   },
   {
+    no: "003",
     // CONFIRMED
     id: "barnes-green-social-centre",
     name: "Barnes Green Social Centre",
@@ -49,6 +53,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/PHu2PKBM2j5dhACP9",
   },
   {
+    no: "004",
     // CONFIRMED
     id: "castelnau-community-centre",
     name: "Castelnau Community Centre",
@@ -61,6 +66,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/QSPGo6tBoEhP23vp7",
   },
   {
+    no: "005",
     // CONFIRMED
     id: "castelnau-library",
     name: "Castelnau Library",
@@ -73,6 +79,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/yzZp7UQuVsyre8ZL8",
   },
   {
+    no: "006",
     // CONFIRMED
     id: "cook-barnes",
     name: "COOK",
@@ -85,6 +92,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/hBpnRQNTV8ZQk1k68",
   },
   {
+    no: "007",
     // CONFIRMED
     id: "mail-boxes-etc-barnes",
     name: "Mail Boxes etc",
@@ -96,6 +104,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/zScMctnRrXDMyNTH8",
   },
   {
+    no: "008",
     // CONFIRMED
     id: "marys-living-giving-shop-barnes",
     name: "Mary's Living & Giving Shop",
@@ -107,6 +116,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/ZY9ycjojNX33LZYaA",
   },
   {
+    no: "009",
     // CONFIRMED
     id: "marks-and-spencers",
     name: "M&S Foodhall",
@@ -118,6 +128,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/2ptbXWJRgvtqb8ce9",
   },
   {
+    no: "010",
     // CONFIRMED
     id: "old-sorting-office",
     name: "The Old Sorting Office",
@@ -130,6 +141,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/gid3ejUg1xj8zPWt8",
   },
   {
+    no: "011",
     // CONFIRMED
     id: "olympic-cinema",
     name: "The Olympic Cinema",
@@ -145,6 +157,7 @@ export const locations: Location[] = [
   // EAST SHEEN - NEW TOWN
 
   {
+    no: "012",
     id: "age-uk",
     name: "Age UK",
     address: "301 Sheen Lane, SW14 8LS",
@@ -155,6 +168,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "013",
     // CONFIRMED
     id: "chubb-butchers",
     name: "Chubb Butchers",
@@ -166,6 +180,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/yVmMJ7L2DGUgqP6Z7",
   },
   {
+    no: "014",
     // CONFIRMED
     id: "cook-east-sheen",
     name: "COOK",
@@ -177,6 +192,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/oZjsVoNmgZYvJa1A9",
   },
   {
+    no: "015",
     // CONFIRMED
     id: "sheen-bookshop",
     name: "The Sheen Bookshop",
@@ -189,6 +205,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/z2rJrqzZ8dKycNbH8",
   },
   {
+    no: "016",
     // CONFIRMED
     id: "east-sheen-library",
     name: "East Sheen Library",
@@ -201,6 +218,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/bT1vcyJZGW3Au5339",
   },
   {
+    no: "017",
     // CONFIRMED
     id: "ginger-spice-florist",
     name: "Ginger & Spice Florist",
@@ -213,6 +231,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/hXd7WAg5CRh6TTKe9",
   },
   {
+    no: "018",
     // CONFIRMED
     id: "holmes-daughters",
     name: "Holmes and Daughters",
@@ -224,6 +243,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/z2AHU5eabeL6sFsEA",
   },
   {
+    no: "019",
     // CONFIRMED
     id: "natures-perk",
     name: "Nature's Perk",
@@ -235,6 +255,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/nq4YL9N1wcf9jNdT6",
   },
   {
+    no: "020",
     // CONFIRMED
     id: "poppys",
     name: "Poppys",
@@ -246,6 +267,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/SiZzxzG7rGeWaHdx6",
   },
   {
+    no: "021",
     // CONFIRMED
     id: "spatetree-pharmacy",
     name: "Spatetree Pharmacy",
@@ -258,6 +280,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/19GvDupWEY1Tc4K47",
   },
   {
+    no: "022",
     // CONFIRMED
     id: "tolley-partners-opticians",
     name: "Tolley & Partners Opticians",
@@ -270,6 +293,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/1fWiVkuMFmrs8zCF8",
   },
   {
+    no: "023",
     id: "waitrose-east-sheen",
     name: "Waitrose",
     address: "292 U Richmond Rd W, SW14 7JG",
@@ -281,6 +305,7 @@ export const locations: Location[] = [
 
   // EAST TWICKENHAM
   {
+    no: "024",
     id: "charles-harry-pharmacy",
     name: "Charles Harry Pharmacy",
     address: "336 Richmond Road, TW1 2DX",
@@ -292,6 +317,7 @@ export const locations: Location[] = [
 
   // HAM
   {
+    no: "025",
     // CONFIRMED
     id: "eye-care-opticians",
     name: "Eye Care Opticians",
@@ -304,6 +330,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/hvg9aqqvLkyzRxRK8",
   },
   {
+    no: "026",
     // CONFIRMED
     id: "ham-food-wine",
     name: "Ham Food and Wine",
@@ -315,6 +342,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/3Sh1boU9CMXaqsFU9",
   },
   {
+    no: "027",
     // CONFIRMED
     id: "ham-library",
     name: "Ham Library",
@@ -327,6 +355,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/UMsuzpvyY7mwwb6F9",
   },
   {
+    no: "028",
     // CONFIRMED
     id: "kanset-pharmacy",
     name: "Kanset Pharmacy",
@@ -338,6 +367,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/hSTicC2PBXwz5zDc7",
   },
   {
+    no: "029",
     // CONFIRMED
     id: "mj-hardware",
     name: "M & J Hardware",
@@ -349,6 +379,7 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/BV7obGBM7ktQtbA46",
   },
   {
+    no: "030",
     // CONFIRMED
     id: "pharmacare",
     name: "Pharmacare",
@@ -363,6 +394,7 @@ export const locations: Location[] = [
   // HAMPTON - NEW TOWN
 
   {
+    no: "031",
     id: "chinos-cafe",
     name: "Chinos Café",
     address: "82 Station Road, TW12 2AX",
@@ -373,6 +405,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "032",
     id: "greenwood-centre",
     name: "Greenwood Centre",
     address: "1a School Road, TW12 1QL",
@@ -382,6 +415,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "033",
     id: "hampton-library",
     name: "Hampton Library",
     address: "Rosehill, TW12 2AB",
@@ -392,6 +426,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "034",
     id: "jolly-coopers-pub",
     name: "Jolly Coopers pub",
     address: "",
@@ -400,6 +435,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "035",
     id: "linden-hall",
     name: "Linden Hall",
     address: "",
@@ -408,6 +444,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "036",
     id: "marinis-fish-chips",
     name: "Marini's Fish & Chips",
     address: "",
@@ -416,6 +453,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "037",
     id: "syzygy-hairdressers",
     name: "Syzygy Hairdressers",
     address: "33 Ashley Road, TW12 2JA",
@@ -425,6 +463,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "038",
     id: "white-house-community-centre",
     name: "White House Community Centre",
     address: "",
@@ -435,6 +474,7 @@ export const locations: Location[] = [
 
   // HAMPTON HILL
   {
+    no: "039",
     id: "hampton-hill-library",
     name: "Hampton Hill Library",
     address: "68 High Street, TW12 1NY",
@@ -445,6 +485,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "040",
     id: "hampton-hill-stationery",
     name: "Hampton Hill Stationery",
     address: "30 High Street, TW12 1PD",
@@ -454,6 +495,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "041",
     id: "health-on-the-hill",
     name: "Health on the Hill",
     address: "62 High Street, TW12 1PD",
@@ -463,6 +505,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "042",
     id: "hill-pharmacy",
     name: "Hill Pharmacy",
     address: "173B High Street, TW12 1NL",
@@ -474,6 +517,7 @@ export const locations: Location[] = [
 
   // HAMPTON WICK
   {
+    no: "043",
     id: "hampton-wick-library",
     name: "Hampton Wick Library",
     address: "Bennet Close, KT1 4AT",
@@ -486,6 +530,7 @@ export const locations: Location[] = [
 
   // KEW
   {
+    no: "044",
     id: "avenue-centre",
     name: "The Avenue Centre",
     address: "St. Luke's in The Avenue, TW9 2AJ",
@@ -496,6 +541,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "045",
     id: "kew-bookshop",
     name: "Kew Bookshop",
     address: "",
@@ -504,6 +550,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "046",
     id: "kew-library",
     name: "Kew Library",
     address: "106 North Road, TW9 4HJ",
@@ -514,6 +561,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "047",
     id: "kitten-to-cat",
     name: "Kitten to Cat",
     address: "297 Sandycombe Road, TW9 3LU",
@@ -524,6 +572,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "048",
     id: "marys-living-giving-shop-kew",
     name: "Mary's Living & Giving Shop",
     address: "",
@@ -532,6 +581,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "049",
     id: "squires-newsagent",
     name: "Squires newsagent",
     address: "",
@@ -540,6 +590,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "050",
     id: "trindle-stores",
     name: "Trindle Stores",
     address: "",
@@ -550,6 +601,7 @@ export const locations: Location[] = [
 
   // MORTLAKE
   {
+    no: "051",
     id: "mortlake-community-centre",
     name: "Mortlake Community Centre",
     address: "",
@@ -560,6 +612,7 @@ export const locations: Location[] = [
 
   // RICHMOND
   {
+    no: "052",
     id: "danielli",
     name: "Danielli",
     address: "",
@@ -568,6 +621,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "053",
     id: "home-selling-corporate-letting",
     name: "Home Selling Corporate Letting Co",
     address: "",
@@ -576,6 +630,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "054",
     id: "john-d-wood",
     name: "John D Wood (Estate Agents)",
     address: "31 Sheen Road, TW9 1AD",
@@ -585,6 +640,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "055",
     id: "richmond-library",
     name: "Richmond Library",
     address: "Little Green, TW9 1QL",
@@ -595,6 +651,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "056",
     id: "ms-richmond",
     name: "M&S",
     address: "",
@@ -603,6 +660,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "057",
     id: "marys-living-giving-shop-richmond",
     name: "Mary's Living & Giving Shop",
     address: "29 The Green, TW9 1LX",
@@ -612,6 +670,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "058",
     id: "richmond-pharmacy",
     name: "Richmond Pharmacy",
     address: "82-86 Sheen Road, TW9 1UF",
@@ -622,6 +681,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "059",
     id: "richmond-reference-library",
     name: "Richmond Reference Library",
     address: "Old Town Hall, Whittaker Ave, TW9 1TP",
@@ -632,6 +692,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "060",
     id: "richmond-rehabilitation-unit",
     name: "Richmond Rehabilitation Unit",
     address: "22 Evelyn Road, TW9 2TF",
@@ -641,6 +702,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "061",
     id: "st-john-divine-church",
     name: "St John the Divine Church",
     address: "Kew Road, TW9 2NA",
@@ -650,6 +712,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "062",
     id: "st-mary-magdalen-church",
     name: "St Mary Magdalen Church",
     address: "Paradise Road, TW9 1SN",
@@ -659,6 +722,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "063",
     id: "vineyard-boutique",
     name: "Vineyard Boutique",
     address: "Paradise Road, TW9 1SN",
@@ -667,6 +731,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "064",
     id: "vineyard-community-centre",
     name: "Vineyard Community Centre",
     address: "The Vineyard, TW10 6AQ",
@@ -677,6 +742,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "065",
     id: "waitrose-richmond",
     name: "Waitrose",
     address: "10 Sheen Road, TW9 1AE",
@@ -688,6 +754,7 @@ export const locations: Location[] = [
 
   // RICHMOND HILL
   {
+    no: "066",
     id: "cambrian-centre",
     name: "Cambrian Centre",
     address: "1 Grove Road, TW10 6SN",
@@ -698,6 +765,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "067",
     id: "st-matthias-church",
     name: "St. Matthias Church",
     address: "Friars Stile Road, TW10 6LS",
@@ -709,6 +777,7 @@ export const locations: Location[] = [
 
   // ST MARGARETS
   {
+    no: "068",
     id: "tesco-st-margarets",
     name: "Tesco",
     address: "",
@@ -719,6 +788,7 @@ export const locations: Location[] = [
 
   // TEDDINGTON
   {
+    no: "069",
     id: "cook-teddington",
     name: "COOK",
     address: "156 High Street, TW11 8HZ",
@@ -728,6 +798,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "070",
     id: "elleray-hall",
     name: "Elleray Hall",
     address: "Elleray Road, TW11 0HG",
@@ -738,6 +809,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "071",
     id: "er-kirby-pharmacy",
     name: "E & R Kirby Pharmacy",
     address: "53 High Street, TW11 8HD",
@@ -747,6 +819,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "072",
     id: "marys-living-giving-shop-teddington",
     name: "Mary's Living & Giving Shop",
     address: "93 High Street, TW11 8HG",
@@ -756,6 +829,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "073",
     id: "richmond-aid",
     name: "Richmond AID",
     address: "4 Waldegrave Road, TW11 8HT",
@@ -766,6 +840,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "074",
     id: "stepping-on-out",
     name: "Stepping on Out",
     address: "7 The Causeway, TW11 0HA",
@@ -776,6 +851,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "075",
     id: "teddington-library",
     name: "Teddington Library",
     address: "Waldegrave Road, TW11 8NY",
@@ -786,6 +862,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "076",
     id: "post-office-teddington",
     name: "The Post Office",
     address: "89 High Street, TW11 8HG",
@@ -797,6 +874,7 @@ export const locations: Location[] = [
 
   // TWICKENHAM
   {
+    no: "077",
     id: "blue-bird-care",
     name: "Blue Bird Care",
     address: "15 Lion Road, TW1 4JH",
@@ -807,6 +885,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "078",
     id: "c-goode-pharmacy",
     name: "C. Goode Pharmacy",
     address: "22 London Road, TW1 3RR",
@@ -817,6 +896,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "079",
     id: "cabbage-patch-pub",
     name: "Cabbage Patch pub",
     address: "",
@@ -825,6 +905,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "080",
     id: "civic-centre",
     name: "The Civic Centre",
     address: "44 York Street, TW1 3BZ",
@@ -834,6 +915,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "081",
     id: "crusader-travel",
     name: "Crusader Travel",
     address: "57 Church Street, TW1 3NR",
@@ -844,6 +926,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "082",
     id: "kneller-gardens-cafe",
     name: "Kneller Gardens café",
     address: "",
@@ -852,6 +935,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "083",
     id: "squires-garden-centre",
     name: "Squires Garden Centre",
     address: "Sixth Cross Road, TW2 5PA",
@@ -861,6 +945,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "084",
     id: "well-being-centre",
     name: "The Well-Being Centre",
     address: "Aragon Road, TW1 3NH",
@@ -870,6 +955,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "085",
     id: "twickenham-library",
     name: "Twickenham Library",
     address: "Garfield Road, TW1 3JT",
@@ -882,6 +968,7 @@ export const locations: Location[] = [
 
   // WHITTON
   {
+    no: "086",
     id: "additional-aids",
     name: "Additional Aids",
     address: "80 High Street, TW2 7LS",
@@ -892,6 +979,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "087",
     id: "community-centre-whitton",
     name: "Community Centre",
     address: "111a Kneller Road, TW2 7DT",
@@ -901,6 +989,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "088",
     id: "cancer-research-shop",
     name: "Cancer Research Shop",
     address: "93 High Street, TW2 7LD",
@@ -910,6 +999,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "089",
     id: "eye-smile-dentists",
     name: "Eye & Smile Dentists",
     address: "120 High Street, TW2 7LL",
@@ -919,6 +1009,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "090",
     id: "grade-1-hairdressers",
     name: "Grade 1 Hairdressers",
     address: "133 Station Road, TW12 2AL",
@@ -928,6 +1019,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "091",
     id: "good-health-shop",
     name: "The Good Health Shop",
     address: "47 High Street, TW2 7LB",
@@ -938,6 +1030,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "092",
     id: "minal-pharmacy",
     name: "Minal Pharmacy",
     address: "9-11 High Street, TW2 7LA",
@@ -947,6 +1040,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "093",
     id: "whitton-health-centre",
     name: "Whitton Health Centre",
     address: "Percy Road, TW2 6JL",
@@ -956,6 +1050,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "094",
     id: "whitton-library",
     name: "Whitton Library",
     address: "141 Nelson Road, TW2 7BB",
@@ -966,6 +1061,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "095",
     id: "whitton-network",
     name: "Whitton Network",
     address: "1 Library Way, TW2 7AP",
@@ -976,6 +1072,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "096",
     id: "whitton-pet-centre",
     name: "Whitton Pet Centre",
     address: "95 High Street, TW2 7LD",
@@ -986,6 +1083,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "097",
     id: "whitton-resource-centre",
     name: "Whitton Resource Centre",
     address: "1 Britannia Lane, TW2 7JX",
@@ -998,6 +1096,7 @@ export const locations: Location[] = [
   // OUTSIDE RICHMOND BOROUGH
   // BADSHOT LEE
   {
+    no: "098",
     id: "squires-garden-centre-badshot",
     name: "Squires Garden Centre",
     address: "Badshot Lea Rd, Farnham, GU9 9JX",
@@ -1009,6 +1108,7 @@ export const locations: Location[] = [
 
   // BALHAM
   {
+    no: "099",
     id: "natures-purest",
     name: "Nature's Purest",
     address: "78 Balham High Road, SW12 9AG",
@@ -1020,6 +1120,7 @@ export const locations: Location[] = [
 
   // HAMMERSMITH & FULHAM
   {
+    no: "100",
     id: "bishop-creighton-house",
     name: "Bishop Creighton House",
     address: "378 Lillie Road, SW6 7PH",
@@ -1030,6 +1131,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "101",
     id: "ce-harrod-pharmacy",
     name: "C.E. Harrod Pharmacy",
     address: "207 New King's Road, SW6 4SR",
@@ -1039,6 +1141,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "102",
     id: "fulham-good-neighbours",
     name: "Fulham Good Neighbours",
     address: "70 Rosaline Road, SW6 7QT",
@@ -1051,6 +1154,7 @@ export const locations: Location[] = [
 
   // KENSINGTON & CHELSEA
   {
+    no: "103",
     id: "royal-brompton-hospital",
     name: "Royal Brompton Hospital",
     address: "Sydney Street, SW3 6NP",
@@ -1062,6 +1166,7 @@ export const locations: Location[] = [
 
   // REIGATE
   {
+    no: "104",
     id: "squires-garden-centre-reigate",
     name: "Squires Garden Centre",
     address: "Buckland (A25), RH2 9RE",
@@ -1073,6 +1178,7 @@ export const locations: Location[] = [
 
   // SURBITON
   {
+    no: "105",
     id: "ritechem",
     name: "Ritechem",
     address: "22 Victoria Road, KT6 4JZ",
@@ -1083,6 +1189,7 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    no: "106",
     id: "cook-surbiton",
     name: "COOK",
     address: "33 Victoria Road, KT6 4JT",
@@ -1094,6 +1201,7 @@ export const locations: Location[] = [
 
   // WANDSWORTH
   {
+    no: "107",
     id: "royal-neuro-disability-hospital",
     name: "Royal Neuro-Disability Hospital",
     address: "West Hill, SW15 3SW",
@@ -1106,6 +1214,7 @@ export const locations: Location[] = [
 
   // WEYBRIDGE
   {
+    no: "108",
     id: "cook-weybridge",
     name: "COOK",
     address: "21 Baker Street, KT13 8AE",
