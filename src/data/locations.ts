@@ -282,8 +282,9 @@ export const locations: Location[] = [
     address: "336 Richmond Road, TW1 2DX",
     town: "East Twickenham",
     phone: "020 8892 1846",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b2200025337a2b8c/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWIyMjRkNmFmZTE2YzI1MGYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWIyMjAwMDI1MzM3YTJiOGMiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ3IiwiaWF0IjoxNzY2NDM3NDEyfQ.qpS9PhSkjDi8sVSNPjr3cOVdeQwc4AEHnCo4k4rUP3A",
+    mapUrl: "https://maps.app.goo.gl/LeZm7gD5CPss1W3P9",
   },
   {
     no: "025",
@@ -450,16 +451,18 @@ export const locations: Location[] = [
     town: "Hampton Hill",
     email: "hamptonhill.library@richmond.gov.uk",
     phone: "020 8734 3320",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949af560008d96dabcc/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWFmNTljMWQ0MTlkMmIxZGIiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWFmNTYwMDA4ZDk2ZGFiY2MiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQyIiwiaWF0IjoxNzY2NDM2Njk3fQ.hnSAPPHPSmrxKIgCdybe_hvYQGkWXkDSSIHvKrb_oVg",
+    mapUrl: "https://maps.app.goo.gl/wGm7qk6wWyDb3Bhj9",
   },
   {
+    // CLOSED
     no: "040",
     id: "hampton-hill-stationery",
-    name: "Hampton Hill Stationery",
-    address: "30 High Street, TW12 1PD",
+    name: "THIS BUSINESS IS CLOSED",
+    address: "CLOSED",
     town: "Hampton Hill",
-    phone: "020 8943 4381",
+    phone: "CLOSED",
     photoUrl: "",
     mapUrl: "",
   },
@@ -470,8 +473,9 @@ export const locations: Location[] = [
     address: "62 High Street, TW12 1PD",
     town: "Hampton Hill",
     phone: "020 8977 2539",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b014002e8578df2d/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWIwMTlhZDU4OTlmZjYwMzYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWIwMTQwMDJlODU3OGRmMmQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ0IiwiaWF0IjoxNzY2NDM2ODg5fQ.V9QW15Kc725ZazcL3iaTF8l8XcDCGaBNYrUpjQuwqO0",
+    mapUrl: "https://maps.app.goo.gl/JU1n2cFMTFQEw9Ay9",
   },
   {
     no: "042",
@@ -480,8 +484,9 @@ export const locations: Location[] = [
     address: "173B High Street, TW12 1NL",
     town: "Hampton Hill",
     phone: "020 8979 9084",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b0b100067d9e7830/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWIwYjZlOWFlNzQ1NmY5ZmMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWIwYjEwMDA2N2Q5ZTc4MzAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ1IiwiaWF0IjoxNzY2NDM3MDQ2fQ.L1GjHVn2ZPd6AKmMAwmOp_dnub7WooISolTq-m9o2mM",
+    mapUrl: "https://maps.app.goo.gl/c4my3VsDgUakY2ge8",
   },
   {
     no: "043",
@@ -491,8 +496,9 @@ export const locations: Location[] = [
     town: "Hampton Wick",
     email: "hamptonwick.library@richmond.gov.uk",
     phone: "020 8734 3358",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b15100195208e297/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWIxNTYyYTc3MWVkNTI2MTUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWIxNTEwMDE5NTIwOGUyOTciLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ2IiwiaWF0IjoxNzY2NDM3MjA2fQ.FAc0X-Wn3s3ulCcgtZce0p-kWTfXdFU-1US753ULD38",
+    mapUrl: "https://maps.app.goo.gl/pqRV1g3FGJC2f5bM8",
   },
   {
     no: "044",

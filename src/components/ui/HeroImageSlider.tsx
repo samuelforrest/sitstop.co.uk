@@ -5,55 +5,55 @@ export const ImageAutoSlider = () => {
     {
       image_url:
         "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_0349.jpeg",
-      location: "Barnes Bookshop",
+      location: "Location",
       location_url: "",
     },
     {
       image_url:
         "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_7184.jpeg",
-      location: "East Sheen Library",
+      location: "Location",
       location_url: "",
     },
     {
       image_url:
         "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_7662.jpeg",
-      location: "Richmond Library",
+      location: "Location",
       location_url: "",
     },
     {
       image_url:
         "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_7890.jpeg",
-      location: "Twickenham Library",
+      location: "Location",
       location_url: "",
     },
     {
       image_url:
         "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_8082.jpeg",
-      location: "Hampton Library",
+      location: "Location",
       location_url: "",
     },
     {
       image_url:
         "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_8064.jpeg",
-      location: "Kew Bookshop",
+      location: "Location",
       location_url: "",
     },
     {
       image_url:
         "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/e-twickenham-cambridge-convenience-store_orig.jpg",
-      location: "Whitton Library",
+      location: "Location",
       location_url: "",
     },
     {
       image_url:
         "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/ham-kanset-pharmacy_orig.jpg",
-      location: "Teddington Library",
+      location: "Location",
       location_url: "",
     },
     {
       image_url:
         "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/fe9e4892-6ccd-407f-b486-1b5e8b7459a2.JPG",
-      location: "Teddington Library",
+      location: "Location",
       location_url: "",
     },
   ];
