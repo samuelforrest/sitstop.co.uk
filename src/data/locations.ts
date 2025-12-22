@@ -213,28 +213,37 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/hXd7WAg5CRh6TTKe9",
   },
   {
+    // CONFIRMED
     id: "holmes-daughters",
     name: "Holmes and Daughters",
-    address: "",
+    address: "461 U Richmond Rd W, SW14 7PU",
     town: "East Sheen",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 8392 1012",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949515f0010a90d94c4/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTUxNjM2YmMxNWUwOGIxMGMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTUxNWYwMDEwYTkwZDk0YzQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI5IiwiaWF0IjoxNzY2NDEyNjQzfQ.ge0f00RtMAWAkcWlwu3j0tZPszHxxg29aKTSv_nNjQM",
+    mapUrl: "https://maps.app.goo.gl/z2AHU5eabeL6sFsEA",
   },
   {
+    // CONFIRMED
     id: "natures-perk",
     name: "Nature's Perk",
-    address: "",
+    address: "10 U Richmond Rd W, SW14 7PS",
     town: "East Sheen",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 4618 1256",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69495484000a17f40478/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTU0ODkyZTM3NWI4NTY4MWQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTU0ODQwMDBhMTdmNDA0NzgiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjMyIiwiaWF0IjoxNzY2NDEzNDQ5fQ.5cKxBfHbY967EFzkojH8MVxjAr2IUGtHeVC1z-0y_vM",
+    mapUrl: "https://maps.app.goo.gl/nq4YL9N1wcf9jNdT6",
   },
   {
+    // CONFIRMED
     id: "poppys",
     name: "Poppys",
-    address: "",
+    address: "202 U Richmond Rd W, SW14 8AN",
     town: "East Sheen",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 3879 9111",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949566400104625a1ef/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTU2NjdlYTIzNTMzZDg4ZGQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTU2NjQwMDEwNDYyNWExZWYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjMzIiwiaWF0IjoxNzY2NDEzOTI3fQ.va2vdWbicd4Rbsvx9Ci9vJ7dCjXo7FTE-SDyArnHIu4",
+    mapUrl: "https://maps.app.goo.gl/SiZzxzG7rGeWaHdx6",
   },
   {
     // CONFIRMED
