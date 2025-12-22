@@ -9,13 +9,9 @@ export interface Location {
   photoUrl: string;
   mapUrl: string;
 }
-
 export const locations: Location[] = [
-  // BARNES - NEW TOWN
-
   {
     no: "001",
-    // CONFIRMED
     id: "barnes-bookshop",
     name: "Barnes Bookshop",
     address: "98 Church Road, SW13 0DQ",
@@ -28,7 +24,6 @@ export const locations: Location[] = [
   },
   {
     no: "002",
-    // CONFIRMED
     id: "bca-rose-house",
     name: "BCA Rose House",
     address: "70 Barnes High Street, SW13 9LD",
@@ -41,7 +36,6 @@ export const locations: Location[] = [
   },
   {
     no: "003",
-    // CONFIRMED
     id: "barnes-green-social-centre",
     name: "Barnes Green Social Centre",
     address: "Church Road, SW13 9HE",
@@ -54,7 +48,6 @@ export const locations: Location[] = [
   },
   {
     no: "004",
-    // CONFIRMED
     id: "castelnau-community-centre",
     name: "Castelnau Community Centre",
     address: "7 Stillingfleet Rd, SW13 9AQ",
@@ -67,7 +60,6 @@ export const locations: Location[] = [
   },
   {
     no: "005",
-    // CONFIRMED
     id: "castelnau-library",
     name: "Castelnau Library",
     address: "75 Castelnau, SW13 9RT",
@@ -80,7 +72,6 @@ export const locations: Location[] = [
   },
   {
     no: "006",
-    // CONFIRMED
     id: "cook-barnes",
     name: "COOK",
     address: "50 Barnes High Street, SW13 9LN",
@@ -93,7 +84,6 @@ export const locations: Location[] = [
   },
   {
     no: "007",
-    // CONFIRMED
     id: "mail-boxes-etc-barnes",
     name: "Mail Boxes etc",
     address: "1 Rocks Lane, SW13 0DB",
@@ -105,7 +95,6 @@ export const locations: Location[] = [
   },
   {
     no: "008",
-    // CONFIRMED
     id: "marys-living-giving-shop-barnes",
     name: "Mary's Living & Giving Shop",
     address: "64 Church Rd, SW13 0DQ",
@@ -117,7 +106,6 @@ export const locations: Location[] = [
   },
   {
     no: "009",
-    // CONFIRMED
     id: "marks-and-spencers",
     name: "M&S Foodhall",
     address: "28-29 High Street, SW13 9LW",
@@ -129,7 +117,6 @@ export const locations: Location[] = [
   },
   {
     no: "010",
-    // CONFIRMED
     id: "old-sorting-office",
     name: "The Old Sorting Office",
     address: "49 Station Road, SW13 0LF",
@@ -142,7 +129,6 @@ export const locations: Location[] = [
   },
   {
     no: "011",
-    // CONFIRMED
     id: "olympic-cinema",
     name: "The Olympic Cinema",
     address: "117-123 Church Road, SW13 9HL",
@@ -153,9 +139,6 @@ export const locations: Location[] = [
       "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69471acf0029e968b692/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzFhZDQ4ZmZjMjhkZGEwNDgiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzFhY2YwMDI5ZTk2OGI2OTIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjUiLCJpYXQiOjE3NjYyNjc2MDR9.icaQo8juDgmWiIBCsbWaUmcJ7KOQy9_2pEJ2qmYCDJk",
     mapUrl: "https://maps.app.goo.gl/478gVbgQmQaFpTaK6",
   },
-
-  // EAST SHEEN - NEW TOWN
-
   {
     no: "012",
     id: "age-uk",
@@ -169,7 +152,6 @@ export const locations: Location[] = [
   },
   {
     no: "013",
-    // CONFIRMED
     id: "chubb-butchers",
     name: "Chubb Butchers",
     address: "350 U Richmond Rd W, SW14 5JT",
@@ -181,7 +163,6 @@ export const locations: Location[] = [
   },
   {
     no: "014",
-    // CONFIRMED
     id: "cook-east-sheen",
     name: "COOK",
     address: "395 U Richmond Rd W, SW14 7NX",
@@ -193,7 +174,6 @@ export const locations: Location[] = [
   },
   {
     no: "015",
-    // CONFIRMED
     id: "sheen-bookshop",
     name: "The Sheen Bookshop",
     address: "375 U Richmond Rd W, SW14 7NX",
@@ -206,7 +186,6 @@ export const locations: Location[] = [
   },
   {
     no: "016",
-    // CONFIRMED
     id: "east-sheen-library",
     name: "East Sheen Library",
     address: "Sheen Lane, SW14 8LP",
@@ -219,7 +198,6 @@ export const locations: Location[] = [
   },
   {
     no: "017",
-    // CONFIRMED
     id: "ginger-spice-florist",
     name: "Ginger & Spice Florist",
     address: "4 Grande Parade, SW14 7PS",
@@ -232,7 +210,6 @@ export const locations: Location[] = [
   },
   {
     no: "018",
-    // CONFIRMED
     id: "holmes-daughters",
     name: "Holmes and Daughters",
     address: "461 U Richmond Rd W, SW14 7PU",
@@ -244,7 +221,6 @@ export const locations: Location[] = [
   },
   {
     no: "019",
-    // CONFIRMED
     id: "natures-perk",
     name: "Nature's Perk",
     address: "10 U Richmond Rd W, SW14 7PS",
@@ -256,7 +232,6 @@ export const locations: Location[] = [
   },
   {
     no: "020",
-    // CONFIRMED
     id: "poppys",
     name: "Poppys",
     address: "202 U Richmond Rd W, SW14 8AN",
@@ -268,7 +243,6 @@ export const locations: Location[] = [
   },
   {
     no: "021",
-    // CONFIRMED
     id: "spatetree-pharmacy",
     name: "Spatetree Pharmacy",
     address: "113 Sheen Lane, SW14 8AE",
@@ -281,7 +255,6 @@ export const locations: Location[] = [
   },
   {
     no: "022",
-    // CONFIRMED
     id: "tolley-partners-opticians",
     name: "Tolley & Partners Opticians",
     address: "300 U Richmond Rd W, SW14 7NX",
@@ -302,8 +275,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // EAST TWICKENHAM
   {
     no: "024",
     id: "charles-harry-pharmacy",
@@ -314,11 +285,8 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // HAM
   {
     no: "025",
-    // CONFIRMED
     id: "eye-care-opticians",
     name: "Eye Care Opticians",
     address: "307 Richmond Road, KT2 5QU",
@@ -331,7 +299,6 @@ export const locations: Location[] = [
   },
   {
     no: "026",
-    // CONFIRMED
     id: "ham-food-wine",
     name: "Ham Food and Wine",
     address: "10 Ashburnham Rd, TW10 7NF",
@@ -343,7 +310,6 @@ export const locations: Location[] = [
   },
   {
     no: "027",
-    // CONFIRMED
     id: "ham-library",
     name: "Ham Library",
     address: "Ham Street, TW10 7HR",
@@ -356,7 +322,6 @@ export const locations: Location[] = [
   },
   {
     no: "028",
-    // CONFIRMED
     id: "kanset-pharmacy",
     name: "Kanset Pharmacy",
     address: "177 Ashburnham Road, TW10 7NR",
@@ -368,7 +333,6 @@ export const locations: Location[] = [
   },
   {
     no: "029",
-    // CONFIRMED
     id: "mj-hardware",
     name: "M & J Hardware",
     address: "Parkleys Prde, U Ham Rd, TW10 5LF",
@@ -380,7 +344,6 @@ export const locations: Location[] = [
   },
   {
     no: "030",
-    // CONFIRMED
     id: "pharmacare",
     name: "Pharmacare",
     address: "12-14 Back Lane, TW10 7LF",
@@ -390,9 +353,6 @@ export const locations: Location[] = [
       "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6947299a00012aa6f37f/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzI5OWZjYWUwNTYwZDA5MzkiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzI5OWEwMDAxMmFhNmYzN2YiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE3IiwiaWF0IjoxNzY2MjcxMzkxfQ.Kok-iKnZQ8DnHehcvd0xY5A3peNb1--9a113TuJUmtI",
     mapUrl: "https://maps.app.goo.gl/dhMZto86tM5Fce3Z6",
   },
-
-  // HAMPTON - NEW TOWN
-
   {
     no: "031",
     id: "chinos-cafe",
@@ -471,8 +431,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // HAMPTON HILL
   {
     no: "039",
     id: "hampton-hill-library",
@@ -514,8 +472,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // HAMPTON WICK
   {
     no: "043",
     id: "hampton-wick-library",
@@ -527,8 +483,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // KEW
   {
     no: "044",
     id: "avenue-centre",
@@ -598,8 +552,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // MORTLAKE
   {
     no: "051",
     id: "mortlake-community-centre",
@@ -609,8 +561,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // RICHMOND
   {
     no: "052",
     id: "danielli",
@@ -751,8 +701,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // RICHMOND HILL
   {
     no: "066",
     id: "cambrian-centre",
@@ -774,8 +722,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // ST MARGARETS
   {
     no: "068",
     id: "tesco-st-margarets",
@@ -785,8 +731,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // TEDDINGTON
   {
     no: "069",
     id: "cook-teddington",
@@ -871,8 +815,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // TWICKENHAM
   {
     no: "077",
     id: "blue-bird-care",
@@ -965,8 +907,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // WHITTON
   {
     no: "086",
     id: "additional-aids",
@@ -1092,9 +1032,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // OUTSIDE RICHMOND BOROUGH
-  // BADSHOT LEE
   {
     no: "098",
     id: "squires-garden-centre-badshot",
@@ -1105,8 +1042,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // BALHAM
   {
     no: "099",
     id: "natures-purest",
@@ -1117,8 +1052,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // HAMMERSMITH & FULHAM
   {
     no: "100",
     id: "bishop-creighton-house",
@@ -1151,8 +1084,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // KENSINGTON & CHELSEA
   {
     no: "103",
     id: "royal-brompton-hospital",
@@ -1163,8 +1094,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // REIGATE
   {
     no: "104",
     id: "squires-garden-centre-reigate",
@@ -1175,8 +1104,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // SURBITON
   {
     no: "105",
     id: "ritechem",
@@ -1198,8 +1125,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // WANDSWORTH
   {
     no: "107",
     id: "royal-neuro-disability-hospital",
@@ -1211,8 +1136,6 @@ export const locations: Location[] = [
     photoUrl: "",
     mapUrl: "",
   },
-
-  // WEYBRIDGE
   {
     no: "108",
     id: "cook-weybridge",
@@ -1224,7 +1147,6 @@ export const locations: Location[] = [
     mapUrl: "",
   },
 ];
-
 export const towns = Array.from(
   new Set(locations.map((loc) => loc.town))
 ).sort();
