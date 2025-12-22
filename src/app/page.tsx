@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       <NavigationBar />
       <div className="w-full px-5 md:px-35 lg:px-45 xl:px-60 2xl:px-100 my-8 pt-20">
         <main>
