@@ -359,10 +359,10 @@ export const locations: Location[] = [
     name: "Chinos Café",
     address: "82 Station Road, TW12 2AX",
     town: "Hampton",
-    email: "chinoscafe@hotmail.co.uk",
     phone: "020 8979 2996",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69499eeb003933326154/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTllZWY3YWVhNzE0OTYyYWMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTllZWIwMDM5MzMzMjYxNTQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM0IiwiaWF0IjoxNzY2NDMyNDk1fQ.RQfdgL7OH_KxymmncQ_ls2xFKQDqoTNAWGKLbokGOeU",
+    mapUrl: "https://maps.app.goo.gl/vGtiUeZ1DbnDGAHY7",
   },
   {
     no: "032",
@@ -371,8 +371,9 @@ export const locations: Location[] = [
     address: "1a School Road, TW12 1QL",
     town: "Hampton",
     phone: "020 8979 9662",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69499f800008b661da63/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTlmODNhNTJkY2I2OGY1NGQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTlmODAwMDA4YjY2MWRhNjMiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM1IiwiaWF0IjoxNzY2NDMyNjQzfQ.LfCGmwZDWG0qreVLUy4AJeGX2cpKlYYW2xRn4AIr9eo",
+    mapUrl: "https://maps.app.goo.gl/uE5zfpJQR5zF4gbX9",
   },
   {
     no: "033",
@@ -382,8 +383,9 @@ export const locations: Location[] = [
     town: "Hampton",
     email: "hampton.library@richmond.gov.uk",
     phone: "020 8734 3347",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69499fe7001cb3eaf611/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTlmZWJjYjBjYzBhNDhmNDMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTlmZTcwMDFjYjNlYWY2MTEiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM2IiwiaWF0IjoxNzY2NDMyNzQ3fQ.C57FPMLBQntY1KqW8axEhYS9zk4kU-5cvWLsWYNLETc",
+    mapUrl: "https://maps.app.goo.gl/jqTT37YXxpPKZwSS8",
   },
   {
     no: "034",
@@ -391,26 +393,32 @@ export const locations: Location[] = [
     name: "Jolly Coopers pub",
     address: "",
     town: "Hampton",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 8979 3384",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949a07a00334005398c/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWEwN2UzNmFlNjI2MGMxZGMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWEwN2EwMDMzNDAwNTM5OGMiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM3IiwiaWF0IjoxNzY2NDMyODk0fQ._XnlFjsIvIB9Snrdfqaf4WGIsWNPxf6kiER8PLIKPKc",
+    mapUrl: "https://maps.app.goo.gl/B5eSVLLgcxKCEN3R9",
   },
   {
     no: "035",
     id: "linden-hall",
     name: "Linden Hall",
-    address: "",
+    address: "Linden Rd, TW12 2JG",
     town: "Hampton",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 8941 2373",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949a0ec000c881aa51e/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWEwZjAwZjk2MzA1Y2Y4OTEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWEwZWMwMDBjODgxYWE1MWUiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM4IiwiaWF0IjoxNzY2NDMzMDA4fQ.Odvv34qc1ltiPSkbVAPULBiI9Y8Na-g3pkzxrmMqdqk",
+    mapUrl: "https://maps.app.goo.gl/dt6k58fQGNEgz7pS8",
   },
   {
     no: "036",
     id: "marinis-fish-chips",
     name: "Marini's Fish & Chips",
-    address: "",
+    address: "115 Station Rd, TW12 2AL",
     town: "Hampton",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 8127 1880",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949a181001986449424/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWExODViMmEyMjVmODI2ZjQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWExODEwMDE5ODY0NDk0MjQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM5IiwiaWF0IjoxNzY2NDMzMTU3fQ.ZJZJRUkpBk5qlEgxnrfiQRc4yL4bFJW65Jt0j9CobCY",
+    mapUrl: "https://maps.app.goo.gl/Jd8METxNPa98gKq46",
   },
   {
     no: "037",
