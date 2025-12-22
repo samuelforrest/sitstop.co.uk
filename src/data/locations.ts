@@ -508,8 +508,9 @@ export const locations: Location[] = [
     town: "Kew",
     email: "avenueclub@kewcommunitytrust.org.uk",
     phone: "020 8948 8807",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b696003d9e497bff/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWI2OTlkMzgzNTQ3Nzk1NDEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWI2OTYwMDNkOWU0OTdiZmYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjUwIiwiaWF0IjoxNzY2NDM4NTUzfQ.oPHf2OT5qGgZdz8TpP37dAQzU2BC4dZQame6wqARscU",
+    mapUrl: "https://maps.app.goo.gl/pS6jdrWFh5AJ8FiBA",
   },
   {
     no: "045",
@@ -528,8 +529,9 @@ export const locations: Location[] = [
     town: "Kew",
     email: "kew.library@richmond.gov.uk",
     phone: "020 8734 3352",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b5c80023e50a372b/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWI1Y2M1YTkwMjMxNTg5MzQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWI1YzgwMDIzZTUwYTM3MmIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ5IiwiaWF0IjoxNzY2NDM4MzQ4fQ.H01W6QwKKA1wgdtqz6hblnAPjxqLFTpiN7PsLQO_SbU",
+    mapUrl: "https://maps.app.goo.gl/VnF4QvpoqwnYQa8Q9",
   },
   {
     no: "047",
@@ -537,10 +539,11 @@ export const locations: Location[] = [
     name: "Kitten to Cat",
     address: "297 Sandycombe Road, TW9 3LU",
     town: "Kew",
-    email: "info@kittentocat.com",
+    email: "reception@kittentocat.co.uk",
     phone: "020 8940 0014",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b50f000410ed7f5f/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWI1MTMyODAxYmUzMWUwYmMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWI1MGYwMDA0MTBlZDdmNWYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ4IiwiaWF0IjoxNzY2NDM4MTYzfQ.PwG_fCySUz7Qc02BjJA6kRZy6OI_u6_k2tPbvQwTa1Y",
+    mapUrl: "https://maps.app.goo.gl/qEStbuHWowfpY77e8",
   },
   {
     no: "048",
