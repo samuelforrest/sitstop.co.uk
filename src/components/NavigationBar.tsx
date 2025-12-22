@@ -91,16 +91,7 @@ export function NavigationBar() {
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                asChild
-                className={navigationMenuTriggerStyle()}
-              >
-                <Link className="text-[17px] bg-transparent" href="/">
-                  Join
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
+
             <NavigationMenuItem>
               <NavigationMenuLink
                 asChild
