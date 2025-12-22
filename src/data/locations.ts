@@ -13,6 +13,7 @@ export const locations: Location[] = [
   // BARNES - NEW TOWN
 
   {
+    // CONFIRMED
     id: "barnes-bookshop",
     name: "Barnes Bookshop",
     address: "98 Church Road, SW13 0DQ",
@@ -107,6 +108,17 @@ export const locations: Location[] = [
   },
   {
     // CONFIRMED
+    id: "marks-and-spencers",
+    name: "M&S Foodhall",
+    address: "28-29 High Street, SW13 9LW",
+    town: "Barnes",
+    phone: "020 3285 6291",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694945ad002abcc9957a/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTQ1YjNkN2Q1ZDllNzQyMmYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTQ1YWQwMDJhYmNjOTk1N2EiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI0IiwiaWF0IjoxNzY2NDA5NjUxfQ.JcvVE7_PWlq9AuLuaM1A61RV81Trca-2-yIyS-DPVDQ",
+    mapUrl: "https://maps.app.goo.gl/2ptbXWJRgvtqb8ce9",
+  },
+  {
+    // CONFIRMED
     id: "old-sorting-office",
     name: "The Old Sorting Office",
     address: "49 Station Road, SW13 0LF",
@@ -143,52 +155,62 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    // CONFIRMED
     id: "chubb-butchers",
     name: "Chubb Butchers",
     address: "350 U Richmond Rd W, SW14 5JT",
     town: "East Sheen",
     phone: "020 8876 2440",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694932c6001f29b0c176/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTMyY2ZhNDQ0N2MyNzdmZjYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTMyYzYwMDFmMjliMGMxNzYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjIxIiwiaWF0IjoxNzY2NDA0ODE1fQ.CKollx2tGOB4gwUCCdtEF0sp-Cl4v4RKNF-lOEF_cm4",
+    mapUrl: "https://maps.app.goo.gl/yVmMJ7L2DGUgqP6Z7",
   },
   {
+    // CONFIRMED
     id: "cook-east-sheen",
     name: "COOK",
     address: "395 U Richmond Rd W, SW14 7NX",
     town: "East Sheen",
     phone: "020 8166 9776",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694947ab0039f8e926d8/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTQ3YjE3OTdhODg3MDZmOTUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTQ3YWIwMDM5ZjhlOTI2ZDgiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI1IiwiaWF0IjoxNzY2NDEwMTYxfQ.-jH59UfZMq6u2m5Nr7v08YmW9FTbw5ebtF2K1laknMw",
+    mapUrl: "https://maps.app.goo.gl/oZjsVoNmgZYvJa1A9",
   },
   {
+    // CONFIRMED
     id: "sheen-bookshop",
     name: "The Sheen Bookshop",
     address: "375 U Richmond Rd W, SW14 7NX",
     town: "East Sheen",
     email: "sheen@hewsonbooks.co.uk",
     phone: "020 8876 1717",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949483e00392d39fd2d/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTQ4NDZjZTUyM2QyNDA5YzQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTQ4M2UwMDM5MmQzOWZkMmQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI2IiwiaWF0IjoxNzY2NDEwMzEwfQ.iP6t9ot9d07lPaQwX0kFV9rW5D0fukYC3grSkUDVY5Q",
+    mapUrl: "https://maps.app.goo.gl/z2rJrqzZ8dKycNbH8",
   },
   {
+    // CONFIRMED
     id: "east-sheen-library",
     name: "East Sheen Library",
     address: "Sheen Lane, SW14 8LP",
     town: "East Sheen",
-    email: "eastsheen.library@richmond.gov.uk",
+    email: "libraries@richmond.gov.uk",
     phone: "020 8734 3337",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949490b002678384e5f/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTQ5MWExNTJmZmUzYTNmNzAiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTQ5MGIwMDI2NzgzODRlNWYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI3IiwiaWF0IjoxNzY2NDEwNTIyfQ.EFb56gE2GtiDZ3MqZKn_xc2YuuLsKI6Ym4QYtkeDpM4",
+    mapUrl: "https://maps.app.goo.gl/bT1vcyJZGW3Au5339",
   },
   {
+    // CONFIRMED
     id: "ginger-spice-florist",
     name: "Ginger & Spice Florist",
     address: "4 Grande Parade, SW14 7PS",
     town: "East Sheen",
     email: "contact@gingerandspiceflorist.com",
     phone: "020 8876 0955",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694949e700368fd00ab0/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTQ5ZWUxYzdiN2UyMzU4ZWQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTQ5ZTcwMDM2OGZkMDBhYjAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI4IiwiaWF0IjoxNzY2NDEwNzM0fQ.bXW3GKPb7rtn69yIhwnZGzG9GkQqaclHFk2SOvdFiLU",
+    mapUrl: "https://maps.app.goo.gl/hXd7WAg5CRh6TTKe9",
   },
   {
     id: "holmes-daughters",
@@ -215,24 +237,28 @@ export const locations: Location[] = [
     mapUrl: "",
   },
   {
+    // CONFIRMED
     id: "spatetree-pharmacy",
     name: "Spatetree Pharmacy",
     address: "113 Sheen Lane, SW14 8AE",
     town: "East Sheen",
     email: "repeat@spatetree.com",
     phone: "020 8255 1717",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69493399003788f71322/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTMzOWUzODE1MTU4MmVkOWYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTMzOTkwMDM3ODhmNzEzMjIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjIyIiwiaWF0IjoxNzY2NDA1MDIyfQ.GNkfszbZzIjfz6ySmfD6bXVIvjk4cqGbD4gONCiHu68",
+    mapUrl: "https://maps.app.goo.gl/19GvDupWEY1Tc4K47",
   },
   {
+    // CONFIRMED
     id: "tolley-partners-opticians",
     name: "Tolley & Partners Opticians",
     address: "300 U Richmond Rd W, SW14 7NX",
     town: "East Sheen",
     email: "info@tolleynpartners.com",
     phone: "020 8878 3415",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69493972003821d235d1/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTM5ODE1ZmU2MDk3NGVhMmYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTM5NzIwMDM4MjFkMjM1ZDEiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjIzIiwiaWF0IjoxNzY2NDA2NTI5fQ.LS65rc8evudkKkxmaxFmzMt9sLuipks6UPxHjs7dYhc",
+    mapUrl: "https://maps.app.goo.gl/1fWiVkuMFmrs8zCF8",
   },
   {
     id: "waitrose-east-sheen",
@@ -269,22 +295,27 @@ export const locations: Location[] = [
     mapUrl: "https://maps.app.goo.gl/hvg9aqqvLkyzRxRK8",
   },
   {
+    // CONFIRMED
     id: "ham-food-wine",
     name: "Ham Food and Wine",
-    address: "Ham Street, TW10 7HR",
+    address: "10 Ashburnham Rd, TW10 7NF",
     town: "Ham",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 8940 3462",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69493106000947b6e70b/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTMxMGMwZTkwZjE3YzYyNTAiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTMxMDYwMDA5NDdiNmU3MGIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE5IiwiaWF0IjoxNzY2NDA0MzY0fQ.Z1F6nps-uAd0rJOFE1UfvzH8fHBEyM46lstgT3Msv8g",
+    mapUrl: "https://maps.app.goo.gl/3Sh1boU9CMXaqsFU9",
   },
   {
+    // CONFIRMED
     id: "ham-library",
     name: "Ham Library",
     address: "Ham Street, TW10 7HR",
     town: "Ham",
     email: "ham.library@richmond.gov.uk",
     phone: "020 8734 3354",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694931ca00277448856e/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTMxZDA4Njc4ZDY5NWUxODkiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTMxY2EwMDI3NzQ0ODg1NmUiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjIwIiwiaWF0IjoxNzY2NDA0NTYwfQ._aRQqyNrH-hq6qaISBwpRdADC1Q1gLV7TSZcWx92aBc",
+    mapUrl: "https://maps.app.goo.gl/UMsuzpvyY7mwwb6F9",
   },
   {
     // CONFIRMED
