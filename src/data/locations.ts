@@ -603,10 +603,12 @@ export const locations: Location[] = [
     no: "053",
     id: "home-selling-corporate-letting",
     name: "Home Selling Corporate Letting Co",
-    address: "",
+    address: "62 Sheen Rd, TW9 1UF",
     town: "Richmond",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 8948 0444",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949d1e70007fb00116d/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWQxZWFhMjgxOGZkOWUyYjciLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWQxZTcwMDA3ZmIwMDExNmQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjU1IiwiaWF0IjoxNzY2NDQ1NTQ2fQ.Dj7v_Mweonep0YudIsxgq3HQFptaGuBjYyfU5zs_mDE",
+    mapUrl: "https://maps.app.goo.gl/pmfbXoP5mwuKtPau6",
   },
   {
     no: "054",
@@ -615,8 +617,9 @@ export const locations: Location[] = [
     address: "31 Sheen Road, TW9 1AD",
     town: "Richmond",
     phone: "020 3369 4327",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949d2e5001b8db769b7/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWQyZTk2ZTI4N2I1NzlmOWQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWQyZTUwMDFiOGRiNzY5YjciLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjU3IiwiaWF0IjoxNzY2NDQ1ODAxfQ.sTyD3SoG8nWDHMWuJFPE7BHGUdCdBlDUKgjatrv5_PM",
+    mapUrl: "https://maps.app.goo.gl/rBA24zjuCe7VDAwz9",
   },
   {
     no: "055",
@@ -626,17 +629,20 @@ export const locations: Location[] = [
     town: "Richmond",
     email: "richmond.library@richmond.gov.uk",
     phone: "020 8734 3330",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949d7ec0018fe3dd9db/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWQ3ZjBhMDYyNGRiOTUxYjQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWQ3ZWMwMDE4ZmUzZGQ5ZGIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjU4IiwiaWF0IjoxNzY2NDQ3MDg4fQ.iHhKivLrQuK89LyuN23eyzAHCihBlIhWZcV9FG6tBBE",
+    mapUrl: "https://maps.app.goo.gl/v7ineUE6QVCc4aAz9",
   },
   {
     no: "056",
     id: "ms-richmond",
     name: "M&S",
-    address: "",
+    address: "Kew Retail Park, 21 Mortlake Rd, TW9 4AD",
     town: "Richmond",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 8876 6864",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949d9910025aeefdb5c/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWQ5OTc4ODZjNWIzYWE2ZGUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWQ5OTEwMDI1YWVlZmRiNWMiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjYwIiwiaWF0IjoxNzY2NDQ3NTExfQ.P0xORj5dDCXM3t5jUCWeDiGQW7FYeWiRtIs6GIk5TjU",
+    mapUrl: "https://maps.app.goo.gl/CxPNpjy3UwZNaPfi7",
   },
   {
     no: "057",
@@ -645,8 +651,9 @@ export const locations: Location[] = [
     address: "29 The Green, TW9 1LX",
     town: "Richmond",
     phone: "020 8332 1584",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949da2d002d6dad8380/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRhMzFiYTg4YjE3ZTZiMTEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRhMmQwMDJkNmRhZDgzODAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjYxIiwiaWF0IjoxNzY2NDQ3NjY1fQ.0TGvb5vPlVqdEguxGO0Ksvnk33--zTv8ZnBou4Xee78",
+    mapUrl: "https://maps.app.goo.gl/dNKDvjXn7hvwGpZx7",
   },
   {
     no: "058",
@@ -656,8 +663,9 @@ export const locations: Location[] = [
     town: "Richmond",
     email: "sr@richmondpharmacy.org.uk",
     phone: "020 8940 3930",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949daa0003c933eaaa2/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRhYTQyZjBkNTRkZGZkN2MiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRhYTAwMDNjOTMzZWFhYTIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjYyIiwiaWF0IjoxNzY2NDQ3NzgwfQ.i-I0LrAhepXudIsW_-0YDZgp0UatmTjiEzhgPgPWrzA",
+    mapUrl: "https://maps.app.goo.gl/JbukwuZioh4MA9SPA",
   },
   {
     no: "059",
@@ -667,8 +675,9 @@ export const locations: Location[] = [
     town: "Richmond",
     email: "information@richmond.gov.uk",
     phone: "020 8734 3308",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949db4b00125e564832/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRiNTAxOWFlYjU3NjlhMWMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRiNGIwMDEyNWU1NjQ4MzIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjYzIiwiaWF0IjoxNzY2NDQ3OTUyfQ.BMV5ChG_FEwkfvPfUOsjelS1TCsthjABFsElMpey8NU",
+    mapUrl: "https://maps.app.goo.gl/p9nc69jReWoiyF6Y8",
   },
   {
     no: "060",
@@ -677,8 +686,9 @@ export const locations: Location[] = [
     address: "22 Evelyn Road, TW9 2TF",
     town: "Richmond",
     phone: "020 8614 7350",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949dbd6003016a4644d/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRiZGI1NTRjOWEwMDZiY2MiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRiZDYwMDMwMTZhNDY0NGQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjY0IiwiaWF0IjoxNzY2NDQ4MDkxfQ.IZdoQCRi_np54pSNdLt5oGkIL84xdTAoQEIGX5dof7Q",
+    mapUrl: "https://maps.app.goo.gl/qcPKLoEdPhDiwMuR8",
   },
   {
     no: "061",
@@ -686,9 +696,10 @@ export const locations: Location[] = [
     name: "St John the Divine Church",
     address: "Kew Road, TW9 2NA",
     town: "Richmond",
-    phone: "020 8892 3690",
-    photoUrl: "",
-    mapUrl: "",
+    phone: "020 8940 0362",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949dc620021c5feace0/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRjNjYwOGFkZTk2MWQyNTciLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRjNjIwMDIxYzVmZWFjZTAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjY1IiwiaWF0IjoxNzY2NDQ4MjMwfQ.aFnXhgnEx3dCby5zz45_G8lOZIwnOUSptK5nFLrGci4",
+    mapUrl: "https://maps.app.goo.gl/HJ5QRz3oEEfMPWsu5",
   },
   {
     no: "062",
@@ -697,17 +708,19 @@ export const locations: Location[] = [
     address: "Paradise Road, TW9 1SN",
     town: "Richmond",
     phone: "020 8940 0362",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949dcca0009c663020e/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRjY2RjN2UzOGI5NWI2ODEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRjY2EwMDA5YzY2MzAyMGUiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjY2IiwiaWF0IjoxNzY2NDQ4MzMzfQ.l0BtZYmamGei1PojfZXvInRlu23a1gVUIrN4SpXymx0",
+    mapUrl: "https://maps.app.goo.gl/8wkisrWjTtqJdtGH7",
   },
   {
     no: "063",
     id: "vineyard-boutique",
     name: "Vineyard Boutique",
-    address: "Paradise Road, TW9 1SN",
+    address: "2 Paradise Road, TW9 1SN",
     town: "Richmond",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949dd21000974e34a77/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRkMjkwMmQ0YWQyY2IyYjIiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRkMjEwMDA5NzRlMzRhNzciLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjY3IiwiaWF0IjoxNzY2NDQ4NDI1fQ.0-612plqHDC9cmyCQrNcUjrtu7O4CkuGJyk13WCyuqg",
+    mapUrl: "https://maps.app.goo.gl/gwceB7JGjsGSP76F6",
   },
   {
     no: "064",
@@ -717,8 +730,9 @@ export const locations: Location[] = [
     town: "Richmond",
     email: "info@vineyardcommunity.org",
     phone: "020 8439 9735",
-    photoUrl: "",
-    mapUrl: "",
+    photoUrl:
+      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949e1540039fa587d66/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWUxNWIzNTVlYTc2YTc4MjMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWUxNTQwMDM5ZmE1ODdkNjYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjY4IiwiaWF0IjoxNzY2NDQ5NDk5fQ.NfHy4coX5gPX-QkY5No1NyI_uExkq5OqFE7zm0a8qV8",
+    mapUrl: "https://maps.app.goo.gl/zm9HmRCneWcuMQYf8",
   },
   {
     no: "065",
