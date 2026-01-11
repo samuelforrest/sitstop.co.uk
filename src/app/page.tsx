@@ -20,8 +20,7 @@ export default function Home() {
               SIT STOP
             </h1>
             <p className="text-md md:text-2xl">
-              Free seating in local shops and businesses for anyone who needs
-              it, no questions asked.
+              Making life a little easier for those who need to sit down.
             </p>
           </section>
 
@@ -58,7 +57,7 @@ export default function Home() {
               What is SIT STOP?
             </h1>
             <p className="text-sm md:text-xl mt-5 md:mt-10">
-              <b>SIT STOP</b> is an initiative that was started in 2005 by an
+              <b>SIT STOP</b> is an initiative that was started in 2006 by an
               independent community group in the London Borough of Richmond upon
               Thames.
             </p>
@@ -121,6 +120,8 @@ export default function Home() {
             <p className="text-sm md:text-xl mt-4 md:mt-8">
               We continue to expand the number of participating organizations -
               not only in the Borough of Richmond upon Thames but also beyond.
+              For example, the Royal Brompton Hospital have set up their own SIT
+              STOP initiative.
             </p>
           </section>
 
