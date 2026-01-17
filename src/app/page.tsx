@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/ui/button";
 import { ImageAutoSlider } from "@/components/ui/HeroImageSlider";
 import {
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <div className="w-full overflow-x-hidden">
       <NavigationBar />
-      <div className="w-full px-5 md:px-35 lg:px-45 xl:px-60 2xl:px-100 my-8 pt-20">
+      <div className="w-full px-5 md:px-35 lg:px-45 xl:px-60 2xl:px-100 3xl:px-150 my-8 pt-20">
         <main>
           <section id="hero" className="w-full text-center space-y-6">
             <h1 className="text-6xl md:text-8xl text-black font-bold ">
