@@ -1,5 +1,4 @@
 import { MetadataRoute } from "next";
-import { locations } from "@/data/locations";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://sitstop.co.uk";
@@ -19,12 +18,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  const locationPages: MetadataRoute.Sitemap = locations.map((location) => ({
-    url: `${baseUrl}/locations/${location.id}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  return [...staticPages, ...locationPages];
+  return [...staticPages];
 }
