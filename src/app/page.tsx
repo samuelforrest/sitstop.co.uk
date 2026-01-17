@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import { NavigationBar } from "@/components/NavigationBar";
 import Link from "next/link";
+import { Mail, PhoneCall, Send } from "lucide-react";
 
 export default function Home() {
   return (
@@ -37,14 +38,14 @@ export default function Home() {
                 </Button>
               </Link>
               {/* need to replace with acc link*/}
-              <Link href="/">
+              <a href="#contact">
                 <Button
                   variant="secondary"
                   className="hover:cursor-pointer bg-gray-200 md:h-11 md:w-40"
                 >
-                  Connect with us
+                  Contact Us
                 </Button>
-              </Link>
+              </a>
             </div>
           </section>
 
@@ -126,7 +127,7 @@ export default function Home() {
 
           <section
             id="about"
-            className="w-full my-8 items-center justify-center"
+            className="w-full my-8 items-center justify-center mb-35"
           >
             <h1 className="text-2xl md:text-4xl text-black font-bold ">
               Our Logo / Sticker
@@ -138,7 +139,7 @@ export default function Home() {
             </p>
             <div className="items-center sm:items-start justify-center sm:justify-start flex">
               <img
-                src="https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/final-logo_12.jpg"
+                src="sitstop-logo.webp"
                 alt="logo"
                 className="w-50 h-60 mt-10 items-center"
                 loading="lazy"
@@ -154,20 +155,17 @@ export default function Home() {
               Join SIT STOP
             </h1>
             <hr className="w-full mt-4 "></hr>
-            <p className="text-sm md:text-xl mt-5 md:mt-10">
-              This campaign needs your support. We would welcome the assistance
-              from all of the following:
-            </p>
+
             <p className="text-sm md:text-xl mt-6 md:mt-12">
-              <b>Businesses:</b>
+              <b>Businesses</b>
             </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8 ml-5">
-              - If you would like to offer a seat to those in need we would be
+            <p className="text-sm md:text-xl mt-4 md:mt-8">
+              If you would like to offer a seat to those in need we would be
               very pleased to help you become a participant in the scheme. You
               do not have to be trading in Richmond Borough to participate.
             </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8 ml-5">
-              - Contact us and we will send you a pack which includes SIT STOP
+            <p className="text-sm md:text-xl mt-4 md:mt-8">
+              Contact us and we will send you a pack which includes SIT STOP
               logo window and wall stickers, information leaflets should you
               wish to place them near the seat you provide and contact
               information for further help in implementing the scheme.
@@ -175,18 +173,18 @@ export default function Home() {
               special equipment. Any chair meets the need!
             </p>
             <p className="text-sm md:text-xl mt-6 md:mt-12">
-              <b>Volunteers:</b>
+              <b>Volunteers</b>
             </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8 ml-5">
-              - If you are a volunteer and would like to help spread the SIT
-              STOP campaign in Richmond or in another location we would be very
+            <p className="text-sm md:text-xl mt-4 md:mt-8">
+              If you are a volunteer and would like to help spread the SIT STOP
+              campaign in Richmond or in another location we would be very
               pleased to hear from you. Please contact us.
             </p>
             <p className="text-sm md:text-xl mt-6 md:mt-12">
-              <b>Local Councils:</b>
+              <b>Local Councils</b>
             </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8 ml-5">
-              - If you are a local council and would like to roll out the scheme
+            <p className="text-sm md:text-xl mt-4 md:mt-8">
+              If you are a local council and would like to roll out the scheme
               in your area do contact us we are pleased to share our experiences
               and provide assistance.
             </p>
@@ -194,7 +192,7 @@ export default function Home() {
 
           <section
             id="about"
-            className="w-full my-8 items-center justify-center"
+            className="w-full my-8 items-center justify-center mb-35"
           >
             <h1 className="text-2xl md:text-4xl text-black font-bold ">
               Frequently Asked
@@ -313,26 +311,7 @@ export default function Home() {
                   </p>
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="item-9">
-                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
-                  I use a business frequently but they have no seating which I
-                  feel they should provide. Would you approach them for me?
-                </AccordionTrigger>
-                <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
-                  <p>
-                    Yes, if we can get there. We have found that face to face is
-                    the best way to persuade people. We are south west London
-                    based. At this stage of the campaign it is not easy for us
-                    to approach businesses substantially outside our area.
-                  </p>
 
-                  <p>
-                    However, we are very happy to write to them if you supply
-                    the full postal address and the name of the manager. Our
-                    contact details are in the contacts section of this website.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
               <AccordionItem value="item-10">
                 <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   Do I have to pay anything because I participate in SIT STOP?
@@ -345,7 +324,7 @@ export default function Home() {
                   </p>
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="item-10">
+              <AccordionItem value="item-11">
                 <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   If I want to make a donation in support of SIT STOP what
                   should I do?
@@ -359,6 +338,50 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </section>
+          <section
+            id="contact"
+            className="w-full mb-35 items-center justify-center"
+          >
+            <h1 className="text-2xl md:text-4xl text-black font-bold ">
+              Contact Us
+            </h1>
+
+            <hr className="w-full mt-4 "></hr>
+
+            <div className="grid grid-cols-2 items-center gap-6 mt-15">
+              <div>
+                <p className="text-sm md:text-xl text-center">
+                  <span className="flex items-center justify-center gap-2">
+                    <Mail /> <b>Email</b>
+                  </span>
+                  <br></br>richmond@sitstop.co.uk
+                </p>
+              </div>
+
+              <div>
+                <p className="text-sm md:text-xl text-center">
+                  <span className="flex items-center justify-center gap-2">
+                    <PhoneCall /> <b>Mobile</b>
+                  </span>
+                  <br></br>(+44) 7789 438246
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div className="justify-center items-center text-center mb-4">
+              &copy; 2026, All rights are reserved
+            </div>
+            <a href="https://www.samuelforrest.me">
+              <div className="justify-center items-center text-center">
+                Site developed by{" "}
+                <span className="underline underline-offset-3">
+                  {" "}
+                  Samuel Forrest
+                </span>
+              </div>
+            </a>
           </section>
         </main>
       </div>
