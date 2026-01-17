@@ -9,7 +9,13 @@ export interface Location {
   photoUrl: string;
   mapUrl: string;
 }
-export const locations: Location[] = [
+/**
+ * Raw locations data.
+ * NOTE: photoUrl is intentionally omitted - it is derived from `no`.
+ */
+type LocationRaw = Omit<Location, "photoUrl">;
+
+export const locationsRaw: LocationRaw[] = [
   {
     no: "001",
     id: "barnes-bookshop",
@@ -18,8 +24,6 @@ export const locations: Location[] = [
     town: "Barnes",
     email: "books@barnesbookshop.com",
     phone: "020 8741 0786",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694722d4003da9c74b61/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzIyZGIxNDljZDNkMzdkYTYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzIyZDQwMDNkYTljNzRiNjEiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjEyIiwiaWF0IjoxNzY2MjY5NjU5fQ.ikt7cor8q6a8nbkdISxC6tt3h0ObEl64S1zybxHNtaw",
     mapUrl: "https://maps.app.goo.gl/PB8wHDkpbmA1me5b8",
   },
   {
@@ -30,8 +34,6 @@ export const locations: Location[] = [
     town: "Barnes",
     phone: "020 8878 2359",
     email: "info@barnes-ca.org",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694720f40011bc7352b0/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzIwZjhkMjQ4OTMwMDkxMTIiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzIwZjQwMDExYmM3MzUyYjAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjExIiwiaWF0IjoxNzY2MjY5MTc2fQ.7vXoQ4SoubagErPwDsfJf9u95XgYD8ggnx5gEkGWajA",
     mapUrl: "https://maps.app.goo.gl/yTCKKhHbBSBunVLa7",
   },
   {
@@ -42,8 +44,6 @@ export const locations: Location[] = [
     town: "Barnes",
     email: "janet.eaton@ageukrichmond.org.uk",
     phone: "020 8876 2377",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6947200700258412c060/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzIwMGM0MjlhNmFkOWM5NjciLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzIwMDcwMDI1ODQxMmMwNjAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjEwIiwiaWF0IjoxNzY2MjY4OTQwfQ.6mfg-l0x5INXoAKNejMwdMjmpb-r7CniuUBVLwAfQGY",
     mapUrl: "https://maps.app.goo.gl/PHu2PKBM2j5dhACP9",
   },
   {
@@ -54,8 +54,6 @@ export const locations: Location[] = [
     town: "Barnes",
     email: "info@castelnaucentreproject.co.uk",
     phone: "020 8741 0909",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69471e290023f97ef3e2/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzFlMzE2ZGU1Njg5ZmQ4MDQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzFlMjkwMDIzZjk3ZWYzZTIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjkiLCJpYXQiOjE3NjYyNjg0NjV9.NPE9cXK7GMOFJp_A4tLHZ98KKJEgA66NUpONzrxH0m8",
     mapUrl: "https://maps.app.goo.gl/QSPGo6tBoEhP23vp7",
   },
   {
@@ -66,8 +64,6 @@ export const locations: Location[] = [
     town: "Barnes",
     email: "castelnau.library@richmond.gov.uk",
     phone: "020 8734 3350",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69471cab0035793f4bb5/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzFjYjBlNzE4YTcyNDVmOWIiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzFjYWIwMDM1NzkzZjRiYjUiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjgiLCJpYXQiOjE3NjYyNjgwODB9.dXNYupkwuUCZe0plx1TskN8rcbslLbFV3z4wlwifVNY",
     mapUrl: "https://maps.app.goo.gl/yzZp7UQuVsyre8ZL8",
   },
   {
@@ -78,8 +74,6 @@ export const locations: Location[] = [
     town: "Barnes",
     email: "feedback@cookfood.net",
     phone: "020 8392 2060",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69471bfc00027fe593b9/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzFjMDIxZTA2YmZmMGZkNTQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzFiZmMwMDAyN2ZlNTkzYjkiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjYiLCJpYXQiOjE3NjYyNjc5MDZ9.cpag6THt4haGaA-4VCVa5gOUoKLAy5FWkbseJWC_gnw",
     mapUrl: "https://maps.app.goo.gl/hBpnRQNTV8ZQk1k68",
   },
   {
@@ -89,8 +83,6 @@ export const locations: Location[] = [
     address: "1 Rocks Lane, SW13 0DB",
     town: "Barnes",
     phone: "020 8876 4734",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69472381000b5c07d939/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzIzODYxMWQ3NWVjZDkxNTQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzIzODEwMDBiNWMwN2Q5MzkiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjEzIiwiaWF0IjoxNzY2MjY5ODMwfQ.2fBnww29bv3u0WfrMkhQHAdbYKtrDeMHKRGKS3Cqzuo",
     mapUrl: "https://maps.app.goo.gl/zScMctnRrXDMyNTH8",
   },
   {
@@ -100,8 +92,6 @@ export const locations: Location[] = [
     address: "64 Church Rd, SW13 0DQ",
     town: "Barnes",
     phone: "020 8741 9041",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69471a09002fece9c8a8/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzFhMGUzZDA3YzE5Yzg2ZWIiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzFhMDkwMDJmZWNlOWM4YTgiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQiLCJpYXQiOjE3NjYyNjc0MDZ9.-qGZ5HBgNIz3ORCUGyeOPLz90r62AbczSzMnP679Brc",
     mapUrl: "https://maps.app.goo.gl/ZY9ycjojNX33LZYaA",
   },
   {
@@ -111,8 +101,6 @@ export const locations: Location[] = [
     address: "28-29 High Street, SW13 9LW",
     town: "Barnes",
     phone: "020 3285 6291",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694945ad002abcc9957a/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTQ1YjNkN2Q1ZDllNzQyMmYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTQ1YWQwMDJhYmNjOTk1N2EiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI0IiwiaWF0IjoxNzY2NDA5NjUxfQ.JcvVE7_PWlq9AuLuaM1A61RV81Trca-2-yIyS-DPVDQ",
     mapUrl: "https://maps.app.goo.gl/2ptbXWJRgvtqb8ce9",
   },
   {
@@ -123,8 +111,6 @@ export const locations: Location[] = [
     town: "Barnes",
     email: "info@osoarts.org.uk",
     phone: "020 8876 9885",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69472482002f7b330967/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzI0OGI5ZTA1MjdiNDNkMTAiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzI0ODIwMDJmN2IzMzA5NjciLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE0IiwiaWF0IjoxNzY2MjcwMDkxfQ.KPLQvqm0dbSgB13gmJf8NIfEqS8RlVT7zqp4XurjC1I",
     mapUrl: "https://maps.app.goo.gl/gid3ejUg1xj8zPWt8",
   },
   {
@@ -135,8 +121,6 @@ export const locations: Location[] = [
     town: "Barnes",
     email: "boxoffice@olympiccinema.co.uk",
     phone: "020 8912 5161",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69471acf0029e968b692/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzFhZDQ4ZmZjMjhkZGEwNDgiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzFhY2YwMDI5ZTk2OGI2OTIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjUiLCJpYXQiOjE3NjYyNjc2MDR9.icaQo8juDgmWiIBCsbWaUmcJ7KOQy9_2pEJ2qmYCDJk",
     mapUrl: "https://maps.app.goo.gl/478gVbgQmQaFpTaK6",
   },
   {
@@ -147,7 +131,6 @@ export const locations: Location[] = [
     town: "East Sheen",
     email: "info@ageukrichmond.org.uk",
     phone: "020 8878 3625",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -157,8 +140,6 @@ export const locations: Location[] = [
     address: "350 U Richmond Rd W, SW14 5JT",
     town: "East Sheen",
     phone: "020 8876 2440",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694932c6001f29b0c176/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTMyY2ZhNDQ0N2MyNzdmZjYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTMyYzYwMDFmMjliMGMxNzYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjIxIiwiaWF0IjoxNzY2NDA0ODE1fQ.CKollx2tGOB4gwUCCdtEF0sp-Cl4v4RKNF-lOEF_cm4",
     mapUrl: "https://maps.app.goo.gl/yVmMJ7L2DGUgqP6Z7",
   },
   {
@@ -168,8 +149,6 @@ export const locations: Location[] = [
     address: "395 U Richmond Rd W, SW14 7NX",
     town: "East Sheen",
     phone: "020 8166 9776",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694947ab0039f8e926d8/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTQ3YjE3OTdhODg3MDZmOTUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTQ3YWIwMDM5ZjhlOTI2ZDgiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI1IiwiaWF0IjoxNzY2NDEwMTYxfQ.-jH59UfZMq6u2m5Nr7v08YmW9FTbw5ebtF2K1laknMw",
     mapUrl: "https://maps.app.goo.gl/oZjsVoNmgZYvJa1A9",
   },
   {
@@ -180,8 +159,6 @@ export const locations: Location[] = [
     town: "East Sheen",
     email: "sheen@hewsonbooks.co.uk",
     phone: "020 8876 1717",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949483e00392d39fd2d/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTQ4NDZjZTUyM2QyNDA5YzQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTQ4M2UwMDM5MmQzOWZkMmQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI2IiwiaWF0IjoxNzY2NDEwMzEwfQ.iP6t9ot9d07lPaQwX0kFV9rW5D0fukYC3grSkUDVY5Q",
     mapUrl: "https://maps.app.goo.gl/z2rJrqzZ8dKycNbH8",
   },
   {
@@ -192,8 +169,6 @@ export const locations: Location[] = [
     town: "East Sheen",
     email: "libraries@richmond.gov.uk",
     phone: "020 8734 3337",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949490b002678384e5f/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTQ5MWExNTJmZmUzYTNmNzAiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTQ5MGIwMDI2NzgzODRlNWYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI3IiwiaWF0IjoxNzY2NDEwNTIyfQ.EFb56gE2GtiDZ3MqZKn_xc2YuuLsKI6Ym4QYtkeDpM4",
     mapUrl: "https://maps.app.goo.gl/bT1vcyJZGW3Au5339",
   },
   {
@@ -204,8 +179,6 @@ export const locations: Location[] = [
     town: "East Sheen",
     email: "contact@gingerandspiceflorist.com",
     phone: "020 8876 0955",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694949e700368fd00ab0/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTQ5ZWUxYzdiN2UyMzU4ZWQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTQ5ZTcwMDM2OGZkMDBhYjAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI4IiwiaWF0IjoxNzY2NDEwNzM0fQ.bXW3GKPb7rtn69yIhwnZGzG9GkQqaclHFk2SOvdFiLU",
     mapUrl: "https://maps.app.goo.gl/hXd7WAg5CRh6TTKe9",
   },
   {
@@ -215,8 +188,6 @@ export const locations: Location[] = [
     address: "461 U Richmond Rd W, SW14 7PU",
     town: "East Sheen",
     phone: "020 8392 1012",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949515f0010a90d94c4/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTUxNjM2YmMxNWUwOGIxMGMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTUxNWYwMDEwYTkwZDk0YzQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjI5IiwiaWF0IjoxNzY2NDEyNjQzfQ.ge0f00RtMAWAkcWlwu3j0tZPszHxxg29aKTSv_nNjQM",
     mapUrl: "https://maps.app.goo.gl/z2AHU5eabeL6sFsEA",
   },
   {
@@ -226,8 +197,6 @@ export const locations: Location[] = [
     address: "10 U Richmond Rd W, SW14 7PS",
     town: "East Sheen",
     phone: "020 4618 1256",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69495484000a17f40478/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTU0ODkyZTM3NWI4NTY4MWQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTU0ODQwMDBhMTdmNDA0NzgiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjMyIiwiaWF0IjoxNzY2NDEzNDQ5fQ.5cKxBfHbY967EFzkojH8MVxjAr2IUGtHeVC1z-0y_vM",
     mapUrl: "https://maps.app.goo.gl/nq4YL9N1wcf9jNdT6",
   },
   {
@@ -237,8 +206,6 @@ export const locations: Location[] = [
     address: "202 U Richmond Rd W, SW14 8AN",
     town: "East Sheen",
     phone: "020 3879 9111",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949566400104625a1ef/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTU2NjdlYTIzNTMzZDg4ZGQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTU2NjQwMDEwNDYyNWExZWYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjMzIiwiaWF0IjoxNzY2NDEzOTI3fQ.va2vdWbicd4Rbsvx9Ci9vJ7dCjXo7FTE-SDyArnHIu4",
     mapUrl: "https://maps.app.goo.gl/SiZzxzG7rGeWaHdx6",
   },
   {
@@ -249,8 +216,6 @@ export const locations: Location[] = [
     town: "East Sheen",
     email: "repeat@spatetree.com",
     phone: "020 8255 1717",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69493399003788f71322/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTMzOWUzODE1MTU4MmVkOWYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTMzOTkwMDM3ODhmNzEzMjIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjIyIiwiaWF0IjoxNzY2NDA1MDIyfQ.GNkfszbZzIjfz6ySmfD6bXVIvjk4cqGbD4gONCiHu68",
     mapUrl: "https://maps.app.goo.gl/19GvDupWEY1Tc4K47",
   },
   {
@@ -261,8 +226,6 @@ export const locations: Location[] = [
     town: "East Sheen",
     email: "info@tolleynpartners.com",
     phone: "020 8878 3415",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69493972003821d235d1/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTM5ODE1ZmU2MDk3NGVhMmYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTM5NzIwMDM4MjFkMjM1ZDEiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjIzIiwiaWF0IjoxNzY2NDA2NTI5fQ.LS65rc8evudkKkxmaxFmzMt9sLuipks6UPxHjs7dYhc",
     mapUrl: "https://maps.app.goo.gl/1fWiVkuMFmrs8zCF8",
   },
   {
@@ -272,7 +235,6 @@ export const locations: Location[] = [
     address: "292 U Richmond Rd W, SW14 7JG",
     town: "East Sheen",
     phone: "020 8878 4792",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -282,8 +244,6 @@ export const locations: Location[] = [
     address: "336 Richmond Road, TW1 2DX",
     town: "East Twickenham",
     phone: "020 8892 1846",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b2200025337a2b8c/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWIyMjRkNmFmZTE2YzI1MGYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWIyMjAwMDI1MzM3YTJiOGMiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ3IiwiaWF0IjoxNzY2NDM3NDEyfQ.qpS9PhSkjDi8sVSNPjr3cOVdeQwc4AEHnCo4k4rUP3A",
     mapUrl: "https://maps.app.goo.gl/LeZm7gD5CPss1W3P9",
   },
   {
@@ -294,8 +254,6 @@ export const locations: Location[] = [
     town: "Ham",
     email: "info@eyecareopticians.com",
     phone: "020 8549 0331",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69472a7b000714a8a6bd/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzJhODA4ZDcxMzM2OTQ1ODAiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzJhN2IwMDA3MTRhOGE2YmQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE4IiwiaWF0IjoxNzY2MjcxNjE2fQ.KzUqVZ5N5i3SrCPgyZMzROvyihF8GI_nqUS39xsEPdc",
     mapUrl: "https://maps.app.goo.gl/hvg9aqqvLkyzRxRK8",
   },
   {
@@ -305,8 +263,6 @@ export const locations: Location[] = [
     address: "10 Ashburnham Rd, TW10 7NF",
     town: "Ham",
     phone: "020 8940 3462",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69493106000947b6e70b/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTMxMGMwZTkwZjE3YzYyNTAiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTMxMDYwMDA5NDdiNmU3MGIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE5IiwiaWF0IjoxNzY2NDA0MzY0fQ.Z1F6nps-uAd0rJOFE1UfvzH8fHBEyM46lstgT3Msv8g",
     mapUrl: "https://maps.app.goo.gl/3Sh1boU9CMXaqsFU9",
   },
   {
@@ -317,8 +273,6 @@ export const locations: Location[] = [
     town: "Ham",
     email: "ham.library@richmond.gov.uk",
     phone: "020 8734 3354",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694931ca00277448856e/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTMxZDA4Njc4ZDY5NWUxODkiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTMxY2EwMDI3NzQ0ODg1NmUiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjIwIiwiaWF0IjoxNzY2NDA0NTYwfQ._aRQqyNrH-hq6qaISBwpRdADC1Q1gLV7TSZcWx92aBc",
     mapUrl: "https://maps.app.goo.gl/UMsuzpvyY7mwwb6F9",
   },
   {
@@ -328,8 +282,6 @@ export const locations: Location[] = [
     address: "177 Ashburnham Road, TW10 7NR",
     town: "Ham",
     phone: "020 8948 0601",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694727410038ab7a70e4/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzI3NDg0MDU3OTdhZGEzOGEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzI3NDEwMDM4YWI3YTcwZTQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE1IiwiaWF0IjoxNzY2MjcwNzkyfQ.1IzANxUnu4TfKV32y2KnKgE5D-VFzlfgmnNXOPZs8F8",
     mapUrl: "https://maps.app.goo.gl/hSTicC2PBXwz5zDc7",
   },
   {
@@ -339,8 +291,6 @@ export const locations: Location[] = [
     address: "Parkleys Prde, U Ham Rd, TW10 5LF",
     town: "Ham",
     phone: "020 8546 4449",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/694728ef002e6954eb5a/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzI4ZjgxMTFlMzJlZTJmMDUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzI4ZWYwMDJlNjk1NGViNWEiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE2IiwiaWF0IjoxNzY2MjcxMjI0fQ.m1eHrmfiOQZRYfmj-DVQVBIwEsvKhmg2pZF6o30x_l4",
     mapUrl: "https://maps.app.goo.gl/BV7obGBM7ktQtbA46",
   },
   {
@@ -350,8 +300,6 @@ export const locations: Location[] = [
     address: "12-14 Back Lane, TW10 7LF",
     town: "Ham",
     phone: "020 8940 7918",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6947299a00012aa6f37f/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0NzI5OWZjYWUwNTYwZDA5MzkiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0NzI5OWEwMDAxMmFhNmYzN2YiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjE3IiwiaWF0IjoxNzY2MjcxMzkxfQ.Kok-iKnZQ8DnHehcvd0xY5A3peNb1--9a113TuJUmtI",
     mapUrl: "https://maps.app.goo.gl/dhMZto86tM5Fce3Z6",
   },
   {
@@ -361,8 +309,6 @@ export const locations: Location[] = [
     address: "82 Station Road, TW12 2AX",
     town: "Hampton",
     phone: "020 8979 2996",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69499eeb003933326154/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTllZWY3YWVhNzE0OTYyYWMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTllZWIwMDM5MzMzMjYxNTQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM0IiwiaWF0IjoxNzY2NDMyNDk1fQ.RQfdgL7OH_KxymmncQ_ls2xFKQDqoTNAWGKLbokGOeU",
     mapUrl: "https://maps.app.goo.gl/vGtiUeZ1DbnDGAHY7",
   },
   {
@@ -372,8 +318,6 @@ export const locations: Location[] = [
     address: "1a School Road, TW12 1QL",
     town: "Hampton",
     phone: "020 8979 9662",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69499f800008b661da63/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTlmODNhNTJkY2I2OGY1NGQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTlmODAwMDA4YjY2MWRhNjMiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM1IiwiaWF0IjoxNzY2NDMyNjQzfQ.LfCGmwZDWG0qreVLUy4AJeGX2cpKlYYW2xRn4AIr9eo",
     mapUrl: "https://maps.app.goo.gl/uE5zfpJQR5zF4gbX9",
   },
   {
@@ -384,8 +328,6 @@ export const locations: Location[] = [
     town: "Hampton",
     email: "hampton.library@richmond.gov.uk",
     phone: "020 8734 3347",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/69499fe7001cb3eaf611/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OTlmZWJjYjBjYzBhNDhmNDMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OTlmZTcwMDFjYjNlYWY2MTEiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM2IiwiaWF0IjoxNzY2NDMyNzQ3fQ.C57FPMLBQntY1KqW8axEhYS9zk4kU-5cvWLsWYNLETc",
     mapUrl: "https://maps.app.goo.gl/jqTT37YXxpPKZwSS8",
   },
   {
@@ -395,8 +337,6 @@ export const locations: Location[] = [
     address: "",
     town: "Hampton",
     phone: "020 8979 3384",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949a07a00334005398c/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWEwN2UzNmFlNjI2MGMxZGMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWEwN2EwMDMzNDAwNTM5OGMiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM3IiwiaWF0IjoxNzY2NDMyODk0fQ._XnlFjsIvIB9Snrdfqaf4WGIsWNPxf6kiER8PLIKPKc",
     mapUrl: "https://maps.app.goo.gl/B5eSVLLgcxKCEN3R9",
   },
   {
@@ -406,8 +346,6 @@ export const locations: Location[] = [
     address: "Linden Rd, TW12 2JG",
     town: "Hampton",
     phone: "020 8941 2373",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949a0ec000c881aa51e/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWEwZjAwZjk2MzA1Y2Y4OTEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWEwZWMwMDBjODgxYWE1MWUiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM4IiwiaWF0IjoxNzY2NDMzMDA4fQ.Odvv34qc1ltiPSkbVAPULBiI9Y8Na-g3pkzxrmMqdqk",
     mapUrl: "https://maps.app.goo.gl/dt6k58fQGNEgz7pS8",
   },
   {
@@ -417,8 +355,6 @@ export const locations: Location[] = [
     address: "115 Station Rd, TW12 2AL",
     town: "Hampton",
     phone: "020 8127 1880",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949a181001986449424/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWExODViMmEyMjVmODI2ZjQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWExODEwMDE5ODY0NDk0MjQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjM5IiwiaWF0IjoxNzY2NDMzMTU3fQ.ZJZJRUkpBk5qlEgxnrfiQRc4yL4bFJW65Jt0j9CobCY",
     mapUrl: "https://maps.app.goo.gl/Jd8METxNPa98gKq46",
   },
   {
@@ -428,8 +364,6 @@ export const locations: Location[] = [
     address: "33 Ashley Road, TW12 2JA",
     town: "Hampton",
     phone: "020 8979 5916",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949a1fe000100352fdf/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWEyMDE4OGEyNGY1MzRlMGYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWExZmUwMDAxMDAzNTJmZGYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQwIiwiaWF0IjoxNzY2NDMzMjgxfQ.sSUSq9gkMS4cwf4AXebRcg7bVj9IsDqXyJYYvxcc_00",
     mapUrl: "https://maps.app.goo.gl/SLtwsMdCf1vbyBkg8",
   },
   {
@@ -439,8 +373,6 @@ export const locations: Location[] = [
     address: "White House, 45 The Avenue, TW12 3RN",
     town: "Hampton",
     phone: "020 8979 1884",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949a282002dca48c31a/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWEyODYxMTI0M2E5ZjczZmUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWEyODIwMDJkY2E0OGMzMWEiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQxIiwiaWF0IjoxNzY2NDMzNDE0fQ.QeIqw3pBGGI969mpxI5VE_dGnfr4wWSgtFXESCypt-M",
     mapUrl: "https://maps.app.goo.gl/tPrm1BsndmWEvT5h6",
   },
   {
@@ -451,8 +383,6 @@ export const locations: Location[] = [
     town: "Hampton Hill",
     email: "hamptonhill.library@richmond.gov.uk",
     phone: "020 8734 3320",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949af560008d96dabcc/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWFmNTljMWQ0MTlkMmIxZGIiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWFmNTYwMDA4ZDk2ZGFiY2MiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQyIiwiaWF0IjoxNzY2NDM2Njk3fQ.hnSAPPHPSmrxKIgCdybe_hvYQGkWXkDSSIHvKrb_oVg",
     mapUrl: "https://maps.app.goo.gl/wGm7qk6wWyDb3Bhj9",
   },
   {
@@ -463,7 +393,6 @@ export const locations: Location[] = [
     address: "CLOSED",
     town: "Hampton Hill",
     phone: "CLOSED",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -473,8 +402,6 @@ export const locations: Location[] = [
     address: "62 High Street, TW12 1PD",
     town: "Hampton Hill",
     phone: "020 8977 2539",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b014002e8578df2d/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWIwMTlhZDU4OTlmZjYwMzYiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWIwMTQwMDJlODU3OGRmMmQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ0IiwiaWF0IjoxNzY2NDM2ODg5fQ.V9QW15Kc725ZazcL3iaTF8l8XcDCGaBNYrUpjQuwqO0",
     mapUrl: "https://maps.app.goo.gl/JU1n2cFMTFQEw9Ay9",
   },
   {
@@ -484,8 +411,6 @@ export const locations: Location[] = [
     address: "173B High Street, TW12 1NL",
     town: "Hampton Hill",
     phone: "020 8979 9084",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b0b100067d9e7830/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWIwYjZlOWFlNzQ1NmY5ZmMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWIwYjEwMDA2N2Q5ZTc4MzAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ1IiwiaWF0IjoxNzY2NDM3MDQ2fQ.L1GjHVn2ZPd6AKmMAwmOp_dnub7WooISolTq-m9o2mM",
     mapUrl: "https://maps.app.goo.gl/c4my3VsDgUakY2ge8",
   },
   {
@@ -496,8 +421,6 @@ export const locations: Location[] = [
     town: "Hampton Wick",
     email: "hamptonwick.library@richmond.gov.uk",
     phone: "020 8734 3358",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b15100195208e297/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWIxNTYyYTc3MWVkNTI2MTUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWIxNTEwMDE5NTIwOGUyOTciLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ2IiwiaWF0IjoxNzY2NDM3MjA2fQ.FAc0X-Wn3s3ulCcgtZce0p-kWTfXdFU-1US753ULD38",
     mapUrl: "https://maps.app.goo.gl/pqRV1g3FGJC2f5bM8",
   },
   {
@@ -508,8 +431,6 @@ export const locations: Location[] = [
     town: "Kew",
     email: "avenueclub@kewcommunitytrust.org.uk",
     phone: "020 8948 8807",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b696003d9e497bff/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWI2OTlkMzgzNTQ3Nzk1NDEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWI2OTYwMDNkOWU0OTdiZmYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjUwIiwiaWF0IjoxNzY2NDM4NTUzfQ.oPHf2OT5qGgZdz8TpP37dAQzU2BC4dZQame6wqARscU",
     mapUrl: "https://maps.app.goo.gl/pS6jdrWFh5AJ8FiBA",
   },
   {
@@ -520,8 +441,6 @@ export const locations: Location[] = [
     town: "Kew",
     phone: "020 8940 0030",
     email: "kew@hewsonbooks.co.uk",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b739003af9d191b0/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWI3M2Q4NzMzNDE1MjIyYjUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWI3MzkwMDNhZjlkMTkxYjAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjUxIiwiaWF0IjoxNzY2NDM4NzE3fQ.x6fa42TIl0qqiRIyipSOmYB1bt72WmjuLMneZ44JmTg",
     mapUrl: "https://maps.app.goo.gl/tAskVabBPbJW6EhSA",
   },
   {
@@ -532,8 +451,6 @@ export const locations: Location[] = [
     town: "Kew",
     email: "kew.library@richmond.gov.uk",
     phone: "020 8734 3352",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b5c80023e50a372b/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWI1Y2M1YTkwMjMxNTg5MzQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWI1YzgwMDIzZTUwYTM3MmIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ5IiwiaWF0IjoxNzY2NDM4MzQ4fQ.H01W6QwKKA1wgdtqz6hblnAPjxqLFTpiN7PsLQO_SbU",
     mapUrl: "https://maps.app.goo.gl/VnF4QvpoqwnYQa8Q9",
   },
   {
@@ -544,8 +461,6 @@ export const locations: Location[] = [
     town: "Kew",
     email: "reception@kittentocat.co.uk",
     phone: "020 8940 0014",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b50f000410ed7f5f/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWI1MTMyODAxYmUzMWUwYmMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWI1MGYwMDA0MTBlZDdmNWYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjQ4IiwiaWF0IjoxNzY2NDM4MTYzfQ.PwG_fCySUz7Qc02BjJA6kRZy6OI_u6_k2tPbvQwTa1Y",
     mapUrl: "https://maps.app.goo.gl/qEStbuHWowfpY77e8",
   },
   {
@@ -555,8 +470,6 @@ export const locations: Location[] = [
     address: "9 Royal Parade, Station Approach, TW9 3QD",
     town: "Kew",
     phone: "020 8948 3783",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b7fe0007eff16d35/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWI4MDFjMTBkYzE1YjJiMTAiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWI3ZmUwMDA3ZWZmMTZkMzUiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjUyIiwiaWF0IjoxNzY2NDM4OTEzfQ._mffC_UA56vOhBtunpvhUMAjFxfqM3mFzxjxz97Id2E",
     mapUrl: "https://maps.app.goo.gl/U7br3qptT9az8Aq49",
   },
   {
@@ -566,8 +479,6 @@ export const locations: Location[] = [
     address: "299 Sandycombe Rd, TW9 3LU",
     town: "Kew",
     phone: "020 8940 1962",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b8b90022b93acbaf/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWI4YmUzY2YxNjIzMTY3YWEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWI4YjkwMDIyYjkzYWNiYWYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjUzIiwiaWF0IjoxNzY2NDM5MTAyfQ.wnT6tVzHQ5VbT8ET1HL7RZA7NQaA0v4KwrfD9FlJ9jA",
     mapUrl: "https://maps.app.goo.gl/pDXb3J2ywsAX1z4X7",
   },
   {
@@ -577,8 +488,6 @@ export const locations: Location[] = [
     address: "18 Station Parade, TW9 3PZ",
     town: "Kew",
     email: "hello@trindle-stores.com",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949b95100027a49f65a/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWI5NTY4ZDE5ZDYwZGFlYmEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWI5NTEwMDAyN2E0OWY2NWEiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjU0IiwiaWF0IjoxNzY2NDM5MjU0fQ.ZwdJN9WjwUw_zUwCvvq1zod91QulE57PFxpN7XKFT2g",
     mapUrl: "https://maps.app.goo.gl/bpY8CD5pQ3qzrYix8",
   },
   {
@@ -587,7 +496,6 @@ export const locations: Location[] = [
     name: "Mortlake Community Centre",
     address: "",
     town: "Mortlake",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -596,7 +504,6 @@ export const locations: Location[] = [
     name: "Danielli",
     address: "",
     town: "Richmond",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -606,8 +513,6 @@ export const locations: Location[] = [
     address: "62 Sheen Rd, TW9 1UF",
     town: "Richmond",
     phone: "020 8948 0444",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949d1e70007fb00116d/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWQxZWFhMjgxOGZkOWUyYjciLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWQxZTcwMDA3ZmIwMDExNmQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjU1IiwiaWF0IjoxNzY2NDQ1NTQ2fQ.Dj7v_Mweonep0YudIsxgq3HQFptaGuBjYyfU5zs_mDE",
     mapUrl: "https://maps.app.goo.gl/pmfbXoP5mwuKtPau6",
   },
   {
@@ -617,8 +522,6 @@ export const locations: Location[] = [
     address: "31 Sheen Road, TW9 1AD",
     town: "Richmond",
     phone: "020 3369 4327",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949d2e5001b8db769b7/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWQyZTk2ZTI4N2I1NzlmOWQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWQyZTUwMDFiOGRiNzY5YjciLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjU3IiwiaWF0IjoxNzY2NDQ1ODAxfQ.sTyD3SoG8nWDHMWuJFPE7BHGUdCdBlDUKgjatrv5_PM",
     mapUrl: "https://maps.app.goo.gl/rBA24zjuCe7VDAwz9",
   },
   {
@@ -629,8 +532,6 @@ export const locations: Location[] = [
     town: "Richmond",
     email: "richmond.library@richmond.gov.uk",
     phone: "020 8734 3330",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949d7ec0018fe3dd9db/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWQ3ZjBhMDYyNGRiOTUxYjQiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWQ3ZWMwMDE4ZmUzZGQ5ZGIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjU4IiwiaWF0IjoxNzY2NDQ3MDg4fQ.iHhKivLrQuK89LyuN23eyzAHCihBlIhWZcV9FG6tBBE",
     mapUrl: "https://maps.app.goo.gl/v7ineUE6QVCc4aAz9",
   },
   {
@@ -640,8 +541,6 @@ export const locations: Location[] = [
     address: "Kew Retail Park, 21 Mortlake Rd, TW9 4AD",
     town: "Richmond",
     phone: "020 8876 6864",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949d9910025aeefdb5c/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWQ5OTc4ODZjNWIzYWE2ZGUiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWQ5OTEwMDI1YWVlZmRiNWMiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjYwIiwiaWF0IjoxNzY2NDQ3NTExfQ.P0xORj5dDCXM3t5jUCWeDiGQW7FYeWiRtIs6GIk5TjU",
     mapUrl: "https://maps.app.goo.gl/CxPNpjy3UwZNaPfi7",
   },
   {
@@ -651,8 +550,6 @@ export const locations: Location[] = [
     address: "29 The Green, TW9 1LX",
     town: "Richmond",
     phone: "020 8332 1584",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949da2d002d6dad8380/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRhMzFiYTg4YjE3ZTZiMTEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRhMmQwMDJkNmRhZDgzODAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjYxIiwiaWF0IjoxNzY2NDQ3NjY1fQ.0TGvb5vPlVqdEguxGO0Ksvnk33--zTv8ZnBou4Xee78",
     mapUrl: "https://maps.app.goo.gl/dNKDvjXn7hvwGpZx7",
   },
   {
@@ -663,8 +560,6 @@ export const locations: Location[] = [
     town: "Richmond",
     email: "sr@richmondpharmacy.org.uk",
     phone: "020 8940 3930",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949daa0003c933eaaa2/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRhYTQyZjBkNTRkZGZkN2MiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRhYTAwMDNjOTMzZWFhYTIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjYyIiwiaWF0IjoxNzY2NDQ3NzgwfQ.i-I0LrAhepXudIsW_-0YDZgp0UatmTjiEzhgPgPWrzA",
     mapUrl: "https://maps.app.goo.gl/JbukwuZioh4MA9SPA",
   },
   {
@@ -675,8 +570,6 @@ export const locations: Location[] = [
     town: "Richmond",
     email: "information@richmond.gov.uk",
     phone: "020 8734 3308",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949db4b00125e564832/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRiNTAxOWFlYjU3NjlhMWMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRiNGIwMDEyNWU1NjQ4MzIiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjYzIiwiaWF0IjoxNzY2NDQ3OTUyfQ.BMV5ChG_FEwkfvPfUOsjelS1TCsthjABFsElMpey8NU",
     mapUrl: "https://maps.app.goo.gl/p9nc69jReWoiyF6Y8",
   },
   {
@@ -686,8 +579,6 @@ export const locations: Location[] = [
     address: "22 Evelyn Road, TW9 2TF",
     town: "Richmond",
     phone: "020 8614 7350",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949dbd6003016a4644d/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRiZGI1NTRjOWEwMDZiY2MiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRiZDYwMDMwMTZhNDY0NGQiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjY0IiwiaWF0IjoxNzY2NDQ4MDkxfQ.IZdoQCRi_np54pSNdLt5oGkIL84xdTAoQEIGX5dof7Q",
     mapUrl: "https://maps.app.goo.gl/qcPKLoEdPhDiwMuR8",
   },
   {
@@ -697,8 +588,6 @@ export const locations: Location[] = [
     address: "Kew Road, TW9 2NA",
     town: "Richmond",
     phone: "020 8940 0362",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949dc620021c5feace0/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRjNjYwOGFkZTk2MWQyNTciLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRjNjIwMDIxYzVmZWFjZTAiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjY1IiwiaWF0IjoxNzY2NDQ4MjMwfQ.aFnXhgnEx3dCby5zz45_G8lOZIwnOUSptK5nFLrGci4",
     mapUrl: "https://maps.app.goo.gl/HJ5QRz3oEEfMPWsu5",
   },
   {
@@ -708,8 +597,6 @@ export const locations: Location[] = [
     address: "Paradise Road, TW9 1SN",
     town: "Richmond",
     phone: "020 8940 0362",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949dcca0009c663020e/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRjY2RjN2UzOGI5NWI2ODEiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRjY2EwMDA5YzY2MzAyMGUiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjY2IiwiaWF0IjoxNzY2NDQ4MzMzfQ.l0BtZYmamGei1PojfZXvInRlu23a1gVUIrN4SpXymx0",
     mapUrl: "https://maps.app.goo.gl/8wkisrWjTtqJdtGH7",
   },
   {
@@ -718,8 +605,6 @@ export const locations: Location[] = [
     name: "Vineyard Boutique",
     address: "2 Paradise Road, TW9 1SN",
     town: "Richmond",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949dd21000974e34a77/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWRkMjkwMmQ0YWQyY2IyYjIiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWRkMjEwMDA5NzRlMzRhNzciLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjY3IiwiaWF0IjoxNzY2NDQ4NDI1fQ.0-612plqHDC9cmyCQrNcUjrtu7O4CkuGJyk13WCyuqg",
     mapUrl: "https://maps.app.goo.gl/gwceB7JGjsGSP76F6",
   },
   {
@@ -730,8 +615,6 @@ export const locations: Location[] = [
     town: "Richmond",
     email: "info@vineyardcommunity.org",
     phone: "020 8439 9735",
-    photoUrl:
-      "https://fra.cloud.appwrite.io/v1/storage/buckets/6943bea6001ca08820dd/files/6949e1540039fa587d66/view?project=storage&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbklkIjoiNjk0OWUxNWIzNTVlYTc2YTc4MjMiLCJyZXNvdXJjZUlkIjoiNjk0M2JlYTYwMDFjYTA4ODIwZGQ6Njk0OWUxNTQwMDM5ZmE1ODdkNjYiLCJyZXNvdXJjZVR5cGUiOiJmaWxlcyIsInJlc291cmNlSW50ZXJuYWxJZCI6IjU1NTk5OjY4IiwiaWF0IjoxNzY2NDQ5NDk5fQ.NfHy4coX5gPX-QkY5No1NyI_uExkq5OqFE7zm0a8qV8",
     mapUrl: "https://maps.app.goo.gl/zm9HmRCneWcuMQYf8",
   },
   {
@@ -741,7 +624,6 @@ export const locations: Location[] = [
     address: "10 Sheen Road, TW9 1AE",
     town: "Richmond",
     phone: "020 8948 6288",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -752,7 +634,6 @@ export const locations: Location[] = [
     town: "Richmond Hill",
     email: "manager@cambriancentre.org",
     phone: "020 8948 3351",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -762,7 +643,6 @@ export const locations: Location[] = [
     address: "Friars Stile Road, TW10 6LS",
     town: "Richmond Hill",
     phone: "020 8940 7462",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -771,7 +651,6 @@ export const locations: Location[] = [
     name: "Tesco",
     address: "",
     town: "St Margarets",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -781,7 +660,6 @@ export const locations: Location[] = [
     address: "156 High Street, TW11 8HZ",
     town: "Teddington",
     phone: "020 8977 7223",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -792,7 +670,6 @@ export const locations: Location[] = [
     town: "Teddington",
     email: "info@ellerayhall.org",
     phone: "020 8977 0549",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -802,7 +679,6 @@ export const locations: Location[] = [
     address: "53 High Street, TW11 8HD",
     town: "Teddington",
     phone: "020 8977 5509",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -812,7 +688,6 @@ export const locations: Location[] = [
     address: "93 High Street, TW11 8HG",
     town: "Teddington",
     phone: "020 8977 0680",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -823,7 +698,6 @@ export const locations: Location[] = [
     town: "Teddington",
     email: "info@richmondaid.org.uk",
     phone: "020 8831 6070",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -834,7 +708,6 @@ export const locations: Location[] = [
     town: "Teddington",
     email: "office@SteppingonOut.org.uk",
     phone: "020 8977 8042",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -845,7 +718,6 @@ export const locations: Location[] = [
     town: "Teddington",
     email: "teddington.library@richmond.gov.uk",
     phone: "020 8734 3304",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -855,7 +727,6 @@ export const locations: Location[] = [
     address: "89 High Street, TW11 8HG",
     town: "Teddington",
     phone: "020 8973 1859",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -866,7 +737,6 @@ export const locations: Location[] = [
     town: "Twickenham",
     email: "richmond@bluebirdcare.co.uk",
     phone: "020 8744 9948",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -877,7 +747,6 @@ export const locations: Location[] = [
     town: "Twickenham",
     email: "enquiries@cgoodepharmacy.com",
     phone: "020 8115 0231",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -886,7 +755,6 @@ export const locations: Location[] = [
     name: "Cabbage Patch pub",
     address: "",
     town: "Twickenham",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -896,7 +764,6 @@ export const locations: Location[] = [
     address: "44 York Street, TW1 3BZ",
     town: "Twickenham",
     phone: "020 8891 1411",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -907,7 +774,6 @@ export const locations: Location[] = [
     town: "Twickenham",
     email: "info@crusadertravel.com",
     phone: "020 8744 0474",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -916,7 +782,6 @@ export const locations: Location[] = [
     name: "Kneller Gardens café",
     address: "",
     town: "Twickenham",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -926,7 +791,6 @@ export const locations: Location[] = [
     address: "Sixth Cross Road, TW2 5PA",
     town: "Twickenham",
     phone: "020 8977 9241",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -936,7 +800,6 @@ export const locations: Location[] = [
     address: "Aragon Road, TW1 3NH",
     town: "Twickenham",
     phone: "020 8538 9254",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -947,7 +810,6 @@ export const locations: Location[] = [
     town: "Twickenham",
     email: "twickenham.library@richmond.gov.uk",
     phone: "020 8734 3340",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -958,7 +820,6 @@ export const locations: Location[] = [
     town: "Whitton",
     email: "aamobility@btconnect.com",
     phone: "020 3369 5022",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -968,7 +829,6 @@ export const locations: Location[] = [
     address: "111a Kneller Road, TW2 7DT",
     town: "Whitton",
     phone: "020 8894 4963",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -978,7 +838,6 @@ export const locations: Location[] = [
     address: "93 High Street, TW2 7LD",
     town: "Whitton",
     phone: "020 8755 4288",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -988,7 +847,6 @@ export const locations: Location[] = [
     address: "120 High Street, TW2 7LL",
     town: "Whitton",
     phone: "020 8755 7900",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -998,7 +856,6 @@ export const locations: Location[] = [
     address: "133 Station Road, TW12 2AL",
     town: "Whitton",
     phone: "020 8979 4961",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1009,7 +866,6 @@ export const locations: Location[] = [
     town: "Whitton",
     email: "info@goodhealthshop.co.uk",
     phone: "020 8894 9487",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1019,7 +875,6 @@ export const locations: Location[] = [
     address: "9-11 High Street, TW2 7LA",
     town: "Whitton",
     phone: "020 8894 7933",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1029,7 +884,6 @@ export const locations: Location[] = [
     address: "Percy Road, TW2 6JL",
     town: "Whitton",
     phone: "020 3903 3600",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1040,7 +894,6 @@ export const locations: Location[] = [
     town: "Whitton",
     email: "whitton.library@richmond.gov.uk",
     phone: "020 8734 3343",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1051,7 +904,6 @@ export const locations: Location[] = [
     town: "Whitton",
     email: "whittonnetwork@btconnect.com",
     phone: "020 8755 1336",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1062,7 +914,6 @@ export const locations: Location[] = [
     town: "Whitton",
     email: "whittonpetcentre@hotmail.co.uk",
     phone: "020 3417 4947",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1072,7 +923,6 @@ export const locations: Location[] = [
     address: "1 Britannia Lane, TW2 7JX",
     town: "Whitton",
     phone: "020 8898 4949",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1082,7 +932,6 @@ export const locations: Location[] = [
     address: "Badshot Lea Rd, Farnham, GU9 9JX",
     town: "Badshot Lee",
     phone: "01252 333666",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1092,7 +941,6 @@ export const locations: Location[] = [
     address: "78 Balham High Road, SW12 9AG",
     town: "Balham",
     phone: "020 8673 2672",
-    photoUrl: "",
     mapUrl: "",
   },
 
@@ -1103,7 +951,6 @@ export const locations: Location[] = [
     address: "Sydney Street, SW3 6NP",
     town: "Kensington & Chelsea",
     phone: "020 7352 8121",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1113,7 +960,6 @@ export const locations: Location[] = [
     address: "Buckland (A25), RH2 9RE",
     town: "Reigate",
     phone: "01737 247217",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1124,7 +970,6 @@ export const locations: Location[] = [
     town: "Surbiton",
     email: "ritechempharmacy22@gmail.com",
     phone: "020 8390 0630",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1134,7 +979,6 @@ export const locations: Location[] = [
     address: "33 Victoria Road, KT6 4JT",
     town: "Surbiton",
     phone: "020 8399 2208",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1145,7 +989,6 @@ export const locations: Location[] = [
     town: "Wandsworth",
     email: "info@rhn.org.uk",
     phone: "020 8780 4500",
-    photoUrl: "",
     mapUrl: "",
   },
   {
@@ -1155,10 +998,18 @@ export const locations: Location[] = [
     address: "21 Baker Street, KT13 8AE",
     town: "Weybridge",
     phone: "01932 845294",
-    photoUrl: "",
     mapUrl: "",
   },
 ];
+
+/**
+ * Final locations array with photoUrl derived from `no`
+ * "001" → "/gallery/1.webp"
+ */
+export const locations: Location[] = locationsRaw.map((loc) => ({
+  ...loc,
+  photoUrl: `/gallery/${Number(loc.no)}.webp`,
+}));
 export const towns = Array.from(
   new Set(locations.map((loc) => loc.town))
 ).sort();
