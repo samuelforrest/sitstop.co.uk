@@ -886,7 +886,7 @@ export const locationsRaw: LocationRaw[] = [
     town: "Whitton",
     email: "whitton.library@richmond.gov.uk",
     phone: "020 8734 3343",
-    mapUrl: "",
+    mapUrl: "https://maps.app.goo.gl/AW63oE3S3Xp4gcB86",
   },
   {
     no: "095",
@@ -896,7 +896,7 @@ export const locationsRaw: LocationRaw[] = [
     town: "Whitton",
     email: "whittonnetwork@btconnect.com",
     phone: "020 8755 1336",
-    mapUrl: "",
+    mapUrl: "https://maps.app.goo.gl/ZRsuSm1kPBoUgiUN7",
   },
   {
     no: "096",
@@ -906,8 +906,12 @@ export const locationsRaw: LocationRaw[] = [
     town: "Whitton",
     email: "whittonpetcentre@hotmail.co.uk",
     phone: "020 3417 4947",
-    mapUrl: "",
+    mapUrl: "https://maps.app.goo.gl/7Gr8ingBXu3ASrGG9",
   },
+];
+
+// Removed Locations Data Array, move entries
+export const archivedLocations: LocationRaw[] = [
   {
     no: "097",
     id: "whitton-resource-centre",
@@ -915,12 +919,8 @@ export const locationsRaw: LocationRaw[] = [
     address: "1 Britannia Lane, TW2 7JX",
     town: "Whitton",
     phone: "020 8898 4949",
-    mapUrl: "",
+    mapUrl: "https://maps.app.goo.gl/eASwuMnGgqqCFwKg6",
   },
-];
-
-// Removed Locations Data Array, move entries
-export const archivedLocations: LocationRaw[] = [
   {
     no: "098",
     id: "squires-garden-centre-badshot",
