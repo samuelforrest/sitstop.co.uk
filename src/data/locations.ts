@@ -9,10 +9,7 @@ export interface Location {
   photoUrl: string;
   mapUrl: string;
 }
-/**
- * Raw locations data.
- * NOTE: photoUrl is intentionally omitted - it is derived from `no`.
- */
+
 type LocationRaw = Omit<Location, "photoUrl">;
 
 export const locationsRaw: LocationRaw[] = [
@@ -122,16 +119,6 @@ export const locationsRaw: LocationRaw[] = [
     email: "boxoffice@olympiccinema.co.uk",
     phone: "020 8912 5161",
     mapUrl: "https://maps.app.goo.gl/478gVbgQmQaFpTaK6",
-  },
-  {
-    no: "012",
-    id: "age-uk",
-    name: "Age UK",
-    address: "301 Sheen Lane, SW14 8LS",
-    town: "East Sheen",
-    email: "info@ageukrichmond.org.uk",
-    phone: "020 8878 3625",
-    mapUrl: "",
   },
   {
     no: "013",
@@ -384,16 +371,6 @@ export const locationsRaw: LocationRaw[] = [
     email: "hamptonhill.library@richmond.gov.uk",
     phone: "020 8734 3320",
     mapUrl: "https://maps.app.goo.gl/wGm7qk6wWyDb3Bhj9",
-  },
-  {
-    // CLOSED
-    no: "040",
-    id: "hampton-hill-stationery",
-    name: "THIS BUSINESS IS CLOSED",
-    address: "CLOSED",
-    town: "Hampton Hill",
-    phone: "CLOSED",
-    mapUrl: "",
   },
   {
     no: "041",
@@ -925,6 +902,10 @@ export const locationsRaw: LocationRaw[] = [
     phone: "020 8898 4949",
     mapUrl: "",
   },
+];
+
+// Removed Locations Data Array, move entries
+export const archivedLocations: LocationRaw[] = [
   {
     no: "098",
     id: "squires-garden-centre-badshot",
@@ -943,7 +924,16 @@ export const locationsRaw: LocationRaw[] = [
     phone: "020 8673 2672",
     mapUrl: "",
   },
-
+  {
+    no: "012",
+    id: "age-uk",
+    name: "Age UK",
+    address: "301 Sheen Lane, SW14 8LS",
+    town: "East Sheen",
+    email: "info@ageukrichmond.org.uk",
+    phone: "020 8878 3625",
+    mapUrl: "",
+  },
   {
     no: "103",
     id: "royal-brompton-hospital",
@@ -951,15 +941,6 @@ export const locationsRaw: LocationRaw[] = [
     address: "Sydney Street, SW3 6NP",
     town: "Kensington & Chelsea",
     phone: "020 7352 8121",
-    mapUrl: "",
-  },
-  {
-    no: "104",
-    id: "squires-garden-centre-reigate",
-    name: "Squires Garden Centre",
-    address: "Buckland (A25), RH2 9RE",
-    town: "Reigate",
-    phone: "01737 247217",
     mapUrl: "",
   },
   {
@@ -1000,16 +981,32 @@ export const locationsRaw: LocationRaw[] = [
     phone: "01932 845294",
     mapUrl: "",
   },
+  {
+    no: "040",
+    id: "hampton-hill-stationery",
+    name: "THIS BUSINESS IS CLOSED",
+    address: "CLOSED",
+    town: "Hampton Hill",
+    phone: "CLOSED",
+    mapUrl: "",
+  },
+  {
+    no: "104",
+    id: "squires-garden-centre-reigate",
+    name: "Squires Garden Centre",
+    address: "Buckland (A25), RH2 9RE",
+    town: "Reigate",
+    phone: "01737 247217",
+    mapUrl: "",
+  },
 ];
 
-/**
- * Final locations array with photoUrl derived from `no`
- * "001" → "/gallery/1.webp"
- */
+// Map the id to the photo
 export const locations: Location[] = locationsRaw.map((loc) => ({
   ...loc,
   photoUrl: `/gallery/${Number(loc.no)}.webp`,
 }));
+
 export const towns = Array.from(
-  new Set(locations.map((loc) => loc.town))
+  new Set(locations.map((loc) => loc.town)),
 ).sort();
