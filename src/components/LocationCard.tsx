@@ -2,7 +2,6 @@
 
 import { Location } from "@/data/locations";
 import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { GoogleMapsIcon } from "@/components/icons/GoogleMapsIcon";
 
