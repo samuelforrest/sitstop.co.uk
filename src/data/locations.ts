@@ -829,7 +829,7 @@ export const locationsRaw: LocationRaw[] = [
     address: "93 High Street, TW2 7LD",
     town: "Whitton",
     phone: "020 8755 4288",
-    mapUrl: "",
+    mapUrl: "https://maps.app.goo.gl/WSoUzrqjQuDGjMu8A",
   },
   {
     no: "089",

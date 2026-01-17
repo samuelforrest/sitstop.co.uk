@@ -38,7 +38,7 @@ export default function Locations() {
   return (
     <div className="w-full">
       <NavigationBar />
-      <div className="w-full px-5 md:px-35 lg:px-45 xl:px-60 2xl:px-100 my-8 pt-20">
+      <div className="w-full px-5 md:px-35 lg:px-45 xl:px-60 2xl:px-75 3xl:px-120 my-8 pt-20">
         <main>
           <section id="hero" className="w-full text-center space-y-6 mb-12">
             <h1 className="text-6xl md:text-8xl text-black font-bold">

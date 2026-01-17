@@ -57,7 +57,7 @@ export function LocationCard({ location }: LocationCardProps) {
               className="flex items-center justify-center gap-2"
             >
               <GoogleMapsIcon />
-              Open in Google Maps
+              Open Google Maps
               <ExternalLink className="w-4 h-4" />
             </a>
           </Button>
