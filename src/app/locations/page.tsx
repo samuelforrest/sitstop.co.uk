@@ -51,7 +51,6 @@ export default function Locations() {
             </p>
           </section>
 
-          {/* Search Bar */}
           <section id="search" className="w-full max-w-2xl mx-auto mb-12">
             <div className="relative">
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -69,7 +68,6 @@ export default function Locations() {
             </p>
           </section>
 
-          {/* Locations Gallery */}
           {activeTowns.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-xl text-gray-600">

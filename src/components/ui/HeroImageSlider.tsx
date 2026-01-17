@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { FaLocationDot } from "react-icons/fa6";
 
 export const ImageAutoSlider = () => {
@@ -111,7 +112,7 @@ export const ImageAutoSlider = () => {
             {duplicatedImages.map((image, index) => (
               <div
                 key={index}
-                className="image-item flex-shrink-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-xl overflow-hidden shadow-2xl relative"
+                className="image-item shrink-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-xl overflow-hidden shadow-2xl relative"
               >
                 <img
                   src={image.image_url}
@@ -121,7 +122,7 @@ export const ImageAutoSlider = () => {
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 flex items-end justify-center pb-4 bg-gradient-to-t from-black/60 to-transparent">
+                <div className="absolute inset-0 flex items-end justify-center pb-4 bg-linear-to-t from-black/60 to-transparent">
                   <div className="flex items-center justify-center gap-1">
                     <FaLocationDot className="text-white" />
                     <p className="text-sm md:text-lg text-white font-semibold">
