@@ -1,65 +1,40 @@
 /* eslint-disable @next/next/no-img-element */
-import { FaLocationDot } from "react-icons/fa6";
 
 export const ImageAutoSlider = () => {
   const images = [
     {
-      image_url:
-        "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_0349.jpeg",
-      location: "Location",
+      image_url: "carousel/carousel1.webp",
+      location: "Squires Garden Centre",
       location_url: "",
     },
     {
-      image_url:
-        "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_7184.jpeg",
-      location: "Location",
+      image_url: "carousel/carousel2.webp",
+      location: "Kanset Pharmacy",
       location_url: "",
     },
     {
-      image_url:
-        "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_7662.jpeg",
-      location: "Location",
+      image_url: "carousel/carousel3.webp",
+      location: "Teddington Stables",
       location_url: "",
     },
     {
-      image_url:
-        "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_7890.jpeg",
-      location: "Location",
+      image_url: "carousel/carousel4.webp",
+      location: "Barnes Summer Fair",
       location_url: "",
     },
     {
-      image_url:
-        "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_8082.jpeg",
-      location: "Location",
+      image_url: "carousel/carousel7.webp",
+      location: "Barnes Summer Fair",
       location_url: "",
     },
+
     {
-      image_url:
-        "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/IMG_8064.jpeg",
-      location: "Location",
-      location_url: "",
-    },
-    {
-      image_url:
-        "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/e-twickenham-cambridge-convenience-store_orig.jpg",
-      location: "Location",
-      location_url: "",
-    },
-    {
-      image_url:
-        "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/ham-kanset-pharmacy_orig.jpg",
-      location: "Location",
-      location_url: "",
-    },
-    {
-      image_url:
-        "https://tqmfgzziyxzcchyeyptb.supabase.co/storage/v1/object/public/photos/fe9e4892-6ccd-407f-b486-1b5e8b7459a2.JPG",
-      location: "Location",
+      image_url: "carousel/carousel6.webp",
+      location: "SIT STOP Team",
       location_url: "",
     },
   ];
 
-  // Duplicate images for seamless loop
   const duplicatedImages = [...images, ...images];
 
   return (
@@ -124,7 +99,6 @@ export const ImageAutoSlider = () => {
                 />
                 <div className="absolute inset-0 flex items-end justify-center pb-4 bg-linear-to-t from-black/60 to-transparent">
                   <div className="flex items-center justify-center gap-1">
-                    <FaLocationDot className="text-white" />
                     <p className="text-sm md:text-lg text-white font-semibold">
                       {image.location}
                     </p>

@@ -48,15 +48,14 @@ export default function Home() {
             </div>
           </section>
 
-          <hr className="w-full "></hr>
-
           <section
             id="about"
-            className="w-full my-8 items-center justify-center"
+            className="w-full mb-35 items-center justify-center"
           >
             <h1 className="text-2xl md:text-4xl text-black font-bold ">
               What is SIT STOP?
             </h1>
+            <hr className="w-full mt-4 "></hr>
             <p className="text-sm md:text-xl mt-5 md:mt-10">
               <b>SIT STOP</b> is an initiative that was started in 2006 by an
               independent community group in the London Borough of Richmond upon
@@ -87,15 +86,14 @@ export default function Home() {
             </p>
           </section>
 
-          <hr className="w-full "></hr>
-
           <section
             id="about"
-            className="w-full my-8 items-center justify-center"
+            className="w-full mb-35 items-center justify-center"
           >
             <h1 className="text-2xl md:text-4xl text-black font-bold ">
               SIT STOP&apos;s History
             </h1>
+            <hr className="w-full mt-4 "></hr>
             <p className="text-sm md:text-xl mt-5 md:mt-10">
               The SIT STOP campaign started in Richmond in 2005. A group of
               individuals led by three Royal Society of Arts (RSA) fellows met
@@ -126,8 +124,6 @@ export default function Home() {
             </p>
           </section>
 
-          <hr className="w-full "></hr>
-
           <section
             id="about"
             className="w-full my-8 items-center justify-center"
@@ -135,6 +131,7 @@ export default function Home() {
             <h1 className="text-2xl md:text-4xl text-black font-bold ">
               Our Logo / Sticker
             </h1>
+            <hr className="w-full mt-4 "></hr>
             <p className="text-sm md:text-xl mt-5 md:mt-10">
               Wherever you see our logo, please feel free to ask to sit down in
               that local business, shop or place:
@@ -149,15 +146,14 @@ export default function Home() {
             </div>
           </section>
 
-          <hr className="w-full"></hr>
-
           <section
             id="about"
-            className="w-full my-8 items-center justify-center"
+            className="w-full mb-35 items-center justify-center"
           >
             <h1 className="text-2xl md:text-4xl text-black font-bold ">
               Join SIT STOP
             </h1>
+            <hr className="w-full mt-4 "></hr>
             <p className="text-sm md:text-xl mt-5 md:mt-10">
               This campaign needs your support. We would welcome the assistance
               from all of the following:
@@ -196,8 +192,6 @@ export default function Home() {
             </p>
           </section>
 
-          <hr className="w-full"></hr>
-
           <section
             id="about"
             className="w-full my-8 items-center justify-center"
@@ -205,6 +199,7 @@ export default function Home() {
             <h1 className="text-2xl md:text-4xl text-black font-bold ">
               Frequently Asked
             </h1>
+            <hr className="w-full mt-4"></hr>
             <Accordion
               type="single"
               collapsible
@@ -212,7 +207,7 @@ export default function Home() {
               defaultValue="item-1"
             >
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   If my business joins the SIT STOP campaign do we have to
                   provide a special/designated chair?
                 </AccordionTrigger>
@@ -225,7 +220,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   Can I designate a particular chair if I wish to?
                 </AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
@@ -237,7 +232,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   Is there a particular type of chair which is best for SIT
                   STOP’s purpose?
                 </AccordionTrigger>
@@ -251,7 +246,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   Does the chair have to be in a particular part of my premises?
                 </AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
@@ -262,7 +257,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   What do I do if someone abuses our hospitality by behaving
                   anti-socially?
                 </AccordionTrigger>
@@ -277,7 +272,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-6">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   Am I required to provide additional first aid training to
                   staff because I participate in Sit Stop?
                 </AccordionTrigger>
@@ -289,7 +284,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-7">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   As a business providing a seat as part of the SIT STOP
                   campaign do we get paid?
                 </AccordionTrigger>
@@ -298,7 +293,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-8">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   I know of a business which provides seating but they are not
                   SIT STOP participants. Should I say something to them?
                 </AccordionTrigger>
@@ -319,7 +314,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-9">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   I use a business frequently but they have no seating which I
                   feel they should provide. Would you approach them for me?
                 </AccordionTrigger>
@@ -339,7 +334,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   Do I have to pay anything because I participate in SIT STOP?
                 </AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
@@ -351,7 +346,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-10">
-                <AccordionTrigger className="text-sm md:text-xl">
+                <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
                   If I want to make a donation in support of SIT STOP what
                   should I do?
                 </AccordionTrigger>

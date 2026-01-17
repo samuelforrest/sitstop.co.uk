@@ -71,16 +71,7 @@ export function NavigationBar() {
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                asChild
-                className={navigationMenuTriggerStyle()}
-              >
-                <Link className="text-[17px] bg-transparent" href="/">
-                  About
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
+
             <NavigationMenuItem>
               <NavigationMenuLink
                 asChild
@@ -88,17 +79,6 @@ export function NavigationBar() {
               >
                 <Link className="text-[17px] bg-transparent" href="/locations">
                   All Locations
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                asChild
-                className={navigationMenuTriggerStyle()}
-              >
-                <Link className="text-[17px] bg-transparent" href="/">
-                  Contact
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
