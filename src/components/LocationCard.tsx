@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { Location } from "@/data/locations";
@@ -25,12 +26,12 @@ export function LocationCard({ location }: LocationCardProps) {
           {location.name}
         </h3>
         <div className="flex items-start gap-2 text-sm text-gray-600 mb-3">
-          <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+          <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
           <p>{location.address}</p>
         </div>
         {location.email && (
           <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
-            <Mail className="w-4 h-4 flex-shrink-0" />
+            <Mail className="w-4 h-4 shrink-0" />
             <a
               href={`mailto:${location.email}`}
               className="hover:underline truncate"
@@ -41,7 +42,7 @@ export function LocationCard({ location }: LocationCardProps) {
         )}
         {location.phone && (
           <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
-            <Phone className="w-4 h-4 flex-shrink-0" />
+            <Phone className="w-4 h-4 shrink-0" />
             <a href={`tel:${location.phone}`} className="hover:underline">
               {location.phone}
             </a>
