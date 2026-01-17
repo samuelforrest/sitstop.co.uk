@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "SIT STOP",
   },
   description: "Making life a little easier for those who need to sit down.",
-  authors: [{ name: "SIT STOP", url: "https://www.samuelforrest.me" }],
+  authors: [{ name: "SIT STOP", url: "https://www.sitstop.co.uk" }],
   creator: "SIT STOP",
   publisher: "SIT STOP",
   keywords: [
