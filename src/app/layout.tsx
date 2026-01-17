@@ -13,9 +13,58 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SIT STOP",
-  description:
-    "SIT STOP makes life a little easier for those who need to sit down",
+  title: {
+    default: "SIT STOP",
+    template: "SIT STOP",
+  },
+  description: "Making life a little easier for those who need to sit down.",
+  authors: [{ name: "SIT STOP", url: "https://www.samuelforrest.me" }],
+  creator: "SIT STOP",
+  publisher: "SIT STOP",
+  keywords: [
+    "Samuel Forrest",
+    "samuelforrest.me",
+    "SIT STOP",
+    "SITSTOP.co.uk",
+    "sitstop.co.uk",
+    "SIT STOP website",
+    "sit stop",
+    "sitstop",
+    "sit stop richmond",
+    "sit stop charity",
+  ],
+  metadataBase: new URL("https://www.sitstop.co.uk"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    title: "SIT STOP",
+    description: "Making life a little easier for those who need to sit down.",
+    url: "https://www.sitstop.co.uk",
+    siteName: "SIT STOP",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SIT STOP",
+    description: "Making life a little easier for those who need to sit down.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category: "Charity",
+  classification: "Charity Website",
 };
 
 export default function RootLayout({
