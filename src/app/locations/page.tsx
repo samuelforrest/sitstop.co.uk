@@ -2,7 +2,7 @@
 
 import { NavigationBar } from "@/components/NavigationBar";
 import { LocationCard } from "@/components/LocationCard";
-import { locations, towns } from "@/data/locations";
+import { locations } from "@/data/locations";
 import { useState, useMemo } from "react";
 import { Search } from "lucide-react";
 
@@ -18,7 +18,7 @@ export default function Locations() {
         location.name.toLowerCase().includes(query) ||
         location.address.toLowerCase().includes(query) ||
         location.town.toLowerCase().includes(query) ||
-        location.email?.toLowerCase().includes(query)
+        location.email?.toLowerCase().includes(query),
     );
   }, [searchQuery]);
 
