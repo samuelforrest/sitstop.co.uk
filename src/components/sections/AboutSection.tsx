@@ -31,14 +31,14 @@ export function AboutSection() {
           our experience and listen to the input from supporting organisations.
         </p>
         <p>
-          Check out our infrographic below showing the varity of people who use{" "}
+          Check out our infographic below showing the varity of people who use{" "}
           <b>SIT STOP</b>.
         </p>
       </div>
 
       <div className="flex flex-col items-start space-y-4">
         <img
-          src="/infrographic.png"
+          src="/infographic.webp"
           alt="SIT STOP infographic"
           className="w-full max-w-xl h-auto rounded-lg shadow-xl"
           loading="lazy"
