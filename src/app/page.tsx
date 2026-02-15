@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/ui/button";
 import { ImageAutoSlider } from "@/components/ui/HeroImageSlider";
 import {
@@ -9,7 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { NavigationBar } from "@/components/NavigationBar";
 import Link from "next/link";
-import { Mail, PhoneCall, Send } from "lucide-react";
+import { Mail, PhoneCall } from "lucide-react";
 
 export default function Home() {
   return (
@@ -68,12 +67,10 @@ export default function Home() {
               <p>
                 <b>SIT STOP</b> is an initiative that was started in 2006 by an
                 independent community group in the London Borough of Richmond
-                upon Thames.
+                upon Thames. At <b>SIT STOP</b> our purpose is to make life just
+                a little easier for those in need of somewhere to sit down.
               </p>
-              <p>
-                At <b>SIT STOP</b> our purpose is to make life just a little
-                easier for those in need of somewhere to sit down.
-              </p>
+
               <p>
                 These individuals may be elderly, pregnant, disabled or unwell;
                 they may have tired feet or be laden down with shopping or they
@@ -81,14 +78,14 @@ export default function Home() {
                 matter what drives the need.
               </p>
               <p>
-                In a shop or business displaying the SIT STOP logo, it is
+                In a shop or business displaying the <b>SIT STOP</b> logo, it is
                 absolutely fine to ask for a seat or to use one if it is
                 available. It is not necessary to be a customer of the store or
                 to be using the services provided there.
               </p>
               <p>
-                We continue to develop the SIT STOP campaign as we learn from
-                our experience and listen to the input from supporting
+                We continue to develop the <b>SIT STOP</b> campaign as we learn
+                from our experience and listen to the input from supporting
                 organisations.
               </p>
               <p>That&apos;s all it is!</p>
@@ -102,8 +99,8 @@ export default function Home() {
             <hr className="w-full mb-8 border-t-2"></hr>
             <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
               <p>
-                The SIT STOP campaign started in Richmond in 2005. A group of
-                individuals led by three{" "}
+                The <b>SIT STOP</b> campaign started in Richmond in 2005. A
+                group of individuals led by three{" "}
                 <a
                   href="https://www.thersa.org/"
                   target="_blank"
@@ -121,22 +118,45 @@ export default function Home() {
               <p>
                 With the help of Richmond Advice and Information on Disability
                 (RAID) and a number of other local agencies and businesses, plus
-                supporting funds from the RSA, Richmond Council and Starbucks,
-                the idea took shape and grew. In Spring 2007 the project - then
-                focused around specially designed chairs - was showcased around
-                London.
+                supporting funds from the RSA, Richmond Council and{" "}
+                <a
+                  href="https://www.starbucks.co.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline underline-offset-2"
+                >
+                  Starbucks
+                </a>
+                , the idea took shape and grew. In Spring 2007 the project -
+                then focused around specially designed chairs - was showcased
+                around London.
               </p>
               <p>
-                The scheme was launched in Twickenham with the support of
-                Richmond Council. Very ethusiastic commments about the idea were
-                received and no major issues were identified by the
-                participating businesses.
+                The scheme was launched in Twickenham with the support of{" "}
+                <a
+                  href="https://www.richmond.gov.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline underline-offset-2"
+                >
+                  Richmond Council
+                </a>
+                . Very ethusiastic commments about the idea were received and no
+                major issues were identified by the participating businesses.
               </p>
               <p>
                 We continue to expand the number of participating organizations
                 - not only in the Borough of Richmond upon Thames but also
-                beyond. For example, the Royal Brompton Hospital have set up
-                their own SIT STOP initiative.
+                beyond. For example, the{" "}
+                <a
+                  href="https://www.rbht.nhs.uk/patients-visitors/for-patients/access-and-support-for-disabled-patients-and-visitors/sit-stop-chairs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline underline-offset-2"
+                >
+                  Royal Brompton Hospital
+                </a>{" "}
+                have set up their own <b>SIT STOP</b> initiative.
               </p>
             </div>
           </section>
@@ -149,7 +169,7 @@ export default function Home() {
             <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
               <p>
                 If you see the following logo in the window of a shop, it means
-                that they have partnered with SIT STOP.
+                that they have partnered with <b>SIT STOP</b>.
               </p>
               <p>Feel free to ask for their seat.</p>
               <div className="flex justify-center md:justify-start mt-8">
@@ -186,8 +206,9 @@ export default function Home() {
                     STOP logo window and wall stickers, information leaflets
                     should you wish to place them near the seat you provide and
                     contact information for further help in implementing the
-                    scheme. Participating in SIT STOP does not require the
-                    purchase of any special equipment. Any chair meets the need!
+                    scheme. Participating in <b>SIT STOP</b> does not require
+                    the purchase of any special equipment. Any chair meets the
+                    need!
                   </p>
                 </div>
               </div>
@@ -196,9 +217,9 @@ export default function Home() {
                   Volunteers
                 </h3>
                 <p>
-                  If you are a volunteer and would like to help spread the SIT
-                  STOP campaign in Richmond or in another location we would be
-                  very pleased to hear from you. Please contact us.
+                  If you are a volunteer and would like to help spread the{" "}
+                  <b>SIT STOP</b> campaign in Richmond or in another location we
+                  would be very pleased to hear from you. Please contact us.
                 </p>
               </div>
               <div>
@@ -244,9 +265,9 @@ export default function Home() {
                 </AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
                   <p>
-                    Yes, we would be delighted to supply a SIT STOP sticker for
-                    the chair if you wish. Please do contact us to order your
-                    sticker. Details are on the contacts page.
+                    Yes, we would be delighted to supply a <b>SIT STOP</b>{" "}
+                    sticker for the chair if you wish. Please do contact us to
+                    order your sticker. Details are on the contacts page.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -284,7 +305,7 @@ export default function Home() {
                   <p>
                     Any premises open to the public will from time to time have
                     incidents of this type. Evidence from our pilot project is
-                    that participating in SIT STOP does not increase the
+                    that participating in <b>SIT STOP</b> does not increase the
                     frequency of such events. When they occur they should be
                     addressed by staff in the way they have been trained.
                   </p>
@@ -319,9 +340,10 @@ export default function Home() {
                 <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
                   <p>
                     We would be very pleased to know of public spirited
-                    businesses such as these! Displaying the SIT STOP logo helps
-                    the public, builds awareness of SIT STOP and assists
-                    recruitment of additional participant businesses.
+                    businesses such as these! Displaying the <b>SIT STOP</b>{" "}
+                    logo helps the public, builds awareness of <b>SIT STOP</b>{" "}
+                    and assists recruitment of additional participant
+                    businesses.
                   </p>
                   <p>
                     By all means approach them to display the logo and put us in
@@ -352,7 +374,7 @@ export default function Home() {
                 </AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
                   <p>
-                    Cheques payable to ‘SIT STOP’ will be very gratefully
+                    Cheques payable to <b>‘SIT STOP’</b> will be very gratefully
                     received. They can be mailed to us at the address on the
                     contacts page.
                   </p>

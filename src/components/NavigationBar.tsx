@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-comment-textnodes */
 "use client";
 
 import * as React from "react";
@@ -30,7 +28,6 @@ export function NavigationBar() {
     <div className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b shadow-sm">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center py-4">
-          {/* Logo/Brand */}
           <Link href="/" className="flex items-center gap-3 font-bold text-xl">
             <img
               src="/sitstop-logo.jpg"
@@ -40,7 +37,6 @@ export function NavigationBar() {
             <span className="hidden sm:inline">SIT STOP</span>
           </Link>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <NavigationMenu>
               <NavigationMenuList className="flex gap-1">
@@ -114,7 +110,6 @@ export function NavigationBar() {
             </NavigationMenu>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
             className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
@@ -129,7 +124,6 @@ export function NavigationBar() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden pb-4 border-t mt-2 pt-4">
             <ul className="flex flex-col space-y-2">
@@ -154,54 +148,54 @@ export function NavigationBar() {
                 </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/#about"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
                   <BsPeople className="w-5 h-5" />
                   <span className="font-medium">About Us</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/#logo"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
                   <Palette className="w-5 h-5" />
                   <span className="font-medium">Logo</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/#join"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
                   <Handshake className="w-5 h-5" />
                   <span className="font-medium">Join</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/#faqs"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
                   <FaQuestion className="w-5 h-5" />
                   <span className="font-medium">FAQs</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/#contact"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
                   <Mail className="w-5 h-5" />
                   <span className="font-medium">Contact</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
