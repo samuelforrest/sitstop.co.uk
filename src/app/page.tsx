@@ -422,7 +422,7 @@ export default function Home() {
             <p>
               Site developed by{" "}
               <a
-                href="https://www.samuelforrest.me"
+                href="https://www.samuelforrest.co.uk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline underline-offset-2"

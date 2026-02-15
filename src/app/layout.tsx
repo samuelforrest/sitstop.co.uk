@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   publisher: "SIT STOP",
   keywords: [
     "Samuel Forrest",
-    "samuelforrest.me",
+    "samuelforrest.co.uk",
     "SIT STOP",
     "SITSTOP.co.uk",
     "sitstop.co.uk",

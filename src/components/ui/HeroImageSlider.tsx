@@ -54,7 +54,6 @@ export const ImageAutoSlider = () => {
           animation: scroll-right 35s linear infinite;
         }
 
-
         .image-item {
           transition: transform 0.3s ease, filter 0.3s ease;
         }
