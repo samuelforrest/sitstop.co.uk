@@ -74,7 +74,7 @@ export default function News() {
                         <h3 className="text-lg md:text-xl font-bold text-black group-hover:text-blue-600 transition-colors line-clamp-2">
                           {link.title}
                         </h3>
-                        <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0 ml-2" />
+                        <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-blue-600 transition-colors shrink-0 ml-2" />
                       </div>
                       <p className="text-sm md:text-base text-gray-600 mb-4 leading-relaxed line-clamp-3">
                         {link.description}

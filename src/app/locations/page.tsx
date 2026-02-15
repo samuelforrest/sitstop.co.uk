@@ -36,10 +36,10 @@ export default function Locations() {
   const activeTowns = Object.keys(locationsByTown).sort();
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       <NavigationBar />
-      <div className="w-full px-5 md:px-35 lg:px-45 xl:px-60 2xl:px-75 3xl:px-120 my-8 pt-20">
-        <main>
+      <div className="w-full flex justify-center px-5 md:px-10 lg:px-16 xl:px-20 my-8 pt-20">
+        <main className="w-full max-w-7xl">
           <section id="hero" className="w-full text-center space-y-6 mb-12">
             <h1 className="text-6xl md:text-8xl text-black font-bold">
               LOCATIONS
