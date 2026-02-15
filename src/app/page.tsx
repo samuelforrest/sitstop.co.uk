@@ -58,7 +58,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="about" className="w-full mb-20 md:mb-28">
+          <section id="about" className="w-full mb-10 md:mb-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-6">
               About Us
             </h2>
@@ -88,7 +88,24 @@ export default function Home() {
                 from our experience and listen to the input from supporting
                 organisations.
               </p>
-              <p>That&apos;s all it is!</p>
+              <p>
+                Check out our infrographic below showing the varity of people
+                who use <b>SIT STOP</b>.
+              </p>
+            </div>
+          </section>
+
+          <section className="w-full mb-20 md:mb-28">
+            <div className="flex flex-col items-start space-y-4">
+              <img
+                src="/infrographic.png"
+                alt="SIT STOP infographic"
+                className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
+                loading="lazy"
+              />
+              <p className="text-sm md:text-base text-gray-600 italic">
+                Infographic
+              </p>
             </div>
           </section>
 
