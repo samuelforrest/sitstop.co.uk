@@ -14,27 +14,33 @@ import { Mail, PhoneCall, Send } from "lucide-react";
 export default function Home() {
   return (
     <div className="w-full overflow-x-hidden">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#faef50] focus:text-black focus:font-bold focus:rounded"
+      >
+        Skip to main content
+      </a>
       <NavigationBar />
-      <div className="w-full px-5 md:px-35 lg:px-45 xl:px-60 2xl:px-100 3xl:px-150 my-8 pt-20">
-        <main>
+      <div className="w-full flex justify-center px-5 md:px-10 lg:px-16 xl:px-20 my-8 pt-20">
+        <main id="main-content" className="w-full max-w-7xl">
           <section
             id="hero"
-            className="w-full text-center space-y-6 justify-center"
+            className="w-full text-center space-y-6 justify-center mb-16 md:mb-20"
           >
-            <h1 className="text-6xl md:text-8xl text- font-bold bg-[#faef50] p-2 ">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold bg-[#faef50] p-4 md:p-6">
               SIT STOP
             </h1>
 
-            <p className="text-md md:text-2xl">
+            <p className="text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto">
               Making life a little easier for those who need to sit down.
             </p>
           </section>
 
-          <section id="hero-images" className="w-full my-8">
+          <section id="hero-images" className="w-full mb-16 md:mb-20">
             <ImageAutoSlider />
           </section>
 
-          <section id="action-buttons" className="w-full my-8">
+          <section id="action-buttons" className="w-full mb-20 md:mb-28">
             <div className="items-center justify-center flex gap-3 md:gap-5">
               <Link href="/locations">
                 <Button className="hover:cursor-pointer md:h-11 md:w-40">
@@ -53,164 +59,165 @@ export default function Home() {
             </div>
           </section>
 
-          <section
-            id="about"
-            className="w-full mb-35 items-center justify-center"
-          >
-            <h1 className="text-2xl md:text-4xl text-black font-bold ">
+          <section id="about" className="w-full mb-20 md:mb-28">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-6">
               What is SIT STOP?
-            </h1>
-            <hr className="w-full mt-4 "></hr>
-            <p className="text-sm md:text-xl mt-5 md:mt-10">
-              <b>SIT STOP</b> is an initiative that was started in 2006 by an
-              independent community group in the London Borough of Richmond upon
-              Thames.
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              At <b>SIT STOP</b> our purpose is to make life just a little
-              easier for those in need of somewhere to sit down.
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              These individuals may be elderly, pregnant, disabled or unwell;
-              they may have tired feet or be laden down with shopping or they
-              may just need somewhere to wait for a few minutes. It does not
-              matter what drives the need.
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              In a shop or business displaying the SIT STOP logo, it is
-              absolutely fine to ask for a seat or to use one if it is
-              available. It is not necessary to be a customer of the store or to
-              be using the services provided there.
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              We continue to develop the SIT STOP campaign as we learn from our
-              experience and listen to the input from supporting organisations.
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              That&apos;s all it is!
-            </p>
-          </section>
-
-          <section
-            id="about"
-            className="w-full mb-35 items-center justify-center"
-          >
-            <h1 className="text-2xl md:text-4xl text-black font-bold ">
-              SIT STOP&apos;s History
-            </h1>
-            <hr className="w-full mt-4 "></hr>
-            <p className="">
-              The SIT STOP campaign started in Richmond in 2005. A group of
-              individuals led by three{" "}
-              <a href="https://www.samuelforrest.me">
-                <div className="">
-                  <span className="hover:underline underline-offset-2 text-blue-600">
-                    {" "}
-                    Royal Society of Arts (RSA)
-                  </span>
-                </div>
-              </a>
-              fellows met to discuss local issues as part of the RSA&apos;s
-              Coffeehouse Challenge process. Meetings like these took place
-              countrywide and were intended to bring focus to the resolution of
-              local issues. In Richmond &apos;Access for All&apos; became our
-              central theme.
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              With the help of Richmond Advice and Information on Disability
-              (RAID) and a number of other local agencies and businesses, plus
-              supporting funds from the RSA, Richmond Council and Starbucks, the
-              idea took shape and grew. In Spring 2007 the project - then
-              focused around specially designed chairs - was showcased around
-              London.
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              The scheme was launched in Twickenham with the support of Richmond
-              Council. Very ethusiastic commments about the idea were received
-              and no major issues were identified by the participating
-              businesses.
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              We continue to expand the number of participating organizations -
-              not only in the Borough of Richmond upon Thames but also beyond.
-              For example, the Royal Brompton Hospital have set up their own SIT
-              STOP initiative.
-            </p>
-          </section>
-
-          <section
-            id="about"
-            className="w-full my-8 items-center justify-center mb-35"
-          >
-            <h1 className="text-2xl md:text-4xl text-black font-bold ">
-              Our Logo / Sticker
-            </h1>
-            <hr className="w-full mt-4 "></hr>
-            <p className="text-sm md:text-xl mt-5 md:mt-10">
-              Wherever you see our logo, please feel free to ask to sit down in
-              that local business, shop or place:
-            </p>
-            <div className="items-center sm:items-start justify-center sm:justify-start flex">
-              <img
-                src="sitstop-logo.jpg"
-                alt="logo"
-                className="w-50 h-60 mt-10 items-center"
-                loading="lazy"
-              />
+            </h2>
+            <hr className="w-full mb-8 border-t-2"></hr>
+            <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
+              <p>
+                <b>SIT STOP</b> is an initiative that was started in 2006 by an
+                independent community group in the London Borough of Richmond
+                upon Thames.
+              </p>
+              <p>
+                At <b>SIT STOP</b> our purpose is to make life just a little
+                easier for those in need of somewhere to sit down.
+              </p>
+              <p>
+                These individuals may be elderly, pregnant, disabled or unwell;
+                they may have tired feet or be laden down with shopping or they
+                may just need somewhere to wait for a few minutes. It does not
+                matter what drives the need.
+              </p>
+              <p>
+                In a shop or business displaying the SIT STOP logo, it is
+                absolutely fine to ask for a seat or to use one if it is
+                available. It is not necessary to be a customer of the store or
+                to be using the services provided there.
+              </p>
+              <p>
+                We continue to develop the SIT STOP campaign as we learn from
+                our experience and listen to the input from supporting
+                organisations.
+              </p>
+              <p>That&apos;s all it is!</p>
             </div>
           </section>
 
-          <section
-            id="about"
-            className="w-full mb-35 items-center justify-center"
-          >
-            <h1 className="text-2xl md:text-4xl text-black font-bold ">
-              Join SIT STOP
-            </h1>
-            <hr className="w-full mt-4 "></hr>
-
-            <p className="text-sm md:text-xl mt-6 md:mt-12">
-              <b>Businesses</b>
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              If you would like to offer a seat to those in need we would be
-              very pleased to help you become a participant in the scheme. You
-              do not have to be trading in Richmond Borough to participate.
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              Contact us and we will send you a pack which includes SIT STOP
-              logo window and wall stickers, information leaflets should you
-              wish to place them near the seat you provide and contact
-              information for further help in implementing the scheme.
-              Participating in SIT STOP does not require the purchase of any
-              special equipment. Any chair meets the need!
-            </p>
-            <p className="text-sm md:text-xl mt-6 md:mt-12">
-              <b>Volunteers</b>
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              If you are a volunteer and would like to help spread the SIT STOP
-              campaign in Richmond or in another location we would be very
-              pleased to hear from you. Please contact us.
-            </p>
-            <p className="text-sm md:text-xl mt-6 md:mt-12">
-              <b>Local Councils</b>
-            </p>
-            <p className="text-sm md:text-xl mt-4 md:mt-8">
-              If you are a local council and would like to roll out the scheme
-              in your area do contact us we are pleased to share our experiences
-              and provide assistance.
-            </p>
+          <section id="history" className="w-full mb-20 md:mb-28">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-6">
+              SIT STOP&apos;s History
+            </h2>
+            <hr className="w-full mb-8 border-t-2"></hr>
+            <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
+              <p>
+                The SIT STOP campaign started in Richmond in 2005. A group of
+                individuals led by three{" "}
+                <a
+                  href="https://www.thersa.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline underline-offset-2"
+                >
+                  Royal Society of Arts (RSA)
+                </a>{" "}
+                fellows met to discuss local issues as part of the RSA&apos;s
+                Coffeehouse Challenge process. Meetings like these took place
+                countrywide and were intended to bring focus to the resolution
+                of local issues. In Richmond &apos;Access for All&apos; became
+                our central theme.
+              </p>
+              <p>
+                With the help of Richmond Advice and Information on Disability
+                (RAID) and a number of other local agencies and businesses, plus
+                supporting funds from the RSA, Richmond Council and Starbucks,
+                the idea took shape and grew. In Spring 2007 the project - then
+                focused around specially designed chairs - was showcased around
+                London.
+              </p>
+              <p>
+                The scheme was launched in Twickenham with the support of
+                Richmond Council. Very ethusiastic commments about the idea were
+                received and no major issues were identified by the
+                participating businesses.
+              </p>
+              <p>
+                We continue to expand the number of participating organizations
+                - not only in the Borough of Richmond upon Thames but also
+                beyond. For example, the Royal Brompton Hospital have set up
+                their own SIT STOP initiative.
+              </p>
+            </div>
           </section>
 
-          <section
-            id="about"
-            className="w-full my-8 items-center justify-center mb-35"
-          >
-            <h1 className="text-2xl md:text-4xl text-black font-bold ">
-              Frequently Asked
-            </h1>
-            <hr className="w-full mt-4"></hr>
+          <section id="logo" className="w-full mb-20 md:mb-28">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-6">
+              Our Logo / Sticker
+            </h2>
+            <hr className="w-full mb-8 border-t-2"></hr>
+            <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
+              <p>
+                Wherever you see our logo, please feel free to ask to sit down
+                in that local business, shop or place:
+              </p>
+              <div className="flex justify-center md:justify-start mt-8">
+                <img
+                  src="sitstop-logo.jpg"
+                  alt="SIT STOP logo - yellow circular sticker"
+                  className="w-64 h-auto rounded-lg shadow-md"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section id="join" className="w-full mb-20 md:mb-28">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-6">
+              Join SIT STOP
+            </h2>
+            <hr className="w-full mb-8 border-t-2"></hr>
+
+            <div className="space-y-8 text-base md:text-lg lg:text-xl leading-relaxed">
+              <div>
+                <h3 className="text-xl md:text-2xl font-bold mb-4">
+                  Businesses
+                </h3>
+                <div className="space-y-4">
+                  <p>
+                    If you would like to offer a seat to those in need we would
+                    be very pleased to help you become a participant in the
+                    scheme. You do not have to be trading in Richmond Borough to
+                    participate.
+                  </p>
+                  <p>
+                    Contact us and we will send you a pack which includes SIT
+                    STOP logo window and wall stickers, information leaflets
+                    should you wish to place them near the seat you provide and
+                    contact information for further help in implementing the
+                    scheme. Participating in SIT STOP does not require the
+                    purchase of any special equipment. Any chair meets the need!
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl md:text-2xl font-bold mb-4">
+                  Volunteers
+                </h3>
+                <p>
+                  If you are a volunteer and would like to help spread the SIT
+                  STOP campaign in Richmond or in another location we would be
+                  very pleased to hear from you. Please contact us.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl md:text-2xl font-bold mb-4">
+                  Local Councils
+                </h3>
+                <p>
+                  If you are a local council and would like to roll out the
+                  scheme in your area do contact us we are pleased to share our
+                  experiences and provide assistance.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="faqs" className="w-full mb-20 md:mb-28">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-6">
+              Frequently Asked Questions
+            </h2>
+            <hr className="w-full mb-8 border-t-2"></hr>
             <Accordion
               type="single"
               collapsible
@@ -352,49 +359,54 @@ export default function Home() {
               </AccordionItem>
             </Accordion>
           </section>
-          <section
-            id="contact"
-            className="w-full mb-35 items-center justify-center"
-          >
-            <h1 className="text-2xl md:text-4xl text-black font-bold ">
+          <section id="contact" className="w-full mb-20">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-6">
               Contact Us
-            </h1>
+            </h2>
 
-            <hr className="w-full mt-4 "></hr>
+            <hr className="w-full mb-8 border-t-2"></hr>
 
-            <div className="grid grid-cols-2 items-center gap-6 mt-15">
-              <div>
-                <p className="text-sm md:text-xl text-center">
-                  <span className="flex items-center justify-center gap-2">
-                    <Mail /> <b>Email</b>
-                  </span>
-                  <br></br>richmond@sitstop.co.uk
-                </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+              <div className="flex flex-col items-center md:items-start space-y-4">
+                <div className="flex items-center gap-3 text-lg md:text-xl">
+                  <Mail className="w-6 h-6" />
+                  <span className="font-bold">Email</span>
+                </div>
+                <a
+                  href="mailto:richmond@sitstop.co.uk"
+                  className="text-blue-600 hover:underline text-base md:text-lg"
+                >
+                  richmond@sitstop.co.uk
+                </a>
               </div>
 
-              <div>
-                <p className="text-sm md:text-xl text-center">
-                  <span className="flex items-center justify-center gap-2">
-                    <PhoneCall /> <b>Mobile</b>
-                  </span>
-                  <br></br>(+44) 7789 438246
-                </p>
+              <div className="flex flex-col items-center md:items-start space-y-4">
+                <div className="flex items-center gap-3 text-lg md:text-xl">
+                  <PhoneCall className="w-6 h-6" />
+                  <span className="font-bold">Mobile</span>
+                </div>
+                <a
+                  href="tel:+447789438246"
+                  className="text-blue-600 hover:underline text-base md:text-lg"
+                >
+                  (+44) 7789 438246
+                </a>
               </div>
             </div>
           </section>
-          <section>
-            <div className="justify-center items-center text-center mb-4">
-              &copy; 2026, All rights are reserved
-            </div>
-            <a href="https://www.samuelforrest.me">
-              <div className="justify-center items-center text-center">
-                Site developed by{" "}
-                <span className="underline underline-offset-3 text-blue-600">
-                  {" "}
-                  Samuel Forrest
-                </span>
-              </div>
-            </a>
+          <section className="border-t pt-8 space-y-4 text-center text-sm md:text-base text-gray-600">
+            <p>&copy; 2026, All rights are reserved</p>
+            <p>
+              Site developed by{" "}
+              <a
+                href="https://www.samuelforrest.me"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline underline-offset-2"
+              >
+                Samuel Forrest
+              </a>
+            </p>
           </section>
         </main>
       </div>

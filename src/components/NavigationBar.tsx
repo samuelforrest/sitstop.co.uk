@@ -2,192 +2,185 @@
 
 import * as React from "react";
 import Link from "next/link";
-import {
-  CircleCheckIcon,
-  CircleHelpIcon,
-  CircleIcon,
-  House,
-  Mail,
-  MapPin,
-  Palette,
-} from "lucide-react";
+import { House, Mail, MapPin, Palette, Menu, X } from "lucide-react";
 
 import { useIsMobile } from "@/hooks/use-mobile";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { BsPeople, BsQuestionDiamond } from "react-icons/bs";
-import { BiQuestionMark } from "react-icons/bi";
+import { BsPeople } from "react-icons/bs";
 import { FaQuestion } from "react-icons/fa6";
-
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-];
 
 export function NavigationBar() {
   const isMobile = useIsMobile();
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b shadow-sm">
-      <div className="flex justify-center md:justify-start items-center py-4">
-        <NavigationMenu viewport={isMobile}>
-          <NavigationMenuList className="flex-wrap">
-            <NavigationMenuItem className="bg-transparent">
-              <NavigationMenuLink
-                asChild
-                className={navigationMenuTriggerStyle()}
-              >
-                <Link className="text-[17px] bg-transparent" href="/">
-                  <span className="flex justify-center items-center gap-2">
-                    <House />
-                    Home
-                  </span>
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                asChild
-                className={navigationMenuTriggerStyle()}
-              >
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="flex justify-between items-center py-4">
+          {/* Logo/Brand */}
+          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
+            <House className="w-6 h-6" />
+            <span className="hidden sm:inline">SIT STOP</span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:block">
+            <NavigationMenu>
+              <NavigationMenuList className="flex gap-1">
+                <NavigationMenuItem>
+                  <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    <Link href="/">
+                      <span className="flex items-center gap-2">
+                        <House className="w-4 h-4" />
+                        Home
+                      </span>
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    <Link href="/locations">
+                      <span className="flex items-center gap-2">
+                        <MapPin className="w-4 h-4" />
+                        Locations
+                      </span>
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <a href="#about" className="flex items-center gap-2">
+                      <BsPeople className="w-4 h-4" />
+                      About Us
+                    </a>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <a href="#logo" className="flex items-center gap-2">
+                      <Palette className="w-4 h-4" />
+                      Logo
+                    </a>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <a href="#faqs" className="flex items-center gap-2">
+                      <FaQuestion className="w-4 h-4" />
+                      FAQs
+                    </a>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <a href="#contact" className="flex items-center gap-2">
+                      <Mail className="w-4 h-4" />
+                      Contact
+                    </a>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={toggleMenu}
+            className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
+          >
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <nav className="md:hidden pb-4 border-t mt-2 pt-4">
+            <ul className="flex flex-col space-y-2">
+              <li>
                 <Link
-                  className="text-[17px] bg-transparent font-bold"
-                  href="/locations"
+                  href="/"
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
-                  <span className="flex justify-center items-center gap-2">
-                    <MapPin />
-                    Locations
-                  </span>
+                  <House className="w-5 h-5" />
+                  <span className="font-medium">Home</span>
                 </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                asChild
-                className={navigationMenuTriggerStyle()}
-              >
+              </li>
+              <li>
                 <Link
-                  className="text-[17px] bg-transparent font-bold"
                   href="/locations"
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
-                  <span className="flex justify-center items-center gap-2">
-                    <BsPeople />
-                    About Us
-                  </span>
+                  <MapPin className="w-5 h-5" />
+                  <span className="font-medium">Locations</span>
                 </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                asChild
-                className={navigationMenuTriggerStyle()}
-              >
-                <Link
-                  className="text-[17px] bg-transparent font-bold"
-                  href="/locations"
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
-                  <span className="flex justify-center items-center gap-2">
-                    <Palette />
-                    Logo
-                  </span>
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                asChild
-                className={navigationMenuTriggerStyle()}
-              >
-                <Link
-                  className="text-[17px] bg-transparent font-bold"
-                  href="/locations"
+                  <BsPeople className="w-5 h-5" />
+                  <span className="font-medium">About Us</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#logo"
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
-                  <span className="flex justify-center items-center gap-2">
-                    <FaQuestion />
-                    FAQs
-                  </span>
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink
-                asChild
-                className={navigationMenuTriggerStyle()}
-              >
-                <Link
-                  className="text-[17px] bg-transparent font-bold"
-                  href="/locations"
+                  <Palette className="w-5 h-5" />
+                  <span className="font-medium">Logo</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#faqs"
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
-                  <span className="flex justify-center items-center gap-2">
-                    <Mail />
-                    Contact
-                  </span>
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+                  <FaQuestion className="w-5 h-5" />
+                  <span className="font-medium">FAQs</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <Mail className="w-5 h-5" />
+                  <span className="font-medium">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        )}
       </div>
     </div>
-  );
-}
-
-function ListItem({
-  title,
-  children,
-  href,
-  ...props
-}: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
-  return (
-    <li {...props}>
-      <NavigationMenuLink asChild>
-        <Link href={href}>
-          <div className="text-sm leading-none font-medium">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
-            {children}
-          </p>
-        </Link>
-      </NavigationMenuLink>
-    </li>
   );
 }

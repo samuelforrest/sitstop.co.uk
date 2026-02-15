@@ -83,6 +83,10 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-behavior: auto;
+    scroll-padding-top: 6rem;
+  }
   body {
     @apply bg-background text-foreground;
   }
