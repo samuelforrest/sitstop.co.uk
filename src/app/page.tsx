@@ -100,7 +100,7 @@ export default function Home() {
               <img
                 src="/infrographic.png"
                 alt="SIT STOP infographic"
-                className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
+                className="w-full max-w-xl h-auto rounded-lg shadow-xl"
                 loading="lazy"
               />
               <p className="text-sm md:text-base text-gray-600 italic">
@@ -189,13 +189,16 @@ export default function Home() {
                 that they have partnered with <b>SIT STOP</b>.
               </p>
               <p>Feel free to ask for their seat.</p>
-              <div className="flex justify-center md:justify-start mt-8">
+              <div className="flex flex-col items-start space-y-4">
                 <img
                   src="sitstop-logo.jpg"
-                  alt="SIT STOP logo - yellow circular sticker"
+                  alt="SIT STOP official logo"
                   className="w-64 h-auto rounded-lg shadow-md"
                   loading="lazy"
                 />
+                <p className="text-sm md:text-base text-gray-600 italic">
+                  SIT STOP Official Logo
+                </p>
               </div>
             </div>
           </section>
