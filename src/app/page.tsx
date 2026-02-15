@@ -21,13 +21,13 @@ export default function Home() {
         Skip to main content
       </a>
       <NavigationBar />
-      <div className="w-full flex justify-center px-5 md:px-10 lg:px-16 xl:px-20 my-8 pt-20">
+      <div className="w-full flex justify-center px-5 md:px-10 lg:px-16 xl:px-20 my-8 pt-15">
         <main id="main-content" className="w-full max-w-7xl">
           <section
             id="hero"
-            className="w-full text-center space-y-6 justify-center mb-16 md:mb-20"
+            className="w-full text-center space-y-6 justify-center mb-16 md:mb-8"
           >
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold bg-[#faef50] p-4 md:p-6">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold p-4 md:p-6">
               SIT STOP
             </h1>
 
@@ -36,11 +36,11 @@ export default function Home() {
             </p>
           </section>
 
-          <section id="hero-images" className="w-full mb-16 md:mb-20">
+          <section id="hero-images" className="w-full mb-10 md:mb-5">
             <ImageAutoSlider />
           </section>
 
-          <section id="action-buttons" className="w-full mb-20 md:mb-28">
+          <section id="action-buttons" className="w-full mb-30 md:mb-35">
             <div className="items-center justify-center flex gap-3 md:gap-5">
               <Link href="/locations">
                 <Button className="hover:cursor-pointer md:h-11 md:w-40">
@@ -61,7 +61,7 @@ export default function Home() {
 
           <section id="about" className="w-full mb-20 md:mb-28">
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-6">
-              What is SIT STOP?
+              About Us
             </h2>
             <hr className="w-full mb-8 border-t-2"></hr>
             <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
@@ -143,14 +143,15 @@ export default function Home() {
 
           <section id="logo" className="w-full mb-20 md:mb-28">
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-6">
-              Our Logo / Sticker
+              Logo
             </h2>
             <hr className="w-full mb-8 border-t-2"></hr>
             <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
               <p>
-                Wherever you see our logo, please feel free to ask to sit down
-                in that local business, shop or place:
+                If you see the following logo in the window of a shop, it means
+                that they have partnered with SIT STOP.
               </p>
+              <p>Feel free to ask for their seat.</p>
               <div className="flex justify-center md:justify-start mt-8">
                 <img
                   src="sitstop-logo.jpg"
@@ -164,7 +165,7 @@ export default function Home() {
 
           <section id="join" className="w-full mb-20 md:mb-28">
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-bold mb-6">
-              Join SIT STOP
+              Joining SIT STOP
             </h2>
             <hr className="w-full mb-8 border-t-2"></hr>
 

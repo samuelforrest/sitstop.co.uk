@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-no-comment-textnodes */
 "use client";
 
 import * as React from "react";
 import Link from "next/link";
-import { House, Mail, MapPin, Palette, Menu, X } from "lucide-react";
+import { House, Mail, MapPin, Palette, Menu, X, Handshake } from "lucide-react";
 
 import { useIsMobile } from "@/hooks/use-mobile";
 import {
@@ -14,6 +16,8 @@ import {
 } from "@/components/ui/navigation-menu";
 import { BsPeople } from "react-icons/bs";
 import { FaQuestion } from "react-icons/fa6";
+import { HiOutlineSparkles } from "react-icons/hi";
+import { FiHelpCircle } from "react-icons/fi";
 
 export function NavigationBar() {
   const isMobile = useIsMobile();
@@ -27,8 +31,12 @@ export function NavigationBar() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center py-4">
           {/* Logo/Brand */}
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <House className="w-6 h-6" />
+          <Link href="/" className="flex items-center gap-3 font-bold text-xl">
+            <img
+              src="/sitstop-logo.jpg"
+              alt="SIT STOP logo"
+              className="h-10 rounded-full"
+            />
             <span className="hidden sm:inline">SIT STOP</span>
           </Link>
 
@@ -64,34 +72,42 @@ export function NavigationBar() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <a href="#about" className="flex items-center gap-2">
+                    <Link href="/#about" className="flex items-center gap-2">
                       <BsPeople className="w-4 h-4" />
-                      About Us
-                    </a>
+                      About
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <a href="#logo" className="flex items-center gap-2">
-                      <Palette className="w-4 h-4" />
+                    <Link href="/#logo" className="flex items-center gap-2">
+                      <HiOutlineSparkles className="w-4 h-4" />
                       Logo
-                    </a>
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <a href="#faqs" className="flex items-center gap-2">
-                      <FaQuestion className="w-4 h-4" />
+                    <Link href="/#join" className="flex items-center gap-2">
+                      <Handshake className="w-4 h-4" />
+                      Join
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <Link href="/#faqs" className="flex items-center gap-2">
+                      <FiHelpCircle className="w-4 h-4" />
                       FAQs
-                    </a>
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <a href="#contact" className="flex items-center gap-2">
+                    <Link href="/#contact" className="flex items-center gap-2">
                       <Mail className="w-4 h-4" />
                       Contact
-                    </a>
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -139,7 +155,7 @@ export function NavigationBar() {
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="/#about"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
@@ -149,7 +165,7 @@ export function NavigationBar() {
               </li>
               <li>
                 <a
-                  href="#logo"
+                  href="/#logo"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
@@ -159,7 +175,17 @@ export function NavigationBar() {
               </li>
               <li>
                 <a
-                  href="#faqs"
+                  href="/#join"
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <Handshake className="w-5 h-5" />
+                  <span className="font-medium">Join</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/#faqs"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
@@ -169,7 +195,7 @@ export function NavigationBar() {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/#contact"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
