@@ -4,7 +4,16 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { House, Mail, MapPin, Palette, Menu, X, Handshake } from "lucide-react";
+import {
+  House,
+  Mail,
+  MapPin,
+  Palette,
+  Menu,
+  X,
+  Handshake,
+  Newspaper,
+} from "lucide-react";
 
 import { useIsMobile } from "@/hooks/use-mobile";
 import {
@@ -39,7 +48,7 @@ export function NavigationBar() {
             <span className="hidden sm:inline">SIT STOP</span>
           </Link>
 
-          <nav className="hidden md:block">
+          <nav className="hidden lg:block">
             <NavigationMenu>
               <NavigationMenuList className="flex gap-1">
                 <NavigationMenuItem>
@@ -64,6 +73,19 @@ export function NavigationBar() {
                       <span className="flex items-center gap-2">
                         <MapPin className="w-4 h-4" />
                         Locations
+                      </span>
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink
+                    asChild
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    <Link href="/news">
+                      <span className="flex items-center gap-2">
+                        <Newspaper className="w-4 h-4" />
+                        News
                       </span>
                     </Link>
                   </NavigationMenuLink>
@@ -114,20 +136,26 @@ export function NavigationBar() {
 
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            className="lg:hidden flex items-center gap-2 px-3 py-2 hover:bg-gray-100 rounded-lg transition-colors"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? (
-              <X className="w-6 h-6" />
+              <>
+                <X className="w-6 h-6" />
+                <span className="font-medium">Close</span>
+              </>
             ) : (
-              <Menu className="w-6 h-6" />
+              <>
+                <Menu className="w-6 h-6" />
+                <span className="font-medium">Menu</span>
+              </>
             )}
           </button>
         </div>
 
         {isMenuOpen && (
-          <nav className="md:hidden pb-4 border-t mt-2 pt-4">
+          <nav className="lg:hidden pb-4 border-t mt-2 pt-4">
             <ul className="flex flex-col space-y-2">
               <li>
                 <Link
@@ -147,6 +175,16 @@ export function NavigationBar() {
                 >
                   <MapPin className="w-5 h-5" />
                   <span className="font-medium">Locations</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/news"
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <Newspaper className="w-5 h-5" />
+                  <span className="font-medium">News</span>
                 </Link>
               </li>
               <li>
