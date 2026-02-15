@@ -6,7 +6,7 @@ export function AboutSection() {
         About Us
       </h2>
       <hr className="w-full mb-8 border-t-2"></hr>
-      <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed mb-10 md:mb-15">
+      <div className="space-y-8 text-base md:text-lg lg:text-xl leading-loose mb-10 md:mb-15">
         <p>
           <b>SIT STOP</b> is an initiative that was started in 2006 by an
           independent community group in the London Borough of Richmond upon

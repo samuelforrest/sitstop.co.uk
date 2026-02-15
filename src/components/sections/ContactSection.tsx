@@ -17,7 +17,7 @@ export function ContactSection() {
           </div>
           <a
             href="mailto:richmond@sitstop.co.uk"
-            className="text-blue-600 hover:underline text-base md:text-lg"
+            className="text-blue-600 hover:underline text-base md:text-lg leading-loose"
           >
             richmond@sitstop.co.uk
           </a>
@@ -30,7 +30,7 @@ export function ContactSection() {
           </div>
           <a
             href="tel:+447789438246"
-            className="text-blue-600 hover:underline text-base md:text-lg"
+            className="text-blue-600 hover:underline text-base md:text-lg leading-loose"
           >
             (+44) 7789 438246
           </a>

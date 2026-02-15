@@ -6,7 +6,7 @@ export function LogoSection() {
         Logo
       </h2>
       <hr className="w-full mb-8 border-t-2"></hr>
-      <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
+      <div className="space-y-8 text-base md:text-lg lg:text-xl leading-loose">
         <p>
           If you see the following logo in the window of a shop, it means that
           they have partnered with <b>SIT STOP</b>. Therefore, feel free to ask

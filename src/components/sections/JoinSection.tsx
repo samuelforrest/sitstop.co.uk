@@ -6,10 +6,10 @@ export function JoinSection() {
       </h2>
       <hr className="w-full mb-8 border-t-2"></hr>
 
-      <div className="space-y-8 text-base md:text-lg lg:text-xl leading-relaxed">
+      <div className="space-y-8 text-base md:text-lg lg:text-xl leading-loose">
         <div>
           <h3 className="text-xl md:text-2xl font-bold mb-4">Businesses</h3>
-          <div className="space-y-4">
+          <div className="space-y-6">
             <p>
               If you would like to offer a seat to those in need we would be
               very pleased to help you become a participant in the scheme. You

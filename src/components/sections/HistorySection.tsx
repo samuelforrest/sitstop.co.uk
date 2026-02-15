@@ -5,7 +5,7 @@ export function HistorySection() {
         SIT STOP&apos;s History
       </h2>
       <hr className="w-full mb-8 border-t-2"></hr>
-      <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
+      <div className="space-y-8 text-base md:text-lg lg:text-xl leading-loose">
         <p>
           The <b>SIT STOP</b> campaign started in Richmond in 2005. A group of
           individuals led by three{" "}

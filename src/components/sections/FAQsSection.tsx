@@ -23,7 +23,7 @@ export function FAQsSection() {
             If my business joins the SIT STOP campaign do we have to provide a
             special/designated chair?
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl leading-loose">
             <p>
               No - any chair in the part of your business that is open to the
               public is fine. Equally, if a chair is willingly provided on
@@ -35,7 +35,7 @@ export function FAQsSection() {
           <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
             Can I designate a particular chair if I wish to?
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl leading-loose">
             <p>
               Yes, we would be delighted to supply a <b>SIT STOP</b> sticker for
               the chair if you wish. Please do contact us to order your sticker.
@@ -48,7 +48,7 @@ export function FAQsSection() {
             Is there a particular type of chair which is best for SIT
             STOP&apos;s purpose?
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl leading-loose">
             <p>
               Yes, a chair which has a relatively high seat and ideally arms is
               the easiest for most people with mobility problems to use. However
@@ -60,7 +60,7 @@ export function FAQsSection() {
           <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
             Does the chair have to be in a particular part of my premises?
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl leading-loose">
             <p>
               No, anywhere in the public area that is convenient to you, and
               accessible to the user.
@@ -72,7 +72,7 @@ export function FAQsSection() {
             What do I do if someone abuses our hospitality by behaving
             anti-socially?
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl leading-loose">
             <p>
               Any premises open to the public will from time to time have
               incidents of this type. Evidence from our pilot project is that
@@ -87,7 +87,7 @@ export function FAQsSection() {
             Am I required to provide additional first aid training to staff
             because I participate in Sit Stop?
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl leading-loose">
             <p>
               No, there is no incremental obligation beyond that which your
               business already has.
@@ -99,7 +99,7 @@ export function FAQsSection() {
             As a business providing a seat as part of the SIT STOP campaign do
             we get paid?
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl leading-loose">
             <p>No. The campaign is entirely voluntary throughout.</p>
           </AccordionContent>
         </AccordionItem>
@@ -108,7 +108,7 @@ export function FAQsSection() {
             I know of a business which provides seating but they are not SIT
             STOP participants. Should I say something to them?
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl leading-loose">
             <p>
               We would be very pleased to know of public spirited businesses
               such as these! Displaying the <b>SIT STOP</b> logo helps the
@@ -128,7 +128,7 @@ export function FAQsSection() {
           <AccordionTrigger className="text-sm md:text-xl cursor-pointer">
             Do I have to pay anything because I participate in SIT STOP?
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl leading-loose">
             <p>
               No. We are a voluntary body. We are funded through donations which
               cover our costs of operation. All our team give their time without
@@ -141,7 +141,7 @@ export function FAQsSection() {
             If I want to make a donation in support of SIT STOP what should I
             do?
           </AccordionTrigger>
-          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl">
+          <AccordionContent className="flex flex-col gap-4 text-balance text-sm md:text-xl leading-loose">
             <p>
               Cheques payable to <b>&apos;SIT STOP&apos;</b> will be very
               gratefully received. They can be mailed to us at the address on
