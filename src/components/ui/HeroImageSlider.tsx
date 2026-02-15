@@ -51,7 +51,7 @@ export const ImageAutoSlider = () => {
         }
 
         .infinite-scroll {
-          animation: scroll-right 20s linear infinite;
+          animation: scroll-right 35s linear infinite;
         }
 
         .scroll-container {

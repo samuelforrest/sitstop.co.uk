@@ -17,10 +17,14 @@ export default function Home() {
       <NavigationBar />
       <div className="w-full px-5 md:px-35 lg:px-45 xl:px-60 2xl:px-100 3xl:px-150 my-8 pt-20">
         <main>
-          <section id="hero" className="w-full text-center space-y-6">
-            <h1 className="text-6xl md:text-8xl text-black font-bold ">
+          <section
+            id="hero"
+            className="w-full text-center space-y-6 justify-center"
+          >
+            <h1 className="text-6xl md:text-8xl text- font-bold bg-[#faef50] p-2 ">
               SIT STOP
             </h1>
+
             <p className="text-md md:text-2xl">
               Making life a little easier for those who need to sit down.
             </p>
@@ -95,13 +99,22 @@ export default function Home() {
               SIT STOP&apos;s History
             </h1>
             <hr className="w-full mt-4 "></hr>
-            <p className="text-sm md:text-xl mt-5 md:mt-10">
+            <p className="">
               The SIT STOP campaign started in Richmond in 2005. A group of
-              individuals led by three Royal Society of Arts (RSA) fellows met
-              to discuss local issues as part of the RSA&apos;s Coffeehouse
-              Challenge process. Meetings like these took place countrywide and
-              were intended to bring focus to the resolution of local issues. In
-              Richmond &apos;Access for All&apos; became our central theme.
+              individuals led by three{" "}
+              <a href="https://www.samuelforrest.me">
+                <div className="">
+                  <span className="hover:underline underline-offset-2 text-blue-600">
+                    {" "}
+                    Royal Society of Arts (RSA)
+                  </span>
+                </div>
+              </a>
+              fellows met to discuss local issues as part of the RSA&apos;s
+              Coffeehouse Challenge process. Meetings like these took place
+              countrywide and were intended to bring focus to the resolution of
+              local issues. In Richmond &apos;Access for All&apos; became our
+              central theme.
             </p>
             <p className="text-sm md:text-xl mt-4 md:mt-8">
               With the help of Richmond Advice and Information on Disability
@@ -139,7 +152,7 @@ export default function Home() {
             </p>
             <div className="items-center sm:items-start justify-center sm:justify-start flex">
               <img
-                src="sitstop-logo.webp"
+                src="sitstop-logo.jpg"
                 alt="logo"
                 className="w-50 h-60 mt-10 items-center"
                 loading="lazy"
@@ -376,7 +389,7 @@ export default function Home() {
             <a href="https://www.samuelforrest.me">
               <div className="justify-center items-center text-center">
                 Site developed by{" "}
-                <span className="underline underline-offset-3">
+                <span className="underline underline-offset-3 text-blue-600">
                   {" "}
                   Samuel Forrest
                 </span>
