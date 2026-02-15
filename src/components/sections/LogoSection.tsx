@@ -9,9 +9,32 @@ export function LogoSection() {
       <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed">
         <p>
           If you see the following logo in the window of a shop, it means that
-          they have partnered with <b>SIT STOP</b>.
+          they have partnered with <b>SIT STOP</b>. Therefore, feel free to ask
+          for a seat.
         </p>
-        <p>Feel free to ask for their seat.</p>
+        <p>
+          If you wish to download our official logo, follow{" "}
+          <a
+            href="/sitstop-logo.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline underline-offset-2"
+            download
+          >
+            this hyperlink
+          </a>{" "}
+          or{" "}
+          <a
+            href="/sitstop-logo.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline underline-offset-2"
+          >
+            view logo in new tab
+          </a>
+          .
+        </p>
+
         <div className="flex flex-col items-start space-y-4">
           <img
             src="sitstop-logo.jpg"
