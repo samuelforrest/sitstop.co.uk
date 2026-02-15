@@ -54,22 +54,6 @@ export const ImageAutoSlider = () => {
           animation: scroll-right 35s linear infinite;
         }
 
-        .scroll-container {
-          mask: linear-gradient(
-            90deg,
-            transparent 0%,
-            black 10%,
-            black 90%,
-            transparent 100%
-          );
-          -webkit-mask: linear-gradient(
-            90deg,
-            transparent 0%,
-            black 10%,
-            black 90%,
-            transparent 100%
-          );
-        }
 
         .image-item {
           transition: transform 0.3s ease, filter 0.3s ease;

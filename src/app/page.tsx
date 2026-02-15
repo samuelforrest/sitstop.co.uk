@@ -24,7 +24,7 @@ export default function Home() {
         <main id="main-content" className="w-full max-w-7xl">
           <section
             id="hero"
-            className="w-full text-center space-y-6 justify-center mb-16 md:mb-8"
+            className="w-full text-center space-y-6 justify-center mb-6 md:mb-8"
           >
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold p-4 md:p-6">
               SIT STOP
