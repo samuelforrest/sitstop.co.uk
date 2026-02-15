@@ -2,7 +2,15 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react";
+import {
+  CircleCheckIcon,
+  CircleHelpIcon,
+  CircleIcon,
+  House,
+  Mail,
+  MapPin,
+  Palette,
+} from "lucide-react";
 
 import { useIsMobile } from "@/hooks/use-mobile";
 import {
@@ -14,6 +22,9 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { BsPeople, BsQuestionDiamond } from "react-icons/bs";
+import { BiQuestionMark } from "react-icons/bi";
+import { FaQuestion } from "react-icons/fa6";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -58,7 +69,7 @@ export function NavigationBar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b shadow-sm">
-      <div className="flex justify-center items-center py-4">
+      <div className="flex justify-center md:justify-start items-center py-4">
         <NavigationMenu viewport={isMobile}>
           <NavigationMenuList className="flex-wrap">
             <NavigationMenuItem className="bg-transparent">
@@ -67,18 +78,90 @@ export function NavigationBar() {
                 className={navigationMenuTriggerStyle()}
               >
                 <Link className="text-[17px] bg-transparent" href="/">
-                  Home
+                  <span className="flex justify-center items-center gap-2">
+                    <House />
+                    Home
+                  </span>
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
-
             <NavigationMenuItem>
               <NavigationMenuLink
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link className="text-[17px] bg-transparent" href="/locations">
-                  All Locations
+                <Link
+                  className="text-[17px] bg-transparent font-bold"
+                  href="/locations"
+                >
+                  <span className="flex justify-center items-center gap-2">
+                    <MapPin />
+                    Locations
+                  </span>
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                asChild
+                className={navigationMenuTriggerStyle()}
+              >
+                <Link
+                  className="text-[17px] bg-transparent font-bold"
+                  href="/locations"
+                >
+                  <span className="flex justify-center items-center gap-2">
+                    <BsPeople />
+                    About Us
+                  </span>
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                asChild
+                className={navigationMenuTriggerStyle()}
+              >
+                <Link
+                  className="text-[17px] bg-transparent font-bold"
+                  href="/locations"
+                >
+                  <span className="flex justify-center items-center gap-2">
+                    <Palette />
+                    Logo
+                  </span>
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                asChild
+                className={navigationMenuTriggerStyle()}
+              >
+                <Link
+                  className="text-[17px] bg-transparent font-bold"
+                  href="/locations"
+                >
+                  <span className="flex justify-center items-center gap-2">
+                    <FaQuestion />
+                    FAQs
+                  </span>
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                asChild
+                className={navigationMenuTriggerStyle()}
+              >
+                <Link
+                  className="text-[17px] bg-transparent font-bold"
+                  href="/locations"
+                >
+                  <span className="flex justify-center items-center gap-2">
+                    <Mail />
+                    Contact
+                  </span>
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
