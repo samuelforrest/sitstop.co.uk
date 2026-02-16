@@ -1,3 +1,5 @@
+// This file is the single source of truth for all the locations
+
 export interface Location {
   no: string;
   id: string;
