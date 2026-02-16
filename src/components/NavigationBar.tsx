@@ -68,7 +68,7 @@ export function NavigationBar() {
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     <Link href="/#about" className="flex items-center gap-2">
                       <BsPeople className="w-4 h-4" />
-                      About
+                      About Us
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -169,26 +169,6 @@ export function NavigationBar() {
               </li>
               <li>
                 <Link
-                  href="/locations"
-                  onClick={closeMenu}
-                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
-                >
-                  <MapPin className="w-5 h-5" />
-                  <span className="font-medium">Locations</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/news"
-                  onClick={closeMenu}
-                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
-                >
-                  <Newspaper className="w-5 h-5" />
-                  <span className="font-medium">News</span>
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/#about"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
@@ -199,12 +179,32 @@ export function NavigationBar() {
               </li>
               <li>
                 <Link
+                  href="/locations"
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <MapPin className="w-5 h-5" />
+                  <span className="font-medium">Locations</span>
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/#logo"
                   onClick={closeMenu}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
                 >
                   <Palette className="w-5 h-5" />
                   <span className="font-medium">Logo</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/news"
+                  onClick={closeMenu}
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-gray-100 rounded-lg transition-colors"
+                >
+                  <Newspaper className="w-5 h-5" />
+                  <span className="font-medium">News</span>
                 </Link>
               </li>
               <li>
