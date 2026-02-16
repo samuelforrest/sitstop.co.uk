@@ -43,7 +43,9 @@ export function AboutSection() {
           className="w-full max-w-xl h-auto rounded-lg shadow-xl"
           loading="lazy"
         />
-        <p className="text-sm md:text-base text-gray-600 italic">Infographic</p>
+        <p className="text-sm md:text-base text-gray-600 italic">
+          SIT STOP makes town centres more accessible to all{" "}
+        </p>
       </div>
     </section>
   );

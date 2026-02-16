@@ -65,6 +65,14 @@ export function NavigationBar() {
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <Link href="/#about" className="flex items-center gap-2">
+                      <BsPeople className="w-4 h-4" />
+                      About
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
                   <NavigationMenuLink
                     asChild
                     className={navigationMenuTriggerStyle()}
@@ -78,6 +86,14 @@ export function NavigationBar() {
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <Link href="/#logo" className="flex items-center gap-2">
+                      <HiOutlineSparkles className="w-4 h-4" />
+                      Logo
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
                   <NavigationMenuLink
                     asChild
                     className={navigationMenuTriggerStyle()}
@@ -87,22 +103,6 @@ export function NavigationBar() {
                         <Newspaper className="w-4 h-4" />
                         News
                       </span>
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <Link href="/#about" className="flex items-center gap-2">
-                      <BsPeople className="w-4 h-4" />
-                      About
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <Link href="/#logo" className="flex items-center gap-2">
-                      <HiOutlineSparkles className="w-4 h-4" />
-                      Logo
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
